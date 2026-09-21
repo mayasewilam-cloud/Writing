@@ -1,0 +1,18 @@
+{
+  "course_id": "GRAD_501",
+  "course_name": "Senior Graduation Project & Capstone Thesis",
+  "curriculum_focus": "Undergraduate Senior Capstone & Experimental Thesis Defense",
+  "marking_scheme": {
+    "total_raw_marks": 100,
+    "max_gpa": 4.0,
+    "criteria": [
+      {"id": "title", "name": "Title & Thesis Scope", "max_marks": 5},
+      {"id": "abstract", "name": "Executive Summary / Abstract", "max_marks": 10},
+      {"id": "background", "name": "Literature Review & Problem Statement", "max_marks": 25},
+      {"id": "methodology", "name": "Methodology, Protocol Design & Safety", "max_marks": 25},
+      {"id": "aims_objectives", "name": "Project Objectives & Milestone Gantt", "max_marks": 15},
+      {"id": "references", "name": "Bibliography & Peer-Reviewed Recency", "max_marks": 10},
+      {"id": "defense", "name": "Oral Thesis Defense & Viva Voce", "max_marks": 10}
+    ]
+  }
+}

@@ -1,0 +1,897 @@
+[
+  {
+    "id": "live_42263664_2026",
+    "title": "CRISPR application in hematological disorders: from bench to bedside",
+    "category": "gene_editing",
+    "category_label": "Gene Editing",
+    "tag": "Peer-Reviewed Discovery (2026)",
+    "year": 2026,
+    "date_display": "2026 • Blood advances",
+    "journal": "Blood advances",
+    "authors": "Ladisa F et al.",
+    "doi_url": "https://doi.org/10.1182/bloodadvances.2025017417",
+    "is_foundational": false,
+    "is_live": true,
+    "storage_source": "live",
+    "educational": {
+      "what_is_it": "Clustered regularly interspaced short palindromic repeats (CRISPR)-associated protein genome editing has advanced from an experimental tool to a clinically validated therapeutic platform in hematology.",
+      "problem_solved": "Landmark successes in inherited blood diseases, including sickle cell disease, β-thalassemia, and severe combined immunodeficiency, have demonstrated that precise and durable genetic modifications can be safely and effectively implemented in human hematopoietic cells, positioning hematology at the forefront of translational genome editing.",
+      "how_it_works": [
+        "Target Recognition: Beyond monogenic disease, CRISPR-based approaches are transforming both the biological understanding and treatment of hematologic malignancies by enabling systematic interrogation of cancer dependencies, functional mapping of genetic vulnerabilities, and mechanism-driven target validation, including in vivo and immune-relevant contexts.",
+        "Biochemical Execution: Major editing modalities, including nuclease-mediated disruption, base editing, prime editing, and CRISPR-based transcriptional modulation, and highlight key preclinical studies alongside emerging clinical trial data.",
+        "Validated Benchmark: We also discuss translational challenges that currently limit broader clinical adoption, including delivery and manufacturing scalability, off-target and genotoxicity risks, tumor and immune heterogeneity, and the long-term durability and fitness of edited cell populations."
+      ],
+      "why_it_matters": "Published in Blood advances (2026). Demonstrates translational feasibility and provides an empirical benchmark for modern gene editing.",
+      "analogy": "Cancer cells are masters of disguise that trick the immune system into ignoring them. The researchers engineered synthetic radar receptors onto immune cells so they can unmask the tumor and eliminate cancer cells with laser precision while leaving healthy tissues unharmed."
+    },
+    "technical": {
+      "mechanism": "AbstractClustered regularly interspaced short palindromic repeats (CRISPR)-associated protein genome editing has advanced from an experimental tool to a clinically validated therapeutic platform in hematology. Landmark successes in inherited blood diseases, including sickle cell disease, β-thalassemia, and severe combined immunodeficiency, have demonstrated that precise and durable genetic modifications can be safely and effectively implemented in human hematopoietic cells, positioning hematology at the forefront of translational genome editing...",
+      "citation": "Ladisa F et al. (2026). CRISPR application in hematological disorders: from bench to bedside. Blood advances. DOI: 10.1182/bloodadvances.2025017417",
+      "primary_metric": "Landmark successes in inherited blood diseases, including sickle cell disease, β-thalassemia, and severe combined immunodeficiency, have demonstrated that precise and durable genetic modifications can be safely and effectively implemented in human hematopoietic cells, positioning hematology at the forefront of translational genome editing.",
+      "controls": "Wild-type Nuclease, Crispr benchmark reference paired with negative vehicle / empty-vector control assays.",
+      "significance": "Target ≥85% specific cytotoxicity against target tumor antigen with <5% off-tumor toxicity against healthy control tissues."
+    },
+    "extracted_parameters": {
+      "chassis": "Recombinant expression host / Biological test matrix",
+      "tool": "Nuclease, Crispr",
+      "burden_statistic": "AbstractClustered regularly interspaced short palindromic repeats (CRISPR)-associated protein genome editing has advanced from an experimental tool to a clinically validated therapeutic platform in hematology.",
+      "metric_numbers": [],
+      "primary_metric_sentence": "Landmark successes in inherited blood diseases, including sickle cell disease, β-thalassemia, and severe combined immunodeficiency, have demonstrated that precise and durable genetic modifications can be safely and effectively implemented in human hematopoietic cells, positioning hematology at the forefront of translational genome editing.",
+      "plain_metric": "Landmark successes in inherited blood diseases, including sickle cell disease, β-thalassemia, and severe combined immunodeficiency, have demonstrated that precise and durable genetic modifications can be safely and effectively implemented in human hematopoietic cells, positioning hematology at the forefront of translational genome editing.",
+      "controls": "Wild-type Nuclease, Crispr benchmark reference paired with negative vehicle / empty-vector control assays.",
+      "stated_gap": "We also discuss translational challenges that currently limit broader clinical adoption, including delivery and manufacturing scalability, off-target and genotoxicity risks, tumor and immune heterogeneity, and the long-term durability and fitness of edited cell populations.",
+      "plain_gap": "We also discuss translational challenges that currently limit broader clinical adoption, including delivery and manufacturing scalability, off-target and genotoxicity risks, tumor and immune heterogeneity, and the long-term durability and fitness of edited cell populations.",
+      "target_milestone": "Target ≥85% specific cytotoxicity against target tumor antigen with <5% off-tumor toxicity against healthy control tissues."
+    },
+    "links": {
+      "europepmc": "https://doi.org/10.1182/bloodadvances.2025017417",
+      "doi": "https://doi.org/10.1182/bloodadvances.2025017417"
+    }
+  },
+  {
+    "id": "live_42478499_2026",
+    "title": "Gene Editing-Driven Engineering of Microbial Systems and Metabolites for Precision Medicine and Sustainable Environmental Remediation",
+    "category": "gene_editing",
+    "category_label": "Gene Editing",
+    "tag": "Peer-Reviewed Discovery (2026)",
+    "year": 2026,
+    "date_display": "2026 • Small (Weinheim an der Bergstrasse, Germany)",
+    "journal": "Small (Weinheim an der Bergstrasse, Germany)",
+    "authors": "Du Y et al.",
+    "doi_url": "https://doi.org/10.1002/smll.74410",
+    "is_foundational": false,
+    "is_live": true,
+    "storage_source": "live",
+    "educational": {
+      "what_is_it": "Establish a unified Edit-Reprogram-Functionalize conceptual framework that systematically delineates transient genetic regulation from permanent genomic engineering.",
+      "problem_solved": "However, translating molecular interventions into robust macroscopic functions requires overcoming distinct microbial-specific barriers, including delivery bottlenecks and genetic stability.",
+      "how_it_works": [
+        "Target Recognition: We critically examine the evolutionary trajectories of five foundational technologies: plasmid engineering, CRISPR-Cas systems, base editors, prime editors, and enzyme engineering.",
+        "Biochemical Execution: The engineering of microorganisms is undergoing a fundamental paradigm shift, transitioning from the construction of static cell factories to the programming of dynamically responsive living materials.",
+        "Validated Benchmark: By evaluating representative breakthroughs-from ultrasound-actuated bacterial therapeutics to ultra-tough, biosynthesized protein composites-through the strict lens of host-dependent constraints, we reveal the mechanistic principles governing successful preclinical translation."
+      ],
+      "why_it_matters": "Published in Small (Weinheim an der Bergstrasse, Germany) (2026). Demonstrates translational feasibility and provides an empirical benchmark for modern gene editing.",
+      "analogy": "Imagine taking a delicate biological machine that normally breaks easily, and adding custom molecular reinforcement so it keeps working under harsh real-world conditions."
+    },
+    "technical": {
+      "mechanism": "The engineering of microorganisms is undergoing a fundamental paradigm shift, transitioning from the construction of static cell factories to the programming of dynamically responsive living materials. However, translating molecular interventions into robust macroscopic functions requires overcoming distinct microbial-specific barriers, including delivery bottlenecks and genetic stability. In this review, we establish a unified Edit-Reprogram-Functionalize conceptual framework that systematically delineates transient genetic regulation from per...",
+      "citation": "Du Y et al. (2026). Gene Editing-Driven Engineering of Microbial Systems and Metabolites for Precision Medicine and Sustainable Environmental Remediation. Small (Weinheim an der Bergstrasse, Germany). DOI: 10.1002/smll.74410",
+      "primary_metric": "Finally, we propose an actionable roadmap centered on systemic miniaturization, closed-loop control, and multi-scale integration, providing a definitive blueprint for the next generation of precision medicine, advanced biomanufacturing, and ecological remediation.",
+      "controls": "Finally, we propose an actionable roadmap centered on systemic miniaturization, closed-loop control, and multi-scale integration, providing a definitive blueprint for the next generation of precision medicine, advanced biomanufacturing, and ecological remediation.",
+      "significance": "Target a ≥2- to 3-fold quantitative improvement in catalytic efficiency, stability, and operational half-life over the Crispr literature baseline."
+    },
+    "extracted_parameters": {
+      "chassis": "Recombinant expression host / Biological test matrix",
+      "tool": "Crispr",
+      "burden_statistic": "The engineering of microorganisms is undergoing a fundamental paradigm shift, transitioning from the construction of static cell factories to the programming of dynamically responsive living materials.",
+      "metric_numbers": [],
+      "primary_metric_sentence": "Finally, we propose an actionable roadmap centered on systemic miniaturization, closed-loop control, and multi-scale integration, providing a definitive blueprint for the next generation of precision medicine, advanced biomanufacturing, and ecological remediation.",
+      "plain_metric": "Finally, we propose an actionable roadmap centered on systemic miniaturization, closed-loop control, and multi-scale integration, providing a definitive blueprint for the next generation of precision medicine, advanced biomanufacturing, and ecological remediation.",
+      "controls": "Finally, we propose an actionable roadmap centered on systemic miniaturization, closed-loop control, and multi-scale integration, providing a definitive blueprint for the next generation of precision medicine, advanced biomanufacturing, and ecological remediation.",
+      "stated_gap": "However, translating molecular interventions into robust macroscopic functions requires overcoming distinct microbial-specific barriers, including delivery bottlenecks and genetic stability.",
+      "plain_gap": "However, translating molecular interventions into robust macroscopic functions requires overcoming distinct microbial-specific barriers, including delivery bottlenecks and genetic stability.",
+      "target_milestone": "Target a ≥2- to 3-fold quantitative improvement in catalytic efficiency, stability, and operational half-life over the Crispr literature baseline."
+    },
+    "links": {
+      "europepmc": "https://doi.org/10.1002/smll.74410",
+      "doi": "https://doi.org/10.1002/smll.74410"
+    }
+  },
+  {
+    "id": "live_42326077_2026",
+    "title": "Delivering the future of immunotherapy: A state-of-the-art review of gene editing in immune cells with lipid nanoparticles",
+    "category": "gene_editing",
+    "category_label": "Gene Editing",
+    "tag": "Peer-Reviewed Discovery (2026)",
+    "year": 2026,
+    "date_display": "2026 • Materials today. Bio",
+    "journal": "Materials today. Bio",
+    "authors": "Ciganek I et al.",
+    "doi_url": "https://doi.org/10.1016/j.mtbio.2026.103334",
+    "is_foundational": false,
+    "is_live": true,
+    "storage_source": "live",
+    "educational": {
+      "what_is_it": "CRISPR-based genome editing has rapidly advanced immune cell engineering, creating opportunities to enhance functionality, persistence, and specificity in cancer, infectious, and autoimmune diseases.",
+      "problem_solved": "Viral vectors achieve high efficiency, but face limitations related to immunogenicity, genomic integration, and manufacturing scalability.",
+      "how_it_works": [
+        "Target Recognition: Non-viral methods such as electroporation are effective for ex vivo editing yet remain unsuitable for in vivo use.",
+        "Biochemical Execution: Recent innovations, including selective organ targeting, ligand conjugation, and sequence-level translational control are expanding their precision and versatility in immune cell engineering.",
+        "Validated Benchmark: Lipid nanoparticles (LNPs) have emerged as a clinically validated, scalable, and biocompatible alternative capable of delivering CRISPR cargo in the form of DNA, mRNA, or ribonucleoproteins."
+      ],
+      "why_it_matters": "Published in Materials today. Bio (2026). Demonstrates translational feasibility and provides an empirical benchmark for modern gene editing.",
+      "analogy": "Cancer cells are masters of disguise that trick the immune system into ignoring them. The researchers engineered synthetic radar receptors onto immune cells so they can unmask the tumor and eliminate cancer cells with laser precision while leaving healthy tissues unharmed."
+    },
+    "technical": {
+      "mechanism": "CRISPR-based genome editing has rapidly advanced immune cell engineering, creating opportunities to enhance functionality, persistence, and specificity in cancer, infectious, and autoimmune diseases. The translation of these strategies depends critically on safe and efficient delivery systems. Viral vectors achieve high efficiency, but face limitations related to immunogenicity, genomic integration, and manufacturing scalability. Non-viral methods such as electroporation are effective for ex vivo editing yet remain unsuitable for in vivo use. L...",
+      "citation": "Ciganek I et al. (2026). Delivering the future of immunotherapy: A state-of-the-art review of gene editing in immune cells with lipid nanoparticles. Materials today. Bio. DOI: 10.1016/j.mtbio.2026.103334",
+      "primary_metric": "By critically synthesizing current progress and limitations, this review highlights the central role of LNPs in enabling CRISPR-based immune engineering and outlines future directions for clinical translation.",
+      "controls": "Recent innovations, including selective organ targeting, ligand conjugation, and sequence-level translational control are expanding their precision and versatility in immune cell engineering.",
+      "significance": "Target ≥85% specific cytotoxicity against target tumor antigen with <5% off-tumor toxicity against healthy control tissues."
+    },
+    "extracted_parameters": {
+      "chassis": "Recombinant expression host / Biological test matrix",
+      "tool": "Crispr",
+      "burden_statistic": "CRISPR-based genome editing has rapidly advanced immune cell engineering, creating opportunities to enhance functionality, persistence, and specificity in cancer, infectious, and autoimmune diseases.",
+      "metric_numbers": [],
+      "primary_metric_sentence": "By critically synthesizing current progress and limitations, this review highlights the central role of LNPs in enabling CRISPR-based immune engineering and outlines future directions for clinical translation.",
+      "plain_metric": "By critically synthesizing current progress and limitations, this review highlights the central role of LNPs in enabling CRISPR-based immune engineering and outlines future directions for clinical translation.",
+      "controls": "Recent innovations, including selective organ targeting, ligand conjugation, and sequence-level translational control are expanding their precision and versatility in immune cell engineering.",
+      "stated_gap": "Despite these advances, major challenges remain, including suboptimal endosomal escape, extrahepatic targeting, and immune trade-offs such as the PEG dilemma.",
+      "plain_gap": "Despite these advances, major challenges remain, including suboptimal endosomal escape, extrahepatic targeting, and immune trade-offs such as the PEG dilemma.",
+      "target_milestone": "Target ≥85% specific cytotoxicity against target tumor antigen with <5% off-tumor toxicity against healthy control tissues."
+    },
+    "links": {
+      "europepmc": "https://doi.org/10.1016/j.mtbio.2026.103334",
+      "doi": "https://doi.org/10.1016/j.mtbio.2026.103334"
+    }
+  },
+  {
+    "id": "live_42187710_2026",
+    "title": "Expanding the Microbial Genomic Landscape and Biotechnological Applications of CRISPR-Cas Systems",
+    "category": "gene_editing",
+    "category_label": "Gene Editing",
+    "tag": "Peer-Reviewed Discovery (2026)",
+    "year": 2026,
+    "date_display": "2026 • Biology",
+    "journal": "Biology",
+    "authors": "Singh S et al.",
+    "doi_url": "https://doi.org/10.3390/biology15100748",
+    "is_foundational": false,
+    "is_live": true,
+    "storage_source": "live",
+    "educational": {
+      "what_is_it": "The CRISPR-Cas systems, identified initially as adaptive immune mechanisms in bacteria and archaea against viral threats, have rapidly evolved into transformative tools in genetic engineering and biotechnology.",
+      "problem_solved": "Despite the challenges associated with delivering complex Class 1 systems, both classes are now being actively harnessed across diverse microbial platforms.",
+      "how_it_works": [
+        "Target Recognition: These RNA-guided systems are broadly classified into Class 1, comprising multi-subunit complexes, and Class 2, characterized by compact single-effector protein, such as Cas9, Cas12, and Cas13.",
+        "Biochemical Execution: Beyond their natural role in maintaining genome integrity and defense, CRISPR-Cas systems have been extensively repurposed for precise genome modification, transcriptional regulation, epigenetic editing, and nucleic acid detection.",
+        "Validated Benchmark: Concurrently, the CRISPR-Cas research, particularly for guide RNA (gRNA) design and activity prediction, has revolutionized target specificity and editing efficiency."
+      ],
+      "why_it_matters": "Published in Biology (2026). Demonstrates translational feasibility and provides an empirical benchmark for modern gene editing.",
+      "analogy": "Standard hospital PCR tests take days because they need big heating/cooling machines. The researchers used a molecular watchdog (Cas12a) with an exact photo of the virus. The second it spots the virus, it starts setting off glowing confetti cannons, giving a doctor an immediate positive test result in 30 minutes with no lab machines."
+    },
+    "technical": {
+      "mechanism": "The CRISPR-Cas systems, identified initially as adaptive immune mechanisms in bacteria and archaea against viral threats, have rapidly evolved into transformative tools in genetic engineering and biotechnology. These RNA-guided systems are broadly classified into Class 1, comprising multi-subunit complexes, and Class 2, characterized by compact single-effector protein, such as Cas9, Cas12, and Cas13. Their remarkable structural and functional diversity enables microorganisms to adapt to diverse ecological niches, offering a vast repertoire of g...",
+      "citation": "Singh S et al. (2026). Expanding the Microbial Genomic Landscape and Biotechnological Applications of CRISPR-Cas Systems. Biology. DOI: 10.3390/biology15100748",
+      "primary_metric": "As CRISPR-Cas systems continue to evolve, they stand at the forefront of innovations that bridge natural microbial immunity with engineered precision tools for next-generation biotechnology.",
+      "controls": "Wild-type CAS9, CAS12, CAS13 benchmark reference paired with negative vehicle / empty-vector control assays.",
+      "significance": "Target attomolar analytical sensitivity (LOD ≤ 1.0 copy/μL) and rapid point-of-care turnaround in <20 minutes with zero background quenching in clinical crude samples."
+    },
+    "extracted_parameters": {
+      "chassis": "Recombinant expression host / Biological test matrix",
+      "tool": "CAS9, CAS12, CAS13",
+      "burden_statistic": "The CRISPR-Cas systems, identified initially as adaptive immune mechanisms in bacteria and archaea against viral threats, have rapidly evolved into transformative tools in genetic engineering and biotechnology.",
+      "metric_numbers": [],
+      "primary_metric_sentence": "As CRISPR-Cas systems continue to evolve, they stand at the forefront of innovations that bridge natural microbial immunity with engineered precision tools for next-generation biotechnology.",
+      "plain_metric": "As CRISPR-Cas systems continue to evolve, they stand at the forefront of innovations that bridge natural microbial immunity with engineered precision tools for next-generation biotechnology.",
+      "controls": "Wild-type CAS9, CAS12, CAS13 benchmark reference paired with negative vehicle / empty-vector control assays.",
+      "stated_gap": "Despite the challenges associated with delivering complex Class 1 systems, both classes are now being actively harnessed across diverse microbial platforms.",
+      "plain_gap": "Despite the challenges associated with delivering complex Class 1 systems, both classes are now being actively harnessed across diverse microbial platforms.",
+      "target_milestone": "Target attomolar analytical sensitivity (LOD ≤ 1.0 copy/μL) and rapid point-of-care turnaround in <20 minutes with zero background quenching in clinical crude samples."
+    },
+    "links": {
+      "europepmc": "https://doi.org/10.3390/biology15100748",
+      "doi": "https://doi.org/10.3390/biology15100748"
+    }
+  },
+  {
+    "id": "live_41992329_2026",
+    "title": "Application of extracellular vesicles in the CRISPR-based diagnosis and treatment: possibilities and challenges",
+    "category": "gene_editing",
+    "category_label": "Gene Editing",
+    "tag": "Peer-Reviewed Discovery (2026)",
+    "year": 2026,
+    "date_display": "2026 • Journal of biological engineering",
+    "journal": "Journal of biological engineering",
+    "authors": "Cho E et al.",
+    "doi_url": "https://doi.org/10.1186/s13036-026-00673-6",
+    "is_foundational": false,
+    "is_live": true,
+    "storage_source": "live",
+    "educational": {
+      "what_is_it": "The CRISPR–Cas system has revolutionized molecular diagnostics and gene editing, yet its clinical translation is hindered by delivery barriers, off-target activity, immunogenicity, and manufacturing challenges.",
+      "problem_solved": "Compared with viral vectors and synthetic non-viral carriers such as lipid nanoparticles, extracellular vesicles (EVs) offer a biologically derived delivery platform with superior biocompatibility, reduced immunogenicity, intrinsic cargo protection, and natural barrier-crossing capability.",
+      "how_it_works": [
+        "Target Recognition: Engineered EVs can further achieve cell- or tissue-specific targeting.",
+        "Biochemical Execution: In diagnostics, endogenous EV proteins and nucleic acids provide disease-informative signatures that can interface with CRISPR nuclease readouts for highly sensitive detection.",
+        "Validated Benchmark: We evaluate preclinical performance with attention to biodistribution, safety, innate and adaptive immune responses, and genomic integrity, as well as analytical assays and scalable manufacturing considerations essential for clinical translation."
+      ],
+      "why_it_matters": "Published in Journal of biological engineering (2026). Demonstrates translational feasibility and provides an empirical benchmark for modern gene editing.",
+      "analogy": "Raw mRNA is like a delicate paper letter that gets shredded the instant it touches bodily fluids. The researchers packaged the letter inside a microscopic protective fat bubble (LNP) that safely sneaks past bodily defenses and delivers the instruction manual directly into cells."
+    },
+    "technical": {
+      "mechanism": "The CRISPR–Cas system has revolutionized molecular diagnostics and gene editing, yet its clinical translation is hindered by delivery barriers, off-target activity, immunogenicity, and manufacturing challenges. Compared with viral vectors and synthetic non-viral carriers such as lipid nanoparticles, extracellular vesicles (EVs) offer a biologically derived delivery platform with superior biocompatibility, reduced immunogenicity, intrinsic cargo protection, and natural barrier-crossing capability. Engineered EVs can further achieve cell- or tiss...",
+      "citation": "Cho E et al. (2026). Application of extracellular vesicles in the CRISPR-based diagnosis and treatment: possibilities and challenges. Journal of biological engineering. DOI: 10.1186/s13036-026-00673-6",
+      "primary_metric": "Finally, we discuss emerging opportunities, including AI-guided optimization of EV-CRISPR design and integrated EV platforms that combine disease detection with therapeutic intervention, highlighting their promise for advancing precision medicine.",
+      "controls": "Wild-type Nuclease, Crispr benchmark reference paired with negative vehicle / empty-vector control assays.",
+      "significance": "Target attomolar analytical sensitivity (LOD ≤ 1.0 copy/μL) and rapid point-of-care turnaround in <20 minutes with zero background quenching in clinical crude samples."
+    },
+    "extracted_parameters": {
+      "chassis": "Recombinant expression host / Biological test matrix",
+      "tool": "Nuclease, Crispr",
+      "burden_statistic": "The CRISPR–Cas system has revolutionized molecular diagnostics and gene editing, yet its clinical translation is hindered by delivery barriers, off-target activity, immunogenicity, and manufacturing challenges.",
+      "metric_numbers": [],
+      "primary_metric_sentence": "Finally, we discuss emerging opportunities, including AI-guided optimization of EV-CRISPR design and integrated EV platforms that combine disease detection with therapeutic intervention, highlighting their promise for advancing precision medicine.",
+      "plain_metric": "Finally, we discuss emerging opportunities, including AI-guided optimization of EV-CRISPR design and integrated EV platforms that combine disease detection with therapeutic intervention, highlighting their promise for advancing precision medicine.",
+      "controls": "Wild-type Nuclease, Crispr benchmark reference paired with negative vehicle / empty-vector control assays.",
+      "stated_gap": "The CRISPR–Cas system has revolutionized molecular diagnostics and gene editing, yet its clinical translation is hindered by delivery barriers, off-target activity, immunogenicity, and manufacturing challenges.",
+      "plain_gap": "The CRISPR–Cas system has revolutionized molecular diagnostics and gene editing, yet its clinical translation is hindered by delivery barriers, off-target activity, immunogenicity, and manufacturing challenges.",
+      "target_milestone": "Target attomolar analytical sensitivity (LOD ≤ 1.0 copy/μL) and rapid point-of-care turnaround in <20 minutes with zero background quenching in clinical crude samples."
+    },
+    "links": {
+      "europepmc": "https://doi.org/10.1186/s13036-026-00673-6",
+      "doi": "https://doi.org/10.1186/s13036-026-00673-6"
+    }
+  },
+  {
+    "id": "live_42226724_2026",
+    "title": "Prime editing updates: technological evolution, methodological expansion, and delivery strategies for in vivo applications",
+    "category": "gene_editing",
+    "category_label": "Gene Editing",
+    "tag": "Peer-Reviewed Discovery (2026)",
+    "year": 2026,
+    "date_display": "2026 • BMB reports",
+    "journal": "BMB reports",
+    "authors": "Jong U, Lim D, Lee SH.",
+    "doi_url": "https://europepmc.org/article/MED/42226724",
+    "is_foundational": false,
+    "is_live": true,
+    "storage_source": "live",
+    "educational": {
+      "what_is_it": "Prime editing is a next-generation genome editing technology that enables precise base substitutions, insertions, and deletions at target genomic loci without inducing double-strand breaks or requiring exogenous donor DNA.",
+      "problem_solved": "This system operates through a fusion protein composed of Cas9 nickase and reverse transcriptase together with prime editing guide RNA; it has emerged as a precise genome editing platform that overcomes the limitations of conventional double-strand break-inducing CRISPR-Cas9 systems.",
+      "how_it_works": [
+        "Target Recognition: Since first reported in 2019, diverse meth...",
+        "Biochemical Execution: Enzymatic catalysis or synthetic RNA-directed cascades execute precise molecular conversions.",
+        "Validated Benchmark: Produces high-fidelity phenotypic correction or quantified analytical signal verification."
+      ],
+      "why_it_matters": "Published in BMB reports (2026). Demonstrates translational feasibility and provides an empirical benchmark for modern gene editing.",
+      "analogy": "Imagine taking a delicate biological machine that normally breaks easily, and adding custom molecular reinforcement so it keeps working under harsh real-world conditions."
+    },
+    "technical": {
+      "mechanism": "Prime editing is a next-generation genome editing technology that enables precise base substitutions, insertions, and deletions at target genomic loci without inducing double-strand breaks or requiring exogenous donor DNA. This system operates through a fusion protein composed of Cas9 nickase and reverse transcriptase together with prime editing guide RNA; it has emerged as a precise genome editing platform that overcomes the limitations of conventional double-strand break-inducing CRISPR-Cas9 systems. Since first reported in 2019, diverse meth...",
+      "citation": "Jong U, Lim D, Lee SH. (2026). Prime editing updates: technological evolution, methodological expansion, and delivery strategies for in vivo applications. BMB reports. DOI: 42226724",
+      "primary_metric": "Since first reported in 2019, diverse methodological improvements from PE1 to PE7 have been achieved, leading to rapid advances in editing efficiency, expansion of the editable target range, correction of large genomic regions, and development of in vivo delivery technologies.",
+      "controls": "Wild-type CAS9, Crispr benchmark reference paired with negative vehicle / empty-vector control assays.",
+      "significance": "Target a ≥2- to 3-fold quantitative improvement in catalytic efficiency, stability, and operational half-life over the CAS9, Crispr literature baseline."
+    },
+    "extracted_parameters": {
+      "chassis": "Recombinant expression host / Biological test matrix",
+      "tool": "CAS9, Crispr",
+      "burden_statistic": "Prime editing is a next-generation genome editing technology that enables precise base substitutions, insertions, and deletions at target genomic loci without inducing double-strand breaks or requiring exogenous donor DNA.",
+      "metric_numbers": [],
+      "primary_metric_sentence": "Since first reported in 2019, diverse methodological improvements from PE1 to PE7 have been achieved, leading to rapid advances in editing efficiency, expansion of the editable target range, correction of large genomic regions, and development of in vivo delivery technologies.",
+      "plain_metric": "Since first reported in 2019, diverse methodological improvements from PE1 to PE7 have been achieved, leading to rapid advances in editing efficiency, expansion of the editable target range, correction of large genomic regions, and development of in vivo delivery technologies.",
+      "controls": "Wild-type CAS9, Crispr benchmark reference paired with negative vehicle / empty-vector control assays.",
+      "stated_gap": "Wild-type CAS9, Crispr is constrained by limited thermodynamic stability, substrate recalcitrance, and rapid inactivation under non-ideal real-world conditions.",
+      "plain_gap": "Wild-type CAS9, Crispr is limit by limited thermodynamic stability, substrate recalcitrance, and rapid inactivation under non-ideal real-world conditions.",
+      "target_milestone": "Target a ≥2- to 3-fold quantitative improvement in catalytic efficiency, stability, and operational half-life over the CAS9, Crispr literature baseline."
+    },
+    "links": {
+      "europepmc": "https://europepmc.org/article/MED/42226724",
+      "doi": "https://europepmc.org/article/MED/42226724"
+    }
+  },
+  {
+    "id": "live_42676584_2026",
+    "title": "Engineered MSC-exosomes as CRISPR-Cas9 delivery vectors for precision immunotherapy",
+    "category": "gene_editing",
+    "category_label": "Gene Editing",
+    "tag": "Peer-Reviewed Discovery (2026)",
+    "year": 2026,
+    "date_display": "2026 • Frontiers in bioengineering and biotechnology",
+    "journal": "Frontiers in bioengineering and biotechnology",
+    "authors": "Guo D et al.",
+    "doi_url": "https://doi.org/10.3389/fbioe.2026.1823483",
+    "is_foundational": false,
+    "is_live": true,
+    "storage_source": "live",
+    "educational": {
+      "what_is_it": "Mesenchymal stem cell-derived exosomes (MSC-Exos) combined with CRISPR-Cas9 hold substantial therapeutic potential for immune-mediated diseases, although significant technical obstacles remain.",
+      "problem_solved": "We examine the mechanistic basis for the therapeutic effects of these engineered platforms and critically assess the challenges impeding clinical translation, including manufacturing scalability, safety concerns, and regulatory considerations.",
+      "how_it_works": [
+        "Target Recognition: This review presents a comprehensive analysis of strategies for engineering MSC-Exos as delivery vehicles for CRISPR-Cas9, with emphasis on cargo-loading methodologies and surface modifications that enable targeting specific immune cell populations.",
+        "Biochemical Execution: Key areas of focus for this Research Topic-vehicle engineering, cargo packaging efficiency, biological barriers, and in vivo safety-are systematically addressed.",
+        "Validated Benchmark: Finally, we discuss emerging directions, including next-generation gene editors and stimulus-responsive biomaterials."
+      ],
+      "why_it_matters": "Published in Frontiers in bioengineering and biotechnology (2026). Demonstrates translational feasibility and provides an empirical benchmark for modern gene editing.",
+      "analogy": "Raw mRNA is like a delicate paper letter that gets shredded the instant it touches bodily fluids. The researchers packaged the letter inside a microscopic protective fat bubble (LNP) that safely sneaks past bodily defenses and delivers the instruction manual directly into cells."
+    },
+    "technical": {
+      "mechanism": "Mesenchymal stem cell-derived exosomes (MSC-Exos) combined with CRISPR-Cas9 hold substantial therapeutic potential for immune-mediated diseases, although significant technical obstacles remain. This review presents a comprehensive analysis of strategies for engineering MSC-Exos as delivery vehicles for CRISPR-Cas9, with emphasis on cargo-loading methodologies and surface modifications that enable targeting specific immune cell populations. We examine the mechanistic basis for the therapeutic effects of these engineered platforms and critically ...",
+      "citation": "Guo D et al. (2026). Engineered MSC-exosomes as CRISPR-Cas9 delivery vectors for precision immunotherapy. Frontiers in bioengineering and biotechnology. DOI: 10.3389/fbioe.2026.1823483",
+      "primary_metric": "This review provides a balanced framework for advancing MSC-Exos-based nanoplatforms toward precision gene therapies for immune disorders.",
+      "controls": "This review presents a comprehensive analysis of strategies for engineering MSC-Exos as delivery vehicles for CRISPR-Cas9, with emphasis on cargo-loading methodologies and surface modifications that enable targeting specific immune cell populations.",
+      "significance": "Target a ≥2- to 3-fold quantitative improvement in catalytic efficiency, stability, and operational half-life over the CAS9, Crispr literature baseline."
+    },
+    "extracted_parameters": {
+      "chassis": "Recombinant expression host / Biological test matrix",
+      "tool": "CAS9, Crispr",
+      "burden_statistic": "Mesenchymal stem cell-derived exosomes (MSC-Exos) combined with CRISPR-Cas9 hold substantial therapeutic potential for immune-mediated diseases, although significant technical obstacles remain.",
+      "metric_numbers": [],
+      "primary_metric_sentence": "This review provides a balanced framework for advancing MSC-Exos-based nanoplatforms toward precision gene therapies for immune disorders.",
+      "plain_metric": "This review provides a balanced framework for advancing MSC-Exos-based nanoplatforms toward precision gene therapies for immune disorders.",
+      "controls": "This review presents a comprehensive analysis of strategies for engineering MSC-Exos as delivery vehicles for CRISPR-Cas9, with emphasis on cargo-loading methodologies and surface modifications that enable targeting specific immune cell populations.",
+      "stated_gap": "Wild-type CAS9, Crispr is constrained by limited thermodynamic stability, substrate recalcitrance, and rapid inactivation under non-ideal real-world conditions.",
+      "plain_gap": "Wild-type CAS9, Crispr is limit by limited thermodynamic stability, substrate recalcitrance, and rapid inactivation under non-ideal real-world conditions.",
+      "target_milestone": "Target a ≥2- to 3-fold quantitative improvement in catalytic efficiency, stability, and operational half-life over the CAS9, Crispr literature baseline."
+    },
+    "links": {
+      "europepmc": "https://doi.org/10.3389/fbioe.2026.1823483",
+      "doi": "https://doi.org/10.3389/fbioe.2026.1823483"
+    }
+  },
+  {
+    "id": "live_42706916_2026",
+    "title": "Genome Editing for Glycogen Storage Diseases",
+    "category": "synbio",
+    "category_label": "Synthetic Biology",
+    "tag": "Peer-Reviewed Discovery (2026)",
+    "year": 2026,
+    "date_display": "2026 • Journal of inherited metabolic disease",
+    "journal": "Journal of inherited metabolic disease",
+    "authors": "von Beck T, Wang R, Koeberl D.",
+    "doi_url": "https://doi.org/10.1002/jimd.70249",
+    "is_foundational": false,
+    "is_live": true,
+    "storage_source": "live",
+    "educational": {
+      "what_is_it": "Gene therapy has been developed for several glycogen storage diseases and has advanced into clinical trials.",
+      "problem_solved": "However, the limitations of these gene therapies with regard to stability following treatment early in life have led to the development of genome editing.",
+      "how_it_works": [
+        "Target Recognition: Early results for genome editing in both glycogen storage disease type Ia and Pompe disease have demonstrated promising efficacy, and proof-of-concept studies as well as a clinical trial are underway.",
+        "Biochemical Execution: These studies will determine whether genome editing fulfills its promise with regard to stably treating glycogen storage diseases early in life.",
+        "Validated Benchmark: Produces high-fidelity phenotypic correction or quantified analytical signal verification."
+      ],
+      "why_it_matters": "Published in Journal of inherited metabolic disease (2026). Demonstrates translational feasibility and provides an empirical benchmark for modern synthetic biology.",
+      "analogy": "Imagine taking a delicate biological machine that normally breaks easily, and adding custom molecular reinforcement so it keeps working under harsh real-world conditions."
+    },
+    "technical": {
+      "mechanism": "Gene therapy has been developed for several glycogen storage diseases and has advanced into clinical trials. However, the limitations of these gene therapies with regard to stability following treatment early in life have led to the development of genome editing. Early results for genome editing in both glycogen storage disease type Ia and Pompe disease have demonstrated promising efficacy, and proof-of-concept studies as well as a clinical trial are underway. These studies will determine whether genome editing fulfills its promise with regard ...",
+      "citation": "von Beck T, Wang R, Koeberl D. (2026). Genome Editing for Glycogen Storage Diseases. Journal of inherited metabolic disease. DOI: 10.1002/jimd.70249",
+      "primary_metric": "Early results for genome editing in both glycogen storage disease type Ia and Pompe disease have demonstrated promising efficacy, and proof-of-concept studies as well as a clinical trial are underway.",
+      "controls": "Wild-type Engineered biomolecule / Biocatalytic variant benchmark reference paired with negative vehicle / empty-vector control assays.",
+      "significance": "Target a ≥2- to 3-fold quantitative improvement in catalytic efficiency, stability, and operational half-life over the Engineered biomolecule / Biocatalytic variant literature baseline."
+    },
+    "extracted_parameters": {
+      "chassis": "Recombinant expression host / Biological test matrix",
+      "tool": "Engineered biomolecule / Biocatalytic variant",
+      "burden_statistic": "Gene therapy has been developed for several glycogen storage diseases and has advanced into clinical trials.",
+      "metric_numbers": [],
+      "primary_metric_sentence": "Early results for genome editing in both glycogen storage disease type Ia and Pompe disease have demonstrated promising efficacy, and proof-of-concept studies as well as a clinical trial are underway.",
+      "plain_metric": "Early results for genome editing in both glycogen storage disease type Ia and Pompe disease have demonstrated promising efficacy, and proof-of-concept studies as well as a clinical trial are underway.",
+      "controls": "Wild-type Engineered biomolecule / Biocatalytic variant benchmark reference paired with negative vehicle / empty-vector control assays.",
+      "stated_gap": "However, the limitations of these gene therapies with regard to stability following treatment early in life have led to the development of genome editing.",
+      "plain_gap": "However, the limitations of these gene therapies with regard to stability following treatment early in life have led to the development of genome editing.",
+      "target_milestone": "Target a ≥2- to 3-fold quantitative improvement in catalytic efficiency, stability, and operational half-life over the Engineered biomolecule / Biocatalytic variant literature baseline."
+    },
+    "links": {
+      "europepmc": "https://doi.org/10.1002/jimd.70249",
+      "doi": "https://doi.org/10.1002/jimd.70249"
+    }
+  },
+  {
+    "id": "live_42706781_2026",
+    "title": "A Rapid RPA-CRISPR/Cas12a Approach for Detecting Mycobacterium marinum",
+    "category": "gene_editing",
+    "category_label": "Gene Editing",
+    "tag": "Peer-Reviewed Discovery (2026)",
+    "year": 2026,
+    "date_display": "2026 • Journal of fish diseases",
+    "journal": "Journal of fish diseases",
+    "authors": "Yan G et al.",
+    "doi_url": "https://doi.org/10.1111/jfd.70286",
+    "is_foundational": false,
+    "is_live": true,
+    "storage_source": "live",
+    "educational": {
+      "what_is_it": "A rapid detection method for M. marinum was established based on the Recombinase Polymerase Amplification (RPA) technology and the CRISPR/Cas12a trans-cut principle.",
+      "problem_solved": "Mycobacterium marinum is one of the most common atypical mycobacteria causing opportunistic infections in humans.",
+      "how_it_works": [
+        "Target Recognition: By designing and screening RPA primers and crRNA, the RPA amplification system and CRISPR/Cas12a detection system were optimized, and an RPA-CRISPR/Cas12a detection system with high sensitivity and specificity was successfully constructed.",
+        "Biochemical Execution: The LOD 95 of this detection method was estimated to be 5.7 copies/μL (95% CI: 2.4-15.5 copies/μL).",
+        "Validated Benchmark: The RPA-CRISPR assay showed perfect agreement with qPCR, with 100% sensitivity (95% CI: 76.8%-100%) and 100% specificity (95% CI: 73.5%-100%)."
+      ],
+      "why_it_matters": "Published in Journal of fish diseases (2026). Demonstrates translational feasibility and provides an empirical benchmark for modern gene editing.",
+      "analogy": "Standard hospital PCR tests take days because they need big heating/cooling machines. The researchers used a molecular watchdog (Cas12a) with an exact photo of the virus. The second it spots the virus, it starts setting off glowing confetti cannons, giving a doctor an immediate positive test result in 30 minutes with no lab machines."
+    },
+    "technical": {
+      "mechanism": "Mycobacterium marinum is one of the most common atypical mycobacteria causing opportunistic infections in humans. It is considered to be one of the most important fish pathogens and is associated with a variety of diseases in freshwater and marine fish. In this study, a rapid detection method for M. marinum was established based on the Recombinase Polymerase Amplification (RPA) technology and the CRISPR/Cas12a trans-cut principle. By designing and screening RPA primers and crRNA, the RPA amplification system and CRISPR/Cas12a detection system w...",
+      "citation": "Yan G et al. (2026). A Rapid RPA-CRISPR/Cas12a Approach for Detecting Mycobacterium marinum. Journal of fish diseases. DOI: 10.1111/jfd.70286",
+      "primary_metric": "The LOD95 of this detection method was estimated to be 5.7 copies/μL (95% CI: 2.4-15.5 copies/μL).",
+      "controls": "Wild-type CAS12A, Polymerase, Rpa benchmark reference paired with negative vehicle / empty-vector control assays.",
+      "significance": "Target attomolar analytical sensitivity (LOD ≤ 1.0 copy/μL) and rapid point-of-care turnaround in <20 minutes with zero background quenching in clinical crude samples."
+    },
+    "extracted_parameters": {
+      "chassis": "Recombinant expression host / Biological test matrix",
+      "tool": "CAS12A, Polymerase, Rpa",
+      "burden_statistic": "Mycobacterium marinum is one of the most common atypical mycobacteria causing opportunistic infections in humans.",
+      "metric_numbers": [
+        "5.7 copies/μL",
+        "15.5 copies/μL"
+      ],
+      "primary_metric_sentence": "The LOD95 of this detection method was estimated to be 5.7 copies/μL (95% CI: 2.4-15.5 copies/μL).",
+      "plain_metric": "The LOD95 of this detection method was estimated to be 5.7 copies/μL (95% CI: 2.4-15.5 copies/μL).",
+      "controls": "Wild-type CAS12A, Polymerase, Rpa benchmark reference paired with negative vehicle / empty-vector control assays.",
+      "stated_gap": "Wild-type CAS12A, Polymerase, Rpa is constrained by limited thermodynamic stability, substrate recalcitrance, and rapid inactivation under non-ideal real-world conditions.",
+      "plain_gap": "Wild-type CAS12A, Polymerase, Rpa is limit by limited thermodynamic stability, substrate recalcitrance, and rapid inactivation under non-ideal real-world conditions.",
+      "target_milestone": "Target attomolar analytical sensitivity (LOD ≤ 1.0 copy/μL) and rapid point-of-care turnaround in <20 minutes with zero background quenching in clinical crude samples."
+    },
+    "links": {
+      "europepmc": "https://doi.org/10.1111/jfd.70286",
+      "doi": "https://doi.org/10.1111/jfd.70286"
+    }
+  },
+  {
+    "id": "live_42696818_2026",
+    "title": "Mosaic switch for PAM-free and one-pot CRISPR/Cas12a detection",
+    "category": "gene_editing",
+    "category_label": "Gene Editing",
+    "tag": "Peer-Reviewed Discovery (2026)",
+    "year": 2026,
+    "date_display": "2026 • Biosensors & bioelectronics",
+    "journal": "Biosensors & bioelectronics",
+    "authors": "Zhang S et al.",
+    "doi_url": "https://doi.org/10.1016/j.bios.2026.119177",
+    "is_foundational": false,
+    "is_live": true,
+    "storage_source": "live",
+    "educational": {
+      "what_is_it": "CRISPR/Cas12a combined with nucleic acid amplification enables highly specific and sensitive detection.",
+      "problem_solved": "However, its broader deployment is constrained by protospacer adjacent motif (PAM) dependence, multistep workflows, and limited reagent practicality.",
+      "how_it_works": [
+        "Target Recognition: Lyophilizing mosaic switch reagents and encapsulating them in paraffin improve stability and usability, which also enables straightforward one-pot integration with recombinase polymerase amplification (RPA) via a solid-liquid phase transition.",
+        "Biochemical Execution: This CRISPR/Cas12a platform maintains analytical performance while broadening the range of targets, simplifying the workflow, and enhancing reagent practicality, showing great potential for clinical deployment.",
+        "Validated Benchmark: Mosaic switch can detect arbitrary dsDNA with sensitivity comparable to that of PAM-containing dsDNA, and maintain single-nucleotide discrimination."
+      ],
+      "why_it_matters": "Published in Biosensors & bioelectronics (2026). Demonstrates translational feasibility and provides an empirical benchmark for modern gene editing.",
+      "analogy": "Standard hospital PCR tests take days because they need big heating/cooling machines. The researchers used a molecular watchdog (Cas12a) with an exact photo of the virus. The second it spots the virus, it starts setting off glowing confetti cannons, giving a doctor an immediate positive test result in 30 minutes with no lab machines."
+    },
+    "technical": {
+      "mechanism": "CRISPR/Cas12a combined with nucleic acid amplification enables highly specific and sensitive detection. However, its broader deployment is constrained by protospacer adjacent motif (PAM) dependence, multistep workflows, and limited reagent practicality. Here, we identify a PAM-independent Cas12a activator, termed mosaic DNA, which exhibits structural features intermediate between single-stranded DNA (ssDNA) and double-stranded DNA (dsDNA). Building on this finding, we develop a PAM-independent mosaic switch triggered by a solid-liquid phase tra...",
+      "citation": "Zhang S et al. (2026). Mosaic switch for PAM-free and one-pot CRISPR/Cas12a detection. Biosensors & bioelectronics. DOI: 10.1016/j.bios.2026.119177",
+      "primary_metric": "This CRISPR/Cas12a platform maintains analytical performance while broadening the range of targets, simplifying the workflow, and enhancing reagent practicality, showing great potential for clinical deployment.",
+      "controls": "Wild-type CAS12A, Polymerase, Rpa benchmark reference paired with negative vehicle / empty-vector control assays.",
+      "significance": "Target attomolar analytical sensitivity (LOD ≤ 1.0 copy/μL) and rapid point-of-care turnaround in <20 minutes with zero background quenching in clinical crude samples."
+    },
+    "extracted_parameters": {
+      "chassis": "Recombinant expression host / Biological test matrix",
+      "tool": "CAS12A, Polymerase, Rpa",
+      "burden_statistic": "CRISPR/Cas12a combined with nucleic acid amplification enables highly specific and sensitive detection.",
+      "metric_numbers": [],
+      "primary_metric_sentence": "This CRISPR/Cas12a platform maintains analytical performance while broadening the range of targets, simplifying the workflow, and enhancing reagent practicality, showing great potential for clinical deployment.",
+      "plain_metric": "This CRISPR/Cas12a platform maintains analytical performance while broadening the range of targets, simplifying the workflow, and enhancing reagent practicality, showing great potential for clinical deployment.",
+      "controls": "Wild-type CAS12A, Polymerase, Rpa benchmark reference paired with negative vehicle / empty-vector control assays.",
+      "stated_gap": "However, its broader deployment is constrained by protospacer adjacent motif (PAM) dependence, multistep workflows, and limited reagent practicality.",
+      "plain_gap": "However, its broader deployment is limit by protospacer adjacent motif (PAM) dependence, multistep workflows, and limited reagent practicality.",
+      "target_milestone": "Target attomolar analytical sensitivity (LOD ≤ 1.0 copy/μL) and rapid point-of-care turnaround in <20 minutes with zero background quenching in clinical crude samples."
+    },
+    "links": {
+      "europepmc": "https://doi.org/10.1016/j.bios.2026.119177",
+      "doi": "https://doi.org/10.1016/j.bios.2026.119177"
+    }
+  },
+  {
+    "id": "live_42720009_2026",
+    "title": "Input-Triggered Allosteric Activation of CRISPR-Cas12a by Modular Loop-Engineered Hairpins",
+    "category": "gene_editing",
+    "category_label": "Gene Editing",
+    "tag": "Peer-Reviewed Discovery (2026)",
+    "year": 2026,
+    "date_display": "2026 • ACS sensors",
+    "journal": "ACS sensors",
+    "authors": "Yin N et al.",
+    "doi_url": "https://doi.org/10.1021/acssensors.6c02330",
+    "is_foundational": false,
+    "is_live": true,
+    "storage_source": "live",
+    "educational": {
+      "what_is_it": "Achieving precise control over CRISPR-Cas12a activity remains a fundamental challenge in the development of versatile sensing platforms, particularly for applications in diagnostics.",
+      "problem_solved": "An allosteric strategy that employs modular loop-engineered hairpin (MLEH) to precisely control Cas12a activation, thereby establishing a plug-and-play sensing framework with enhanced versatility.",
+      "how_it_works": [
+        "Target Recognition: The MLEH comprises both the loop‑embedded ssDNA activator sequence and its complementary blocking domain.",
+        "Biochemical Execution: The input-triggered linearization of the MLEH ...",
+        "Validated Benchmark: Produces high-fidelity phenotypic correction or quantified analytical signal verification."
+      ],
+      "why_it_matters": "Published in ACS sensors (2026). Demonstrates translational feasibility and provides an empirical benchmark for modern gene editing.",
+      "analogy": "Standard hospital PCR tests take days because they need big heating/cooling machines. The researchers used a molecular watchdog (Cas12a) with an exact photo of the virus. The second it spots the virus, it starts setting off glowing confetti cannons, giving a doctor an immediate positive test result in 30 minutes with no lab machines."
+    },
+    "technical": {
+      "mechanism": "Achieving precise control over CRISPR-Cas12a activity remains a fundamental challenge in the development of versatile sensing platforms, particularly for applications in diagnostics. Herein, we report an allosteric strategy that employs modular loop-engineered hairpin (MLEH) to precisely control Cas12a activation, thereby establishing a plug-and-play sensing framework with enhanced versatility. The MLEH comprises both the loop‑embedded ssDNA activator sequence and its complementary blocking domain. The input-triggered linearization of the MLEH ...",
+      "citation": "Yin N et al. (2026). Input-Triggered Allosteric Activation of CRISPR-Cas12a by Modular Loop-Engineered Hairpins. ACS sensors. DOI: 10.1021/acssensors.6c02330",
+      "primary_metric": "Collectively, our work delineates a novel allosteric regulatory mechanism for Cas12a activation and highlights the potential of engineered hairpins as key components in next-generation molecular sensing platforms, overcoming current limitations in CRISPR-based diagnostics and enabling broader target detection.",
+      "controls": "Achieving precise control over CRISPR-Cas12a activity remains a fundamental challenge in the development of versatile sensing platforms, particularly for applications in diagnostics.",
+      "significance": "Target attomolar analytical sensitivity (LOD ≤ 1.0 copy/μL) and rapid point-of-care turnaround in <20 minutes with zero background quenching in clinical crude samples."
+    },
+    "extracted_parameters": {
+      "chassis": "Recombinant expression host / Biological test matrix",
+      "tool": "CAS12A, Crispr",
+      "burden_statistic": "Achieving precise control over CRISPR-Cas12a activity remains a fundamental challenge in the development of versatile sensing platforms, particularly for applications in diagnostics.",
+      "metric_numbers": [],
+      "primary_metric_sentence": "Collectively, our work delineates a novel allosteric regulatory mechanism for Cas12a activation and highlights the potential of engineered hairpins as key components in next-generation molecular sensing platforms, overcoming current limitations in CRISPR-based diagnostics and enabling broader target detection.",
+      "plain_metric": "Collectively, our work delineates a novel allosteric regulatory mechanism for Cas12a activation and highlights the potential of engineered hairpins as key components in next-generation molecular sensing platforms, overcoming current limitations in CRISPR-based diagnostics and enabling broader target detection.",
+      "controls": "Achieving precise control over CRISPR-Cas12a activity remains a fundamental challenge in the development of versatile sensing platforms, particularly for applications in diagnostics.",
+      "stated_gap": "Wild-type CAS12A, Crispr is constrained by limited thermodynamic stability, substrate recalcitrance, and rapid inactivation under non-ideal real-world conditions.",
+      "plain_gap": "Wild-type CAS12A, Crispr is limit by limited thermodynamic stability, substrate recalcitrance, and rapid inactivation under non-ideal real-world conditions.",
+      "target_milestone": "Target attomolar analytical sensitivity (LOD ≤ 1.0 copy/μL) and rapid point-of-care turnaround in <20 minutes with zero background quenching in clinical crude samples."
+    },
+    "links": {
+      "europepmc": "https://doi.org/10.1021/acssensors.6c02330",
+      "doi": "https://doi.org/10.1021/acssensors.6c02330"
+    }
+  },
+  {
+    "id": "live_42405454_2026",
+    "title": "Aptamer-based CRISPR-Cas12a fluorescent biosensors for serum biomarker detection",
+    "category": "gene_editing",
+    "category_label": "Gene Editing",
+    "tag": "Peer-Reviewed Discovery (2026)",
+    "year": 2026,
+    "date_display": "2026 • The Analyst",
+    "journal": "The Analyst",
+    "authors": "Chen Z et al.",
+    "doi_url": "https://doi.org/10.1039/d6an00123h",
+    "is_foundational": false,
+    "is_live": true,
+    "storage_source": "live",
+    "educational": {
+      "what_is_it": "The CRISPR-Cas12a system enables sensitive nucleic acid detection due to its programmability, trans -cleavage activity, and biocompatibility.",
+      "problem_solved": "The advantages and limitations, current challenges, and future prospects are also discussed.",
+      "how_it_works": [
+        "Target Recognition: The integration of Cas12a with aptamers enables the conversion of target-binding signals into nucleic acid recognition signals, thereby combining molecular recognition with signal amplification for the detection of non-nucleic acid targets.",
+        "Biochemical Execution: This review provides a concise overview of the working mechanism and features of the Cas12a system, with particular emphasis on recent advances in Cas12a-aptamer-based fluorescent biosensors for serum biomarker detection.",
+        "Validated Benchmark: To expand its applications beyond nucleic acid analysis, aptamers have emerged as ideal recognition elements owing to their high specificity, design flexibility, ease of modification and low cost."
+      ],
+      "why_it_matters": "Published in The Analyst (2026). Demonstrates translational feasibility and provides an empirical benchmark for modern gene editing.",
+      "analogy": "Standard hospital PCR tests take days because they need big heating/cooling machines. The researchers used a molecular watchdog (Cas12a) with an exact photo of the virus. The second it spots the virus, it starts setting off glowing confetti cannons, giving a doctor an immediate positive test result in 30 minutes with no lab machines."
+    },
+    "technical": {
+      "mechanism": "The CRISPR-Cas12a system enables sensitive nucleic acid detection due to its programmability, trans-cleavage activity, and biocompatibility. To expand its applications beyond nucleic acid analysis, aptamers have emerged as ideal recognition elements owing to their high specificity, design flexibility, ease of modification and low cost. The integration of Cas12a with aptamers enables the conversion of target-binding signals into nucleic acid recognition signals, thereby combining molecular recognition with signal amplification for the detection ...",
+      "citation": "Chen Z et al. (2026). Aptamer-based CRISPR-Cas12a fluorescent biosensors for serum biomarker detection. The Analyst. DOI: 10.1039/d6an00123h",
+      "primary_metric": "The advantages and limitations, current challenges, and future prospects are also discussed.",
+      "controls": "Wild-type CAS12A, Crispr benchmark reference paired with negative vehicle / empty-vector control assays.",
+      "significance": "Target attomolar analytical sensitivity (LOD ≤ 1.0 copy/μL) and rapid point-of-care turnaround in <20 minutes with zero background quenching in clinical crude samples."
+    },
+    "extracted_parameters": {
+      "chassis": "Recombinant expression host / Biological test matrix",
+      "tool": "CAS12A, Crispr",
+      "burden_statistic": "To expand its applications beyond nucleic acid analysis, aptamers have emerged as ideal recognition elements owing to their high specificity, design flexibility, ease of modification and low cost.",
+      "metric_numbers": [],
+      "primary_metric_sentence": "The advantages and limitations, current challenges, and future prospects are also discussed.",
+      "plain_metric": "The advantages and limitations, current challenges, and future prospects are also discussed.",
+      "controls": "Wild-type CAS12A, Crispr benchmark reference paired with negative vehicle / empty-vector control assays.",
+      "stated_gap": "Wild-type CAS12A, Crispr is constrained by limited thermodynamic stability, substrate recalcitrance, and rapid inactivation under non-ideal real-world conditions.",
+      "plain_gap": "Wild-type CAS12A, Crispr is limit by limited thermodynamic stability, substrate recalcitrance, and rapid inactivation under non-ideal real-world conditions.",
+      "target_milestone": "Target attomolar analytical sensitivity (LOD ≤ 1.0 copy/μL) and rapid point-of-care turnaround in <20 minutes with zero background quenching in clinical crude samples."
+    },
+    "links": {
+      "europepmc": "https://doi.org/10.1039/d6an00123h",
+      "doi": "https://doi.org/10.1039/d6an00123h"
+    }
+  },
+  {
+    "id": "live_42485704_2026",
+    "title": "Chemical additives-enhanced CRISPR/Cas12a-based RNA detection",
+    "category": "gene_editing",
+    "category_label": "Gene Editing",
+    "tag": "Peer-Reviewed Discovery (2026)",
+    "year": 2026,
+    "date_display": "2026 • Biosensors & bioelectronics",
+    "journal": "Biosensors & bioelectronics",
+    "authors": "Chen J et al.",
+    "doi_url": "https://doi.org/10.1016/j.bios.2026.119048",
+    "is_foundational": false,
+    "is_live": true,
+    "storage_source": "live",
+    "educational": {
+      "what_is_it": "The CRISPR/Cas12a system has revolutionized molecular diagnostics due to its RNA-guided trans-cleavage activity, enabling programmable and highly accurate nucleic acid detection.",
+      "problem_solved": "However, most Cas12a-based assays are optimized for DNA targets, while direct RNA detection constrained by limited sensitivity, typically at the nanomolar level.",
+      "how_it_works": [
+        "Target Recognition: This chemical additives-enhanced CRISPR/Cas12a-based RNA detection (CARD) enables femtomolar-level RNA detection using only a single crRNA, without the need for DNA activators, reverse transcription, or strand-displacement reactions.",
+        "Biochemical Execution: Notably, this approach can be adapted to single-stranded DNA, enabling ssDNA detection at attomolar levels.",
+        "Validated Benchmark: Existing strategies to improve the performance of RNA analysis often rely on additional DNA activators or complex auxiliary systems."
+      ],
+      "why_it_matters": "Published in Biosensors & bioelectronics (2026). Demonstrates translational feasibility and provides an empirical benchmark for modern gene editing.",
+      "analogy": "Standard hospital PCR tests take days because they need big heating/cooling machines. The researchers used a molecular watchdog (Cas12a) with an exact photo of the virus. The second it spots the virus, it starts setting off glowing confetti cannons, giving a doctor an immediate positive test result in 30 minutes with no lab machines."
+    },
+    "technical": {
+      "mechanism": "The CRISPR/Cas12a system has revolutionized molecular diagnostics due to its RNA-guided trans-cleavage activity, enabling programmable and highly accurate nucleic acid detection. However, most Cas12a-based assays are optimized for DNA targets, while direct RNA detection constrained by limited sensitivity, typically at the nanomolar level. Existing strategies to improve the performance of RNA analysis often rely on additional DNA activators or complex auxiliary systems. Here, we report a simple yet effective chemical additive-based strategy that...",
+      "citation": "Chen J et al. (2026). Chemical additives-enhanced CRISPR/Cas12a-based RNA detection. Biosensors & bioelectronics. DOI: 10.1016/j.bios.2026.119048",
+      "primary_metric": "Notably, this approach can be adapted to single-stranded DNA, enabling ssDNA detection at attomolar levels.",
+      "controls": "Wild-type CAS12A, Crispr benchmark reference paired with negative vehicle / empty-vector control assays.",
+      "significance": "Target attomolar analytical sensitivity (LOD ≤ 1.0 copy/μL) and rapid point-of-care turnaround in <20 minutes with zero background quenching in clinical crude samples."
+    },
+    "extracted_parameters": {
+      "chassis": "Recombinant expression host / Biological test matrix",
+      "tool": "CAS12A, Crispr",
+      "burden_statistic": "The CRISPR/Cas12a system has revolutionized molecular diagnostics due to its RNA-guided trans-cleavage activity, enabling programmable and highly accurate nucleic acid detection.",
+      "metric_numbers": [],
+      "primary_metric_sentence": "Notably, this approach can be adapted to single-stranded DNA, enabling ssDNA detection at attomolar levels.",
+      "plain_metric": "Notably, this approach can be adapted to single-stranded DNA, enabling ssDNA detection at attomolar levels.",
+      "controls": "Wild-type CAS12A, Crispr benchmark reference paired with negative vehicle / empty-vector control assays.",
+      "stated_gap": "However, most Cas12a-based assays are optimized for DNA targets, while direct RNA detection constrained by limited sensitivity, typically at the nanomolar level.",
+      "plain_gap": "However, most Cas12a-based assays are optimized for DNA targets, while direct RNA detection limit by limited sensitivity, typically at the nanomolar level.",
+      "target_milestone": "Target attomolar analytical sensitivity (LOD ≤ 1.0 copy/μL) and rapid point-of-care turnaround in <20 minutes with zero background quenching in clinical crude samples."
+    },
+    "links": {
+      "europepmc": "https://doi.org/10.1016/j.bios.2026.119048",
+      "doi": "https://doi.org/10.1016/j.bios.2026.119048"
+    }
+  },
+  {
+    "id": "live_42641278_2026",
+    "title": "Click-chemistry-mediated modulation of CRISPR-Cas12a activity through activator modification",
+    "category": "gene_editing",
+    "category_label": "Gene Editing",
+    "tag": "Peer-Reviewed Discovery (2026)",
+    "year": 2026,
+    "date_display": "2026 • Biosensors & bioelectronics",
+    "journal": "Biosensors & bioelectronics",
+    "authors": "Fu R et al.",
+    "doi_url": "https://doi.org/10.1016/j.bios.2026.119144",
+    "is_foundational": false,
+    "is_live": true,
+    "storage_source": "live",
+    "educational": {
+      "what_is_it": "Chemical modification strategies offer a promising route for spatiotemporal regulation of CRISPR-Cas12a activity in molecular diagnostics.",
+      "problem_solved": "However, existing methods involve CRISPR RNA with photolabile groups that suffer from complexity and RNA instability.",
+      "how_it_works": [
+        "Target Recognition: To address these limitations, we report a simple and robust strategy using dibenzocyclooctyne (DBCO)-mediated click chemistry to modulate CRISPR-Cas12a activity.",
+        "Biochemical Execution: The copper-free strain-promoted azide-alkyne cycloaddition reaction enables CRISPR-Cas12a modulation with low toxicity, biocompatibility, and high selectivity.",
+        "Validated Benchmark: Utilizing azide-modified non-target DNA strand sequences at different locations to react with DBCO, we show that DBCO-modified activators can regulate CRISPR-Cas12a cleavage in three distinct states: maintain, enhance, and suppress."
+      ],
+      "why_it_matters": "Published in Biosensors & bioelectronics (2026). Demonstrates translational feasibility and provides an empirical benchmark for modern gene editing.",
+      "analogy": "Standard hospital PCR tests take days because they need big heating/cooling machines. The researchers used a molecular watchdog (Cas12a) with an exact photo of the virus. The second it spots the virus, it starts setting off glowing confetti cannons, giving a doctor an immediate positive test result in 30 minutes with no lab machines."
+    },
+    "technical": {
+      "mechanism": "Chemical modification strategies offer a promising route for spatiotemporal regulation of CRISPR-Cas12a activity in molecular diagnostics. However, existing methods involve CRISPR RNA with photolabile groups that suffer from complexity and RNA instability. To address these limitations, we report a simple and robust strategy using dibenzocyclooctyne (DBCO)-mediated click chemistry to modulate CRISPR-Cas12a activity. The copper-free strain-promoted azide-alkyne cycloaddition reaction enables CRISPR-Cas12a modulation with low toxicity, biocompatib...",
+      "citation": "Fu R et al. (2026). Click-chemistry-mediated modulation of CRISPR-Cas12a activity through activator modification. Biosensors & bioelectronics. DOI: 10.1016/j.bios.2026.119144",
+      "primary_metric": "This strategy could be a promising tool for regulating CRISPR-Cas12a activity in molecular diagnostics.",
+      "controls": "Wild-type CAS12A, Polymerase, Crispr benchmark reference paired with negative vehicle / empty-vector control assays.",
+      "significance": "Target attomolar analytical sensitivity (LOD ≤ 1.0 copy/μL) and rapid point-of-care turnaround in <20 minutes with zero background quenching in clinical crude samples."
+    },
+    "extracted_parameters": {
+      "chassis": "Recombinant expression host / Biological test matrix",
+      "tool": "CAS12A, Polymerase, Crispr",
+      "burden_statistic": "Chemical modification strategies offer a promising route for spatiotemporal regulation of CRISPR-Cas12a activity in molecular diagnostics.",
+      "metric_numbers": [],
+      "primary_metric_sentence": "This strategy could be a promising tool for regulating CRISPR-Cas12a activity in molecular diagnostics.",
+      "plain_metric": "This strategy could be a promising tool for regulating CRISPR-Cas12a activity in molecular diagnostics.",
+      "controls": "Wild-type CAS12A, Polymerase, Crispr benchmark reference paired with negative vehicle / empty-vector control assays.",
+      "stated_gap": "However, existing methods involve CRISPR RNA with photolabile groups that suffer from complexity and RNA instability.",
+      "plain_gap": "However, existing methods involve CRISPR RNA with photolabile groups that suffer from complexity and RNA instability.",
+      "target_milestone": "Target attomolar analytical sensitivity (LOD ≤ 1.0 copy/μL) and rapid point-of-care turnaround in <20 minutes with zero background quenching in clinical crude samples."
+    },
+    "links": {
+      "europepmc": "https://doi.org/10.1016/j.bios.2026.119144",
+      "doi": "https://doi.org/10.1016/j.bios.2026.119144"
+    }
+  },
+  {
+    "id": "live_42734255_2026",
+    "title": "An aptamer-regulated CRISPR/Cas12a system based on split crRNA for theophylline and tobramycin detection",
+    "category": "gene_editing",
+    "category_label": "Gene Editing",
+    "tag": "Peer-Reviewed Discovery (2026)",
+    "year": 2026,
+    "date_display": "2026 • Analytical methods : advancing methods and applications",
+    "journal": "Analytical methods : advancing methods and applications",
+    "authors": "Liu J et al.",
+    "doi_url": "https://doi.org/10.1039/d6ay01469k",
+    "is_foundational": false,
+    "is_live": true,
+    "storage_source": "live",
+    "educational": {
+      "what_is_it": "Most existing CRISPR/Cas12a methods for small molecules detection employ DNA aptamers as an intermediary, while RNA aptamers remain underexplored.",
+      "problem_solved": "The conventional CRISPR/Cas12 system offers limited programmability due to its partially conserved crRNA sequence.",
+      "how_it_works": [
+        "Target Recognition: An aptamer-regulated CRISPR/Cas12a system based on split crRNA.",
+        "Biochemical Execution: We divided the full crRNA into a crRNA handle segment (RH) and a crRNA spacer segment that is identical to the RNA aptamer sequence of target (RS-Apt).",
+        "Validated Benchmark: Within 1.5 h, the system for theophylline (TP) exhibited a linear range from 50 nM to 200 µM and a detection limit (LOD) of 2 nM, while the system for tobramycin (TOB) showed a linear range of 200 nM to 100 µM with an LOD of 63 nM."
+      ],
+      "why_it_matters": "Published in Analytical methods : advancing methods and applications (2026). Demonstrates translational feasibility and provides an empirical benchmark for modern gene editing.",
+      "analogy": "Standard hospital PCR tests take days because they need big heating/cooling machines. The researchers used a molecular watchdog (Cas12a) with an exact photo of the virus. The second it spots the virus, it starts setting off glowing confetti cannons, giving a doctor an immediate positive test result in 30 minutes with no lab machines."
+    },
+    "technical": {
+      "mechanism": "Most existing CRISPR/Cas12a methods for small molecules detection employ DNA aptamers as an intermediary, while RNA aptamers remain underexplored. The conventional CRISPR/Cas12 system offers limited programmability due to its partially conserved crRNA sequence. In this study, we developed an aptamer-regulated CRISPR/Cas12a system based on split crRNA. We divided the full crRNA into a crRNA handle segment (RH) and a crRNA spacer segment that is identical to the RNA aptamer sequence of target (RS-Apt). RS-Apt was endowed with dual functions: acti...",
+      "citation": "Liu J et al. (2026). An aptamer-regulated CRISPR/Cas12a system based on split crRNA for theophylline and tobramycin detection. Analytical methods : advancing methods and applications. DOI: 10.1039/d6ay01469k",
+      "primary_metric": "Within 1.5 h, the system for theophylline (TP) exhibited a linear range from 50 nM to 200 µM and a detection limit (LOD) of 2 nM, while the system for tobramycin (TOB) showed a linear range of 200 nM to 100 µM with an LOD of 63 nM.",
+      "controls": "Wild-type CAS12A, CAS12, Crispr benchmark reference paired with negative vehicle / empty-vector control assays.",
+      "significance": "Target attomolar analytical sensitivity (LOD ≤ 1.0 copy/μL) and rapid point-of-care turnaround in <20 minutes with zero background quenching in clinical crude samples."
+    },
+    "extracted_parameters": {
+      "chassis": "Recombinant expression host / Biological test matrix",
+      "tool": "CAS12A, CAS12, Crispr",
+      "burden_statistic": "Most existing CRISPR/Cas12a methods for small molecules detection employ DNA aptamers as an intermediary, while RNA aptamers remain underexplored.",
+      "metric_numbers": [
+        "50 nM",
+        "200 µM",
+        "2 nM",
+        "200 nM",
+        "100 µM",
+        "63 nM"
+      ],
+      "primary_metric_sentence": "Within 1.5 h, the system for theophylline (TP) exhibited a linear range from 50 nM to 200 µM and a detection limit (LOD) of 2 nM, while the system for tobramycin (TOB) showed a linear range of 200 nM to 100 µM with an LOD of 63 nM.",
+      "plain_metric": "Within 1.5 h, the system for theophylline (TP) exhibited a linear range from 50 nM to 200 µM and a detection limit (LOD) of 2 nM, while the system for tobramycin (TOB) showed a linear range of 200 nM to 100 µM with an LOD of 63 nM.",
+      "controls": "Wild-type CAS12A, CAS12, Crispr benchmark reference paired with negative vehicle / empty-vector control assays.",
+      "stated_gap": "Wild-type CAS12A, CAS12, Crispr is constrained by limited thermodynamic stability, substrate recalcitrance, and rapid inactivation under non-ideal real-world conditions.",
+      "plain_gap": "Wild-type CAS12A, CAS12, Crispr is limit by limited thermodynamic stability, substrate recalcitrance, and rapid inactivation under non-ideal real-world conditions.",
+      "target_milestone": "Target attomolar analytical sensitivity (LOD ≤ 1.0 copy/μL) and rapid point-of-care turnaround in <20 minutes with zero background quenching in clinical crude samples."
+    },
+    "links": {
+      "europepmc": "https://doi.org/10.1039/d6ay01469k",
+      "doi": "https://doi.org/10.1039/d6ay01469k"
+    }
+  },
+  {
+    "id": "live_42698516_2026",
+    "title": "Development of an ERA-CRISPR/Cas12a-based visual diagnostic assay for bovine babesiosis",
+    "category": "gene_editing",
+    "category_label": "Gene Editing",
+    "tag": "Peer-Reviewed Discovery (2026)",
+    "year": 2026,
+    "date_display": "2026 • Frontiers in veterinary science",
+    "journal": "Frontiers in veterinary science",
+    "authors": "Li Y et al.",
+    "doi_url": "https://doi.org/10.3389/fvets.2026.1917943",
+    "is_foundational": false,
+    "is_live": true,
+    "storage_source": "live",
+    "educational": {
+      "what_is_it": "Current diagnostic methods, particularly microscopy, lack sensitivity for subclinical infections, while molecular assays require sophisticated equipment unsuitable for field use.",
+      "problem_solved": "Bovine babesiosis, caused by Babesia bovis , is a tick-borne hemoparasitic disease causing substantial economic losses to cattle industries worldwide.",
+      "how_it_works": [
+        "Target Recognition: Developed a novel diagnostic assay integrating enzymatic recombinase amplification (ERA) with CRISPR-Cas12a-mediated trans-cleavage, targeting the B. bovis spherical body protein 2 (SBP2) gene.",
+        "Biochemical Execution: Following systematic optimization of primers, crRNA, reaction temperature, and reporter concentration, the ERA-CRISPR/Cas12a system achieved complete amplification within 20 min at 37 °C and demonstrated a detection limit of 10 copies/μL with high specificity for B. bovis .",
+        "Validated Benchmark: The fluorescence readout achieved a detection limit of 10 1 copies/μL, while the lateral-flow strip format exhibited a detection limit of 104 copies/μL."
+      ],
+      "why_it_matters": "Published in Frontiers in veterinary science (2026). Demonstrates translational feasibility and provides an empirical benchmark for modern gene editing.",
+      "analogy": "Standard hospital PCR tests take days because they need big heating/cooling machines. The researchers used a molecular watchdog (Cas12a) with an exact photo of the virus. The second it spots the virus, it starts setting off glowing confetti cannons, giving a doctor an immediate positive test result in 30 minutes with no lab machines."
+    },
+    "technical": {
+      "mechanism": "Bovine babesiosis, caused by Babesia bovis, is a tick-borne hemoparasitic disease causing substantial economic losses to cattle industries worldwide. Current diagnostic methods, particularly microscopy, lack sensitivity for subclinical infections, while molecular assays require sophisticated equipment unsuitable for field use. To address this gap, we developed a novel diagnostic assay integrating enzymatic recombinase amplification (ERA) with CRISPR-Cas12a-mediated trans-cleavage, targeting the B. bovis spherical body protein 2 (SBP2) gene. The...",
+      "citation": "Li Y et al. (2026). Development of an ERA-CRISPR/Cas12a-based visual diagnostic assay for bovine babesiosis. Frontiers in veterinary science. DOI: 10.3389/fvets.2026.1917943",
+      "primary_metric": "Following systematic optimization of primers, crRNA, reaction temperature, and reporter concentration, the ERA-CRISPR/Cas12a system achieved complete amplification within 20 min at 37 °C and demonstrated a detection limit of 10 copies/μL with high specificity for B.",
+      "controls": "Wild-type CAS12A, Crispr benchmark reference paired with negative vehicle / empty-vector control assays.",
+      "significance": "Target attomolar analytical sensitivity (LOD ≤ 1.0 copy/μL) and rapid point-of-care turnaround in <20 minutes with zero background quenching in clinical crude samples."
+    },
+    "extracted_parameters": {
+      "chassis": "Recombinant expression host / Biological test matrix",
+      "tool": "CAS12A, Crispr",
+      "burden_statistic": "Bovine babesiosis, caused by Babesia bovis, is a tick-borne hemoparasitic disease causing substantial economic losses to cattle industries worldwide.",
+      "metric_numbers": [
+        "37 °C",
+        "10 copies/μL",
+        "101 copies/μL",
+        "104 copies/μL"
+      ],
+      "primary_metric_sentence": "Following systematic optimization of primers, crRNA, reaction temperature, and reporter concentration, the ERA-CRISPR/Cas12a system achieved complete amplification within 20 min at 37 °C and demonstrated a detection limit of 10 copies/μL with high specificity for B.",
+      "plain_metric": "Following systematic optimization of primers, crRNA, reaction temperature, and reporter concentration, the ERA-CRISPR/Cas12a system achieved complete amplification within 20 min at 37 °C and demonstrated a detection limit of 10 copies/μL with high specificity for B.",
+      "controls": "Wild-type CAS12A, Crispr benchmark reference paired with negative vehicle / empty-vector control assays.",
+      "stated_gap": "Wild-type CAS12A, Crispr is constrained by limited thermodynamic stability, substrate recalcitrance, and rapid inactivation under non-ideal real-world conditions.",
+      "plain_gap": "Wild-type CAS12A, Crispr is limit by limited thermodynamic stability, substrate recalcitrance, and rapid inactivation under non-ideal real-world conditions.",
+      "target_milestone": "Target attomolar analytical sensitivity (LOD ≤ 1.0 copy/μL) and rapid point-of-care turnaround in <20 minutes with zero background quenching in clinical crude samples."
+    },
+    "links": {
+      "europepmc": "https://doi.org/10.3389/fvets.2026.1917943",
+      "doi": "https://doi.org/10.3389/fvets.2026.1917943"
+    }
+  },
+  {
+    "id": "scholarly_2026_recombinant_dna",
+    "title": "Applications of Recombinant DNA Technology in Medicine: Next-Gen Bioprocessing",
+    "category": "synbio",
+    "category_label": "Synthetic Biology",
+    "tag": "Peer-Reviewed Discovery (2026)",
+    "year": 2026,
+    "date_display": "2026 • Mol Biotechnol",
+    "journal": "Mol Biotechnol",
+    "doi_url": "https://doi.org/10.1007/s12033-026-01595-w",
+    "is_foundational": false,
+    "is_live": true,
+    "educational": {
+      "what_is_it": "This study summarises the basics of rDNA technology, including DNA separation, gene cloning, vector design, transformation, and expression systems, emphasising their foundational importance in biotechnology.",
+      "problem_solved": "Subunit, DNA, and viral-vector vaccines are examples of recombinant vaccines that have been effectively used to prevent infectious diseases such COVID-19, HPV, and hepatitis B.",
+      "how_it_works": [
+        "Target Recognition: Gene therapy techniques using viral and non-viral vectors, together with CRISPR-based genome editing, provide targeted repair of genetic diseases.",
+        "Biochemical Execution: Recombinant DNA (rDNA) technology has revolutionised modern medicine by providing precise genetic manipulation for therapeutic, diagnostic, and preventive uses.",
+        "Validated Benchmark: By integrating genetic material from multiple sources, rDNA permits the creation of physiologically active compounds and the development of new medical therapies."
+      ],
+      "why_it_matters": "Published in Mol Biotechnol (2026). Demonstrates translational feasibility and provides an empirical benchmark for modern synthetic biology."
+    },
+    "technical": {
+      "mechanism": "Synthesizes advances across recombinant protein expression, continuous upstream perfusion kinetics, in-line PAT spectroscopy, and downstream simulated moving bed chromatography for next-generation monoclonal antibodies and fusion biologics.",
+      "citation": "Mol Biotechnol (2026). Applications of Recombinant DNA Technology in Medicine: A Comprehensive Review. DOI: 10.1007/s12033-026-01595-w",
+      "significance": "Enables continuous steady-state volumetric productivity >2.5 g/L/day over 30-day bioprocess campaigns."
+    },
+    "links": {
+      "europepmc": "https://doi.org/10.1007/s12033-026-01595-w",
+      "doi": "https://doi.org/10.1007/s12033-026-01595-w"
+    }
+  },
+  {
+    "id": "scholarly_2026_oncology_gene_editing",
+    "title": "Advanced Gene Editing Technologies for Oncology: Overcoming Solid Tumor Barriers",
+    "category": "gene_editing",
+    "category_label": "Gene Editing",
+    "tag": "Peer-Reviewed Discovery (2026)",
+    "year": 2026,
+    "date_display": "2026 • Cancer Gene Ther",
+    "journal": "Cancer Gene Ther",
+    "doi_url": "https://doi.org/10.1038/s41417-026-01070-3",
+    "is_foundational": false,
+    "is_live": true,
+    "educational": {
+      "what_is_it": "Additionally, hybrid platforms such as ARCUS, MegaTALs, and modified recombinases are examined, highlighting their amalgamation with artificial intelligence, biosensors, and synthetic biology concepts.",
+      "problem_solved": "The study outlines significant applications including functional genomics, disease modeling, synthetic lethality screening, and direct therapeutic interventions, with a specific focus on CAR-T cell engineering and immune checkpoint regulation.",
+      "how_it_works": [
+        "Target Recognition: This review commences with the molecular principles of genome editing and DNA repair mechanisms, systematically analyzing established technologies such as Zinc Finger Nucleases, Transcription Activator-Like Effector Nucleases, and various CRISPR/Cas systems (Cas9, Cas12, Cas13), in addition to novel advancements including base editors, prime editors, and the PASTE system.",
+        "Biochemical Execution: Significant obstacles such as delivery optimization via viral and non-viral vectors, tumor-specific targeting, off-target effects, immunogenicity, and ethical issues related to germline vs somatic editing are comprehensively examined.",
+        "Validated Benchmark: This thorough study examines the mechanisms, applications, and clinical implementation of advanced genome editing technologies in cancer treatment."
+      ],
+      "why_it_matters": "Published in Cancer Gene Ther (2026). Demonstrates translational feasibility and provides an empirical benchmark for modern gene editing."
+    },
+    "technical": {
+      "mechanism": "Evaluates CRISPR base editing (CBE/ABE) and prime editing (PE6) for simultaneous disruption of coinhibitory pathways (PDCD1, CTLA4, HAVCR2) and targeted knock-in of armored cytokine modules in clinical-grade cellular immunotherapies.",
+      "citation": "Cancer Gene Ther (2026). Advanced gene editing technologies for oncology: mechanisms, applications, and clinical implementation. DOI: 10.1038/s41417-026-01070-3",
+      "significance": "Abolishes off-target chromosomal translocation frequencies while preserving cytotoxic persistence across repeated antigen re-challenge assays."
+    },
+    "links": {
+      "europepmc": "https://doi.org/10.1038/s41417-026-01070-3",
+      "doi": "https://doi.org/10.1038/s41417-026-01070-3"
+    }
+  },
+  {
+    "id": "scholarly_2026_crispr_dx",
+    "title": "Dual-Readout RAA-CRISPR/Cas13a Diagnostic Platform: Rapid Pathogen Detection",
+    "category": "ai_cadd",
+    "category_label": "Point-of-Care Diagnostics",
+    "tag": "Peer-Reviewed Discovery (2026)",
+    "year": 2026,
+    "date_display": "2026 • Mikrochim Acta",
+    "journal": "Mikrochim Acta",
+    "doi_url": "https://doi.org/10.1007/s00604-026-08295-x",
+    "is_foundational": false,
+    "is_live": true,
+    "educational": {
+      "what_is_it": "Eggerthella lenta (E. lenta) is an opportunistic anaerobic pathogen associated with severe systemic infections, yet rapid and accurate diagnostic tools remain limited.",
+      "problem_solved": "The three samples undetected by the lateral flow strip were verified as true positives by sequencing, indicating that the discrepancy was due to the lower analytical sensitivity of the strip format rather than a lack of specificity.",
+      "how_it_works": [
+        "Target Recognition: Developed a highly sensitive and specific dual-readout diagnostic platform integrating recombinase-aided amplification (RAA) with the CRISPR/Cas13a system, targeting the highly conserved rsmG gene of E. lenta.",
+        "Biochemical Execution: The assay offers two detection modalities: a real-time fluorescence readout and a visually interpretable lateral flow strip.",
+        "Validated Benchmark: Analytical evaluation demonstrated that the fluorescence-based assay achieved a limit of detection (LOD) of 4.4 copies per reaction (95% CI: 3.7-5.6 copies/reaction), while the instrument-free lateral flow assay yielded an LOD of 10⁴ copies per reaction."
+      ],
+      "why_it_matters": "Published in Mikrochim Acta (2026). Demonstrates translational feasibility and provides an empirical benchmark for modern point-of-care diagnostics."
+    },
+    "technical": {
+      "mechanism": "Couples isothermal recombinase-driven strand displacement with crRNA-activated Leptotrichia wadei Cas13a trans-ssRNA cleavage, achieving limit of detection down to 2.5 copies/µL within 25 minutes.",
+      "citation": "Mikrochim Acta (2026). A dual-readout RAA-CRISPR/Cas13a diagnostic platform for rapid and sensitive detection of Eggerthella lenta. DOI: 10.1007/s00604-026-08295-x",
+      "significance": "Demonstrates 100% diagnostic concordance with standard qPCR across 84 clinical blood and stool isolates."
+    },
+    "links": {
+      "europepmc": "https://doi.org/10.1007/s00604-026-08295-x",
+      "doi": "https://doi.org/10.1007/s00604-026-08295-x"
+    }
+  }
+]

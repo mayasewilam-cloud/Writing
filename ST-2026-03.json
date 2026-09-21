@@ -1,0 +1,93 @@
+{
+  "student_id": "ST-2026-03",
+  "student_name": "Amna Syeda & Team NutriGrain",
+  "modality": "Cellular Expression",
+  "chassis": "Oryza sativa indica (Rice)",
+  "tool": "Maize Phytoene Synthase (ZmPSY1) and Bacterial Desaturase (CrtI)",
+  "target": "Provitamin A (beta-carotene) biosynthetic pathway in rice endosperm",
+  "query": "(\"Golden Rice\" OR \"provitamin A\") AND (\"phytoene synthase\" OR \"ZmPSY1\") AND \"endosperm\" AND \"biofortification\"",
+  "title": "Optimization of Phytoene Synthase Expression in Golden Rice Endosperm for Provitamin A Biofortification",
+  "abstract": "Vitamin A deficiency remains a devastating nutritional affliction affecting over 190 million preschool children in developing nations where milled rice constitutes the predominant dietary caloric intake. Because the endosperm of wild-type Oryza sativa naturally lacks carotenoid pigments despite synthesizing the early isoprenoid precursor geranylgeranyl diphosphate (GGPP), engineered biofortified 'Golden Rice' introduces exogenous phytoene synthase (psy) and carotene desaturase (crtI) genes. However, first-generation lines exhibited insufficient beta-carotene accumulation due to promoter attenuation and uncoordinated enzymatic flux. In this proposal, we engineer an enhanced multi-gene expression cassette utilizing the endosperm-specific glutelin promoter (Gt1) driving a codon-optimized Zea mays phytoene synthase (ZmPSY1) coupled to Erwinia uredovora crtI. The construct will be delivered via Agrobacterium tumefaciens-mediated transformation into elite indica varieties. We anticipate achieving >30 ug/g dry grain beta-carotene yield, providing 60% of the recommended dietary allowance (RDA) in a standard 100g daily serving.",
+  "funnel": {
+    "tier1": "Micronutrient malnutrition, notably Vitamin A deficiency (VAD), causes irreversible childhood blindness in 500,000 children annually and exacerbates pediatric mortality.",
+    "tier2": "Milled white rice provides over 70% of daily calories across South and Southeast Asia, but its starchy endosperm lacks provitamin A carotenoids.",
+    "tier3": "First-generation Golden Rice (GR1) synthesized only 1.6 ug/g carotenoids due to low catalytic efficiency of the daffodil phytoene synthase enzyme.",
+    "tier4": "We hypothesize that utilizing codon-optimized maize ZmPSY1 under the stringent endosperm-specific Gt1 promoter will increase provitamin A synthesis above 30 ug/g without inducing yield penalties."
+  },
+  "matrix": {
+    "blue": "Yield: 32 ug/g beta-carotene; Bioavailability: 3.8:1 conversion ratio; Stability: 85% post-storage",
+    "yellow": "Agrobacterium-mediated transformation with endosperm-specific Gt1 glutelin promoter",
+    "green": "Post-harvest carotenoid degradation during prolonged tropical storage under elevated humidity",
+    "purple": "Positive: Proven GR2 event lines; Negative: Untransformed wild-type indica parental cultivar",
+    "citation": "Paine et al. (2005) Nature Biotechnology; Ye et al. (2000) Science"
+  },
+  "aims": {
+    "aim1": "Assemble a binary T-DNA construct harboring codon-optimized ZmPSY1 and CrtI under the rice endosperm-specific Gt1 promoter using Golden Gate cloning.",
+    "aim2": "Generate transgenic indica rice lines via Agrobacterium tumefaciens-mediated embryogenic callus transformation and confirm stable single-copy integration by Southern blot.",
+    "aim3": "Quantify carotenoid profiles (beta-carotene, lutein, zeaxanthin) in polished grain across 3 harvest generations using reverse-phase HPLC."
+  },
+  "methodology": "The synthetic expression cassette will be cloned into pCAMBIA1300. Immature embryos of Oryza sativa indica will be inoculated with Agrobacterium tumefaciens strain EHA105. Transgenic calli will be selected on hygromycin B (50 mg/L) and regenerated into plantlets under controlled greenhouse conditions. Grain from T1 and T2 generations will be dehusked and polished using an experimental micro-mill. Carotenoids will be extracted in cold acetone under dim light, saponified, and analyzed on a Waters Alliance HPLC with photodiode array detection at 450 nm. Positive controls will utilize certified GR2 reference grain; negative controls will evaluate untransformed wild-type parental grain.",
+  "impact_data": {
+    "academic": "Provides quantitative metabolic flux maps of the endosperm isoprenoid pathway and promoter-driver kinetics in tropical cereal crops.",
+    "economic": "Reduces public healthcare costs associated with vitamin A deficiency supplementation and clinical ophthalmology interventions by $140M annually.",
+    "societal": "Combats endemic micronutrient malnutrition in vulnerable agrarian populations without requiring changes to traditional culinary habits."
+  },
+  "competitor_data": {
+    "incumbent": "Periodic high-dose synthetic Vitamin A capsule distribution: cost-inefficient ($2.50/dose), low rural reach, logistically vulnerable.",
+    "emerging": "Dietary diversification campaigns: difficult to sustain in low-income populations living below the poverty threshold.",
+    "proposed": "Self-sustaining biofortified Golden Rice: farmers save and replant seed freely with no recurring intervention costs.",
+    "usp": "The only staple-food biofortification solution providing >60% of child Vitamin A requirements in a single daily bowl of rice."
+  },
+  "swot": {
+    "s": "Proven safety record across regulatory approvals in Australia, New Zealand, USA, Canada, and the Philippines.",
+    "w": "Vulnerability of carotenoids to oxidative degradation during open-air grain storage in tropical heat.",
+    "o": "Recent deregulation in Southeast Asia establishing legal pathways for farmer commercialization.",
+    "t": "Anti-GMO political activism and localized regulatory delays delaying variety registration."
+  },
+  "budget": [
+    {
+      "category": "Consumables & Reagents",
+      "description": "Tissue culture media, hygromycin, Golden Gate enzymes, HPLC carotenoid analytical standards",
+      "amount": 6200
+    },
+    {
+      "category": "Equipment & Tooling",
+      "description": "Controlled-environment plant growth chamber rental and greenhouse bench space",
+      "amount": 3400
+    },
+    {
+      "category": "Testing & Analytical Services",
+      "description": "Southern blotting, digital droplet PCR for copy number, and HPLC testing",
+      "amount": 2400
+    },
+    {
+      "category": "Dissemination & Publication",
+      "description": "Open-access publication in Plant Biotechnology Journal",
+      "amount": 2500
+    }
+  ],
+  "references": "Ye, X., et al. (2000). Engineering the provitamin A (beta-carotene) biosynthetic pathway into (carotenoid-free) rice endosperm. Science, 287(5451), 303-305.\nPaine, J. A., et al. (2005). Improving the nutritional value of Golden Rice through increased pro-vitamin A content. Nature Biotechnology, 23(4), 482-487.\nBeyer, P., et al. (2002). Golden Rice: introducing the beta-carotene biosynthesis pathway into rice endosperm by genetic engineering to defeat vitamin A deficiency. The Journal of Nutrition, 132(3), 506S-510S.",
+  "updated_at": "2026-09-19T15:07:44.866283",
+  "updated_at_readable": "Initial Submission",
+  "summary": {
+    "completed_nodes": 10,
+    "completion_percentage": 100,
+    "word_count": 391
+  },
+  "aims_contingencies": {
+    "aim1_fallback": "Use alternative endosperm promoter (e.g. prolamin) if Gt1 promoter methylation leads to gene silencing.",
+    "aim2_fallback": "Utilize particle bombardment / biolistics if Agrobacterium embryogenic callus transformation frequency is < 2%.",
+    "aim3_fallback": "Test natural antioxidant co-expression (e.g. alpha-tocopherol) if post-harvest beta-carotene degradation exceeds 30%."
+  },
+  "control_triad": {
+    "negative_control": "Untransformed wild-type parental indica rice grain grown under identical greenhouse conditions.",
+    "positive_control": "Certified reference GR2 event grain with established 30 ug/g carotenoid baseline.",
+    "specificity_control": "Isogenic line expressing only empty pCAMBIA1300 vector to rule out tissue-culture somaclonal variation."
+  },
+  "biotech_risk_matrix": {
+    "off_target": "Pleiotropic growth penalty due to GGPP precursor depletion from plant hormone (gibberellin) synthesis. Mitigation: Stringent endosperm-specific Gt1 promoter expression.",
+    "toxicity": "No toxicity to consumer, but potential insect herbivory changes due to carotenoid alteration. Mitigation: Standard greenhouse biosafety netting.",
+    "solubility": "Carotenoid oxidative degradation in humid tropical storage. Mitigation: Hermetic storage bags with oxygen scavengers.",
+    "biosafety": "Gene flow via pollen drift to wild or weedy red rice (Oryza rufipogon). Mitigation: Spatial isolation buffer (≥ 100 meters) and staggered flowering times."
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "student_id": "ST-2026-02",
+  "student_name": "Omar Tariq & Team EnzymX",
+  "modality": "Cellular Expression",
+  "chassis": "Escherichia coli BL21(DE3)",
+  "tool": "Engineered FAST-PETase with S214H/I168R/W159H mutations",
+  "target": "Post-consumer polyethylene terephthalate (PET) plastic bottles",
+  "query": "(\"PETase\" OR \"FAST-PETase\") AND (\"protein engineering\" OR \"rational design\") AND (\"polyethylene terephthalate\" OR \"PET recycling\")",
+  "title": "Engineered Fast-PETase Depolymerase with Hydrophobic Cavity Mutations for Enhanced Low-Temperature Biodegradation",
+  "abstract": "Accumulation of polyethylene terephthalate (PET) microplastics constitutes a pervasive ecological hazard due to the extreme recalcitrance of aromatic ester bonds. Bacterial PETase enzymes isolated from Ideonella sakaiensis exhibit native activity at mesophilic temperatures but suffer from low kinetic turnover (kcat < 10 s-1) and rapid thermal inactivation at temperatures above 37°C. In this study, we rationally engineered the substrate-binding groove of FAST-PETase through targeted mutagenesis of hydrophobic residues flanking the catalytic triad (S214H and I168R) to stabilize the pre-hydrolysis Michaelis complex. Recombinant variants expressed in Escherichia coli BL21(DE3) demonstrated an 8.4-fold increase in depolymerization rate against commercial amorphous PET films at 30°C compared to wild-type enzyme, achieving 74% conversion into monomeric terephthalic acid (TPA) within 48 hours without requiring energy-intensive thermal pre-treatment.",
+  "funnel": {
+    "tier1": "Over 350 million metric tons of plastic waste are generated annually worldwide, with polyethylene terephthalate (PET) comprising the majority of single-use beverage containers.",
+    "tier2": "Enzymatic biorecycling using microbial depolymerases provides a circular closed-loop alternative to mechanical downcycling and chemical pyrolysis.",
+    "tier3": "Native Ideonella sakaiensis PETase suffers from low kinetic turnover (kcat = 8.2 s-1) and rapid active-site collapse at temperatures below the glass transition point of PET.",
+    "tier4": "We hypothesize that introducing targeted hydrophobic-to-cationic substitutions (I168R and S214H) will lower the activation energy barrier for ester bond cleavage on untreated amorphous PET films at 30°C."
+  },
+  "matrix": {
+    "blue": "Conversion: 74% degradation in 48 h; kcat: 42.5 s-1 at 30°C; Tm: 52.4°C",
+    "yellow": "Rational active-site engineering via site-directed mutagenesis and Ni-NTA purification",
+    "green": "High-crystallinity commercial PET remains recalcitrant without prior chemical swelling",
+    "purple": "Positive: Wild-type IsPETase; Negative: Catalytic mutant S160A and empty pET-28a vector",
+    "citation": "Lu et al. (2022) Nature; Tournier et al. (2020) Nature"
+  },
+  "aims": {
+    "aim1": "Construct expression plasmids for 6 rational PETase active-site variants using Gibson Assembly and transform into E. coli BL21(DE3).",
+    "aim2": "Express and purify recombinant enzymes via immobilized metal affinity chromatography (IMAC) and determine melting temperature (Tm) via differential scanning fluorimetry (DSF).",
+    "aim3": "Quantify degradation kinetics (kcat, Km) and monomer release (TPA, MHET) against post-consumer commercial PET films via reverse-phase HPLC."
+  },
+  "methodology": "Target mutations will be introduced into pET-28a-FAST-PETase via site-directed mutagenesis primers. Expression in E. coli BL21(DE3) will be induced at OD600 = 0.6 using 0.2 mM IPTG at 18°C for 16 hours. Cell pellets will be lysed by sonication in 50 mM Tris-HCl buffer (pH 7.5, 300 mM NaCl) and purified through a 5 mL HisTrap HP column. Depolymerization assays will be performed by incubating 100 nM purified enzyme with 10 mg amorphous PET coupons in 1 mL buffer at 30°C with 150 rpm orbital shaking. Reaction products (TPA, MHET) will be quenched with DMSO and quantified on an Agilent 1260 Infinity HPLC equipped with a C18 column. Controls will include wild-type IsPETase (positive benchmark) and inactive S160A catalytic dead mutant (negative control).",
+  "impact_data": {
+    "academic": "Elucidates biophysical mechanics of how active-site hydrophobic architecture modulates aromatic polymer binding below glass transition temperature.",
+    "economic": "Enables ambient-temperature enzymatic biorecycling without energy-intensive heating of waste plastic, reducing carbon emissions by 68%.",
+    "societal": "Provides municipal recycling facilities with an affordable, non-toxic bio-treatment method for plastic landfill mitigation."
+  },
+  "competitor_data": {
+    "incumbent": "Mechanical shredding and thermal extrusion: degrades polymer chains, yielding low-grade grey plastic suitable only for carpeting.",
+    "emerging": "Thermophilic engineered cutinases (LCC-ICCG) operating at 72°C: requires huge electrical inputs to maintain high temperature.",
+    "proposed": "Engineered Fast-PETase (I168R/S214H): Operates directly at 30°C with high kinetic turnover on post-consumer packaging.",
+    "usp": "The first biocatalytic variant achieving >70% plastic breakdown at room temperature (30°C) without requiring auxiliary heating."
+  },
+  "swot": {
+    "s": "High solubility in standard E. coli expression; rapid HPLC quantification of monomer release.",
+    "w": "Recombinant enzymes accumulate in inclusion bodies if induction temperature exceeds 22°C.",
+    "o": "Global single-use plastic reduction treaties creating strong industrial pull for biocatalytic solutions.",
+    "t": "Chemical recycling (glycolysis/methanolysis) has established industrial scale despite harsh solvent usage."
+  },
+  "budget": [
+    {
+      "category": "Consumables & Reagents",
+      "description": "Competent cells, IPTG, Ni-NTA resins, HPLC solvents, commercial PET substrate coupons",
+      "amount": 5800
+    },
+    {
+      "category": "Equipment & Tooling",
+      "description": "Access to high-resolution HPLC and differential scanning fluorimeter",
+      "amount": 2500
+    },
+    {
+      "category": "Testing & Analytical Services",
+      "description": "Mass spectrometry of degradation intermediates and protein sequencing",
+      "amount": 2200
+    },
+    {
+      "category": "Dissemination & Publication",
+      "description": "ACS Catalysis open-access publication charges",
+      "amount": 2500
+    }
+  ],
+  "references": "Tournier, V., et al. (2020). An engineered PET depolymerase to break down and recycle plastic bottles. Nature, 580(7802), 216-219.\nLu, H., et al. (2022). Machine learning-aided engineering of hydrolases for PET depolymerization. Nature, 604(7907), 662-667.\nAustin, H. P., et al. (2018). Characterization and engineering of a plastic-degrading aromatic polyesterase. PNAS, 115(19), E4350-E4357.",
+  "updated_at": "2026-09-19T15:07:44.865376",
+  "updated_at_readable": "Initial Submission",
+  "summary": {
+    "completed_nodes": 10,
+    "completion_percentage": 100,
+    "word_count": 405
+  },
+  "aims_contingencies": {
+    "aim1_fallback": "Switch expression to Pichia pastoris with alpha-mating factor secretion if E. coli yields insoluble inclusion bodies.",
+    "aim2_fallback": "Add 5% glycerol and 0.5M L-arginine during IMAC elution if engineered mutants show active-site aggregation.",
+    "aim3_fallback": "Apply pre-swelling with mild eco-friendly solvents (ethanol/water 1:1) if high-crystallinity industrial PET resists degradation."
+  },
+  "control_triad": {
+    "negative_control": "Catalytic-dead mutant S160A and empty pET-28a vector cell lysate.",
+    "positive_control": "Purified wild-type Ideonella sakaiensis PETase benchmark enzyme.",
+    "specificity_control": "Substrate mock control: non-PET polyesters (polycaprolactone and PLA) to verify aromatic ester specificity."
+  },
+  "biotech_risk_matrix": {
+    "off_target": "Hydrolysis of cellular ester compounds in host. Mitigation: Periplasmic targeting or induction in stationary phase.",
+    "toxicity": "Metabolic burden of high-copy plasmid expression. Mitigation: Tunable T7 promoter induction with low IPTG (0.1 mM).",
+    "solubility": "Inclusion body aggregation during high-yield expression. Mitigation: Cold induction (16°C) and chaperone co-expression (GroEL-GroES).",
+    "biosafety": "Accidental release of engineered E. coli with enhanced degradation capacity. Mitigation: Standard BSL-1 laboratory containment and clean autoclave destruction."
+  }
+}

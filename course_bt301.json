@@ -1,0 +1,162 @@
+{
+  "course_id": "BT_301",
+  "course_name": "Introduction to Biotechnology",
+  "curriculum_focus": "Writing Fundable Scientific Research Proposals",
+  "project_models": [
+    {
+      "id": "cellular",
+      "name": "Host Organism / Cellular Expression (Microbial, Plant, Mammalian)",
+      "pillar1_label": "Biological Chassis / Host Organism",
+      "pillar1_placeholder": "e.g. Pseudomonas putida, Pichia pastoris, Triticum aestivum",
+      "pillar1_desc": "The living cell line, bacterial strain, yeast, or plant model expressing the construct.",
+      "pillar2_label": "Molecular Tool / Engineered Enzyme / Gene",
+      "pillar2_placeholder": "e.g. Engineered PETase, CRISPR-Cas12a, TaHKT1;5 transporter",
+      "pillar2_desc": "The specific protein, promoter, catalytic mechanism, or molecular intervention.",
+      "pillar3_label": "Target Phenomenon / Quantitative Outcome",
+      "pillar3_placeholder": "e.g. Accelerated PET depolymerization, foliar salinity exclusion",
+      "pillar3_desc": "The substrate, clinical phenotype, or quantitative metric being improved."
+    },
+    {
+      "id": "cell_free",
+      "name": "Cell-Free Diagnostics / Biosensors / Molecular Assays (No Living Host)",
+      "pillar1_label": "Diagnostic System / Reaction Matrix / Sample Matrix",
+      "pillar1_placeholder": "e.g. Paper lateral flow strip, lyophilized cell-free lysate, hospital effluent",
+      "pillar1_desc": "The test platform, detection matrix, clinical fluid, or environmental sample.",
+      "pillar2_label": "Recognition Element / Molecular Probe / Assay Mechanism",
+      "pillar2_placeholder": "e.g. Cas12a-crRNA fluorescent reporter, DNA aptamer, gold nanoparticles",
+      "pillar2_desc": "The molecular sensor, enzymatic cascade, or amplification mechanism.",
+      "pillar3_label": "Target Biomarker / Limit of Detection (LOD)",
+      "pillar3_placeholder": "e.g. mcr-1 antibiotic resistance gene, circulating microRNA, femtomolar LOD",
+      "pillar3_desc": "The target analyte and the required analytical sensitivity."
+    },
+    {
+      "id": "nanotech",
+      "name": "Biomaterials / Nanotechnology / Drug Delivery Formulations",
+      "pillar1_label": "Carrier Material / Nanomaterial Matrix / Formulation Vehicle",
+      "pillar1_placeholder": "e.g. Chitosan-PLGA nanoparticles, lipid nanoparticles (LNPs), PEG hydrogel",
+      "pillar1_desc": "The delivery vehicle, polymeric scaffold, or synthetic nanomaterial.",
+      "pillar2_label": "Bioactive Cargo / Conjugated Ligand / Release Mechanism",
+      "pillar2_placeholder": "e.g. siRNA cargo, targeting transferrin peptide, pH-responsive cleavage",
+      "pillar2_desc": "The therapeutic biomolecule, targeting moiety, or controlled-release trigger.",
+      "pillar3_label": "Pathological Target / Therapeutic Threshold",
+      "pillar3_placeholder": "e.g. Triple-negative breast cancer, intracellular delivery efficiency >80%",
+      "pillar3_desc": "The disease tissue and quantitative pharmacodynamic target."
+    },
+    {
+      "id": "environmental",
+      "name": "Environmental Biotechnology / Bioremediation / Waste Streams",
+      "pillar1_label": "Contaminated Matrix / Bioreactor System / Effluent Stream",
+      "pillar1_placeholder": "e.g. Industrial textile wastewater, saline agricultural drainage, sludge matrix",
+      "pillar1_desc": "The environmental medium, soil type, or industrial effluent being treated.",
+      "pillar2_label": "Biocatalytic Consortium / Immobilized Enzyme / Filtration Media",
+      "pillar2_placeholder": "e.g. Cross-linked enzyme aggregates (CLEAs), microbial biofilm, laccase",
+      "pillar2_desc": "The catalytic agent, biofilm system, or enzymatic treatment mechanism.",
+      "pillar3_label": "Target Pollutant / Clearance Threshold",
+      "pillar3_placeholder": "e.g. Azo dye decolorization >95%, heavy metal reduction <0.1 mg/L",
+      "pillar3_desc": "The specific chemical contaminant and required regulatory discharge limit."
+    },
+    {
+      "id": "computational",
+      "name": "Computational Biology / In Silico Modeling / Structural Bioinformatics",
+      "pillar1_label": "Computational Framework / Molecular Model / Target Database",
+      "pillar1_placeholder": "e.g. AlphaFold predicted structure, PDB 6EQE, molecular dynamics ensemble",
+      "pillar1_desc": "The macromolecular coordinate model, simulation platform, or dataset.",
+      "pillar2_label": "In Silico Algorithm / Mutagenesis Strategy / Screening Pipeline",
+      "pillar2_placeholder": "e.g. Rosetta flex ddG, QM/MM catalytic profiling, virtual docking",
+      "pillar2_desc": "The computational algorithm, free energy calculation, or scoring function.",
+      "pillar3_label": "Biophysical Metric / Predictive Accuracy Benchmark",
+      "pillar3_placeholder": "e.g. Binding affinity delta-G < -10 kcal/mol, catalytic activation barrier",
+      "pillar3_desc": "The quantitative thermodynamic or kinetic parameter being optimized."
+    }
+  ],
+  "marking_scheme": {
+    "total_raw_marks": 85,
+    "max_gpa": 10.0,
+    "criteria": [
+      {
+        "id": "title",
+        "name": "Title",
+        "max_marks": 2,
+        "type": "all_or_none",
+        "description": "Concise & descriptive of the molecular mechanism, experimental system, target metric, and application.",
+        "formula": "[Molecular Mechanism / Tool] in [Experimental System / Matrix] to [Target Metric] for [Application]"
+      },
+      {
+        "id": "abstract",
+        "name": "Structured Abstract",
+        "max_marks": 5,
+        "type": "scaled",
+        "max_words": 250,
+        "description": "Balanced across Problem/Significance (2%), Methodology (2%), Expected Outcomes (1%), and Concluding Relevance."
+      },
+      {
+        "id": "background",
+        "name": "Background & Inverted Funnel Rationale",
+        "max_marks": 20,
+        "type": "scaled",
+        "subsections": [
+          {"name": "Epidemiological / Global Problem Burden", "marks": 5},
+          {"name": "State of the Art & Current Methodological Baselines", "marks": 5},
+          {"name": "Critical Scientific Knowledge Gap & Mechanistic Flaw", "marks": 5},
+          {"name": "Overall Project Aim, Mechanistic Hypothesis & Specific Objectives", "marks": 5}
+        ]
+      },
+      {
+        "id": "methodology",
+        "name": "Methodology",
+        "max_marks": 15,
+        "type": "scaled",
+        "guidance": "Written strictly in FUTURE TENSE ('will be assayed', 'will be synthesized'). Must include positive/negative experimental controls and validated quantitative assays."
+      },
+      {
+        "id": "aims_objectives",
+        "name": "Specific Objectives (Specific Aims)",
+        "max_marks": 5,
+        "type": "scaled",
+        "guidance": "3 discrete, decoupled objectives with quantitative Go/No-Go milestones, ensuring no Domino Collapse dependency."
+      },
+      {
+        "id": "expected_outcomes_impact",
+        "name": "Expected Outcomes & Long-Term Impact (Section 10)",
+        "max_marks": 10,
+        "type": "scaled",
+        "guidance": "5% for concrete visual deliverables and figures; 5% for long-term Academic, Translational, and Societal Impact answering 'Why do the results matter?'"
+      },
+      {
+        "id": "competitive_advantage",
+        "name": "Competitive Advantage, Competitor Analysis & USPs",
+        "max_marks": 5,
+        "type": "scaled",
+        "guidance": "2.5% for Competitor Analysis Matrix comparing Incumbent vs Emerging vs Proposed; 2.5% for specific USP naming a real competitor (no 'traditional methods' strawman)."
+      },
+      {
+        "id": "swot_pestel",
+        "name": "Biotechnology SWOT & PESTEL Analysis",
+        "max_marks": 10,
+        "type": "scaled",
+        "guidance": "Authentic biochemical failure modes (e.g. inclusion bodies, protease sensitivity) avoiding student clichés ('we are students'). All 6 PESTEL dimensions."
+      },
+      {
+        "id": "time_plan",
+        "name": "Gantt Timeline & Feasibility Decision Gates",
+        "max_marks": 5,
+        "type": "scaled",
+        "guidance": "Clear monthly work package schedule with explicit Go/No-Go decision milestones."
+      },
+      {
+        "id": "budget",
+        "name": "Tabulated Itemized Budget",
+        "max_marks": 5,
+        "type": "scaled",
+        "guidance": "Itemized 5-category budget table (Consumables, Personnel, Equipment, Overhead, Travel) with justifications."
+      },
+      {
+        "id": "references",
+        "name": "References & 60% Recency Rule",
+        "max_marks": 5,
+        "type": "scaled",
+        "guidance": "At least 60% of peer-reviewed references published between 2021 and 2026. Consistent Harvard or Vancouver style."
+      }
+    ]
+  }
+}

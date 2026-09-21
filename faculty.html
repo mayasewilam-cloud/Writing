@@ -1,0 +1,2612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BioWriter Faculty Studio • BT_301 Evaluation & Review</title>
+  <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+  <link rel="alternate icon" href="/favicon.ico">
+  <style>
+    /* ==========================================================================
+       BioWriter Faculty Studio - Dark Obsidian Luxury & Academic Palette
+       ========================================================================== */
+    :root {
+      --fac-obsidian: #090d16;
+      --fac-dark-border: #1e293b;
+      --fac-indigo: #4f46e5;
+      --fac-indigo-hover: #4338ca;
+      --fac-card-bg: #ffffff;
+      --fac-card-border: #e2e8f0;
+      --fac-accent-purple: #7c3aed;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f8fafc;
+      margin: 0;
+      color: #0f172a;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", sans-serif;
+      line-height: 1.5;
+    }
+
+    /* Top Obsidian Navbar */
+    .faculty-top-navbar {
+      background: var(--fac-obsidian);
+      border-bottom: 1px solid var(--fac-dark-border);
+      padding: 0 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .brand-section {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-logo {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      background: linear-gradient(135deg, #7c3aed, #4f46e5);
+      box-shadow: 0 0 16px rgba(124, 58, 237, 0.45);
+    }
+
+    .faculty-brand-title {
+      color: #ffffff;
+      font-size: 1.1rem;
+      font-weight: 800;
+      letter-spacing: -0.2px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .brand-badge-course {
+      font-size: 0.72rem;
+      font-weight: 700;
+      background: rgba(255, 255, 255, 0.1);
+      color: #cbd5e1;
+      padding: 2px 8px;
+      border-radius: 4px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .faculty-access-badge {
+      background: rgba(245, 158, 11, 0.2);
+      color: #fcd34d;
+      border: 1px solid rgba(245, 158, 11, 0.4);
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 6px;
+    }
+
+    /* 4-View Segmented Switcher */
+    .view-mode-selector {
+      display: flex;
+      background: rgba(255, 255, 255, 0.06);
+      padding: 4px;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      gap: 4px;
+    }
+
+    .btn-view-mode {
+      background: transparent;
+      border: none;
+      color: #94a3b8;
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 7px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.15s ease;
+    }
+
+    .btn-view-mode:hover {
+      color: #ffffff;
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .btn-view-mode.active {
+      background: var(--fac-indigo);
+      color: #ffffff;
+      box-shadow: 0 2px 8px rgba(79, 70, 229, 0.4);
+    }
+
+    .top-nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn-fac-logout {
+      background: rgba(239, 68, 68, 0.15);
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      color: #fca5a5;
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.15s ease;
+    }
+
+    .btn-fac-logout:hover {
+      background: #dc2626;
+      color: #ffffff;
+      border-color: #dc2626;
+    }
+
+    /* Fast Export Dropdown */
+    .dropdown-wrapper {
+      position: relative;
+    }
+
+    .btn-export-trigger {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: #f1f5f9;
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .btn-export-trigger:hover {
+      background: rgba(255, 255, 255, 0.14);
+    }
+
+    .export-menu {
+      position: absolute;
+      top: calc(100% + 8px);
+      right: 0;
+      width: 220px;
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      box-shadow: 0 15px 35px -5px rgba(0,0,0,0.2);
+      display: none;
+      flex-direction: column;
+      padding: 6px;
+      z-index: 1050;
+    }
+
+    .export-menu.show {
+      display: flex;
+    }
+
+    .export-menu-item {
+      background: transparent;
+      border: none;
+      text-align: left;
+      padding: 8px 12px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: #334155;
+      border-radius: 6px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .export-menu-item:hover {
+      background: #f1f5f9;
+      color: #0f172a;
+    }
+
+    /* ==========================================================================
+       AUTH & ACCESS RESTRICTION GATES
+       ========================================================================== */
+    .fac-gate-overlay {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: calc(100vh - 64px);
+      padding: 40px 20px;
+      background: radial-gradient(circle at 50% 15%, #1e1b4b 0%, #0f172a 60%, #090d16 100%);
+    }
+
+    .fac-gate-card {
+      background: #0f172a;
+      border: 1px solid #334155;
+      border-radius: 20px;
+      width: 100%;
+      max-width: 480px;
+      padding: 36px 32px;
+      text-align: center;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+      color: #f8fafc;
+    }
+
+    .fac-gate-icon {
+      width: 60px;
+      height: 60px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, #7c3aed, #4f46e5);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      margin-bottom: 16px;
+      box-shadow: 0 8px 20px rgba(124, 58, 237, 0.4);
+    }
+
+    .fac-gate-title {
+      font-size: 1.4rem;
+      font-weight: 800;
+      margin: 0 0 8px;
+    }
+
+    .fac-gate-desc {
+      font-size: 0.88rem;
+      color: #94a3b8;
+      line-height: 1.5;
+      margin: 0 0 20px;
+    }
+
+    /* Common Form Controls */
+    .form-input {
+      width: 100%;
+      padding: 9px 12px;
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      font-size: 0.88rem;
+      color: #0f172a;
+      transition: all 0.15s ease;
+    }
+
+    .form-input:focus {
+      outline: none;
+      border-color: var(--fac-indigo);
+      box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+    }
+
+    .password-input-wrap {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    .btn-toggle-pwd {
+      position: absolute;
+      right: 8px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      font-size: 0.95rem;
+      opacity: 0.6;
+    }
+
+    .btn-control-action {
+      background: var(--fac-indigo);
+      color: #ffffff;
+      border: none;
+      border-radius: 8px;
+      padding: 9px 16px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      transition: all 0.15s ease;
+    }
+
+    .btn-control-action:hover {
+      background: var(--fac-indigo-hover);
+      transform: translateY(-1px);
+    }
+
+    /* ==========================================================================
+       VIEW 1: COHORT ROSTER & ANALYTICS
+       ========================================================================== */
+    .view-container {
+      display: none;
+      max-width: 1780px;
+      margin: 24px auto;
+      padding: 0 24px;
+    }
+
+    .view-container.active {
+      display: block;
+    }
+
+    /* KPI Metrics Cards */
+    .fac-kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .fac-kpi-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+      padding: 18px 20px;
+      box-shadow: 0 1px 3px rgba(16, 24, 40, 0.04);
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .fac-kpi-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+    }
+
+    .fac-kpi-info {
+      flex: 1;
+    }
+
+    .fac-kpi-num {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: #0f172a;
+      line-height: 1.2;
+    }
+
+    .fac-kpi-label {
+      font-size: 0.76rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #64748b;
+      letter-spacing: 0.5px;
+    }
+
+    /* Roster Table Card */
+    .roster-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 2px 6px rgba(16, 24, 40, 0.04);
+    }
+
+    .roster-toolbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    .roster-search-input {
+      max-width: 360px;
+      padding: 8px 14px;
+      border-radius: 8px;
+      border: 1px solid #cbd5e1;
+      font-size: 0.85rem;
+    }
+
+    .roster-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.86rem;
+    }
+
+    .roster-table th {
+      background: #f8fafc;
+      color: #475569;
+      font-size: 0.74rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 12px 14px;
+      border-bottom: 2px solid #e2e8f0;
+      text-align: left;
+    }
+
+    .roster-table td {
+      padding: 14px;
+      border-bottom: 1px solid #f1f5f9;
+      color: #334155;
+    }
+
+    .roster-table tr:hover td {
+      background: #f8fafc;
+    }
+
+    .status-pill {
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 6px;
+      display: inline-block;
+    }
+
+    .status-grant-ready {
+      background: #dcfce7;
+      color: #15803d;
+    }
+
+    .status-minor-rev {
+      background: #e0f2fe;
+      color: #0369a1;
+    }
+
+    .status-major-rev {
+      background: #fef3c7;
+      color: #92400e;
+    }
+
+    /* ==========================================================================
+       VIEW 2: RUBRIC EVALUATION CONSOLE
+       ========================================================================== */
+    .student-context-ribbon {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+      padding: 14px 20px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      box-shadow: 0 1px 3px rgba(16, 24, 40, 0.04);
+    }
+
+    .student-context-main {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .student-avatar-badge {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: #ede9fe;
+      color: #5b21b6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+    }
+
+    .student-context-name {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: #0f172a;
+    }
+
+    .student-context-meta {
+      font-size: 0.8rem;
+      color: #64748b;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .student-nav-group {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-student-nav {
+      background: #f8fafc;
+      border: 1px solid #cbd5e1;
+      color: #334155;
+      padding: 6px 12px;
+      border-radius: 7px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .btn-student-nav:hover {
+      background: #f1f5f9;
+      color: #0f172a;
+    }
+
+    /* Grading Cards Grid */
+    .grading-console-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .faculty-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 1px 3px rgba(16, 24, 40, 0.04);
+    }
+
+    .faculty-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid #f1f5f9;
+    }
+
+    .faculty-card-title {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: #0f172a;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* Score Summary with Circular Ring */
+    .faculty-rubric-summary {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin-bottom: 20px;
+    }
+
+    .fac-ring-wrap {
+      position: relative;
+      width: 90px;
+      height: 90px;
+      flex-shrink: 0;
+    }
+
+    .fac-ring-svg {
+      width: 100%;
+      height: 100%;
+      transform: rotate(-90deg);
+    }
+
+    .ring-bg {
+      fill: none;
+      stroke: #e2e8f0;
+      stroke-width: 8;
+    }
+
+    .ring-fill {
+      fill: none;
+      stroke-width: 8;
+      stroke-linecap: round;
+      transition: stroke-dashoffset 0.6s ease;
+    }
+
+    .fac-ring-center {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .fac-score-num {
+      font-size: 1.45rem;
+      font-weight: 800;
+      color: #0f172a;
+      line-height: 1;
+    }
+
+    .fac-score-sub {
+      font-size: 0.65rem;
+      font-weight: 700;
+      color: #64748b;
+    }
+
+    .fac-gpa-stat {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: #0f172a;
+    }
+
+    .fac-raw-stat {
+      font-size: 0.85rem;
+      color: #64748b;
+      margin-bottom: 6px;
+    }
+
+    /* 10 Logic Chain Progress Grid */
+    .progress-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+    }
+
+    .progress-node {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 10px 12px;
+    }
+
+    .progress-node.active {
+      border-left: 4px solid #16a34a;
+      background: #f0fdf4;
+    }
+
+    .progress-node-title {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #475569;
+      margin-bottom: 4px;
+    }
+
+    .progress-node-val {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: #1e293b;
+    }
+
+    /* Comment Chips */
+    .comment-chip {
+      background: #f1f5f9;
+      color: #334155;
+      border: 1px solid #cbd5e1;
+      border-radius: 7px;
+      padding: 5px 10px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .comment-chip:hover {
+      background: #e2e8f0;
+    }
+
+    .comment-chip.active {
+      background: #4f46e5;
+      color: #ffffff;
+      border-color: #4f46e5;
+    }
+
+    .memo-output {
+      background: #0f172a;
+      color: #f8fafc;
+      font-family: monospace;
+      font-size: 0.82rem;
+      line-height: 1.6;
+      padding: 16px;
+      border-radius: 10px;
+      white-space: pre-wrap;
+      max-height: 350px;
+      overflow-y: auto;
+    }
+
+    /* ==========================================================================
+       VIEW 3: NATURE PREPRINT READER & SPLIT REVIEW
+       ========================================================================== */
+    .preprint-full-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 16px;
+      padding: 32px 40px;
+      box-shadow: 0 2px 6px rgba(16, 24, 40, 0.04);
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .manuscript-nature-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #0f172a;
+      padding-bottom: 12px;
+      margin-bottom: 14px;
+    }
+
+    .nature-masthead-title {
+      font-family: Georgia, serif;
+      font-size: 1.4rem;
+      font-weight: 900;
+      font-style: italic;
+      color: #0f172a;
+      letter-spacing: -0.5px;
+    }
+
+    .nature-tag-pill {
+      background: #0f172a;
+      color: #ffffff;
+      font-size: 0.65rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      padding: 3px 8px;
+      border-radius: 4px;
+      letter-spacing: 0.8px;
+      margin-left: 10px;
+    }
+
+    .manuscript-doi-bar {
+      font-size: 0.74rem;
+      color: #64748b;
+      margin-bottom: 16px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .manuscript-title {
+      font-family: Georgia, serif;
+      font-size: 1.65rem;
+      font-weight: 800;
+      color: #0f172a;
+      line-height: 1.25;
+      margin: 0 0 10px;
+    }
+
+    .manuscript-authors {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #4338ca;
+      margin-bottom: 4px;
+    }
+
+    .manuscript-affil {
+      font-size: 0.8rem;
+      color: #64748b;
+      font-style: italic;
+      margin-bottom: 20px;
+    }
+
+    .manuscript-abstract-container {
+      background: #f8fafc;
+      border-left: 4px solid var(--fac-indigo);
+      padding: 16px 20px;
+      border-radius: 8px;
+      margin-bottom: 24px;
+    }
+
+    .abstract-title-label {
+      font-size: 0.75rem;
+      font-weight: 800;
+      color: var(--fac-indigo);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .manuscript-abstract-text {
+      font-family: Georgia, serif;
+      font-size: 0.92rem;
+      line-height: 1.65;
+      color: #1e293b;
+      margin-top: 8px;
+    }
+
+    .manuscript-sec-heading {
+      font-family: Georgia, serif;
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: #0f172a;
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 6px;
+      margin: 24px 0 12px;
+    }
+
+    .manuscript-sec-body {
+      font-family: Georgia, serif;
+      font-size: 0.9rem;
+      line-height: 1.65;
+      color: #334155;
+    }
+
+    /* Split Screen Dual Pane Grid */
+    .split-grid-layout {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: 20px;
+    }
+
+    @media (max-width: 1100px) {
+      .split-grid-layout {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========================================================================
+       TOP FACULTY NAVBAR
+       ======================================================================== -->
+  <header class="faculty-top-navbar">
+    <div class="brand-section">
+      <div class="brand-logo">👨‍🏫</div>
+      <div>
+        <div class="faculty-brand-title">
+          BioWriter Faculty Studio
+          <span class="brand-badge-course">BT_301 Evaluation & Review</span>
+          <span class="faculty-access-badge">🔒 Instructor Mode</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Segmented 4-View Switcher -->
+    <div class="view-mode-selector" id="fac-view-mode-selector" {% if not is_authenticated %}style="display: none;"{% endif %}>
+      <button type="button" class="btn-view-mode active" data-view="roster" id="btn-view-roster">
+        <span>👥</span> <span>Cohort Roster</span>
+      </button>
+      <button type="button" class="btn-view-mode" data-view="grading" id="btn-view-grading">
+        <span>⚖️</span> <span>Rubric Evaluation</span>
+      </button>
+      <button type="button" class="btn-view-mode" data-view="paper" id="btn-view-paper">
+        <span>📄</span> <span>Nature Preprint</span>
+      </button>
+      <button type="button" class="btn-view-mode" data-view="split" id="btn-view-split">
+        <span>🔀</span> <span>Split Review</span>
+      </button>
+    </div>
+
+    <div class="top-nav-actions" {% if not is_authenticated %}style="display: none;"{% endif %}>
+      <!-- Export Dropdown -->
+      <div class="dropdown-wrapper">
+        <button type="button" class="btn-export-trigger" id="btn-fac-export-trigger">
+          <span>📥</span> <span>Export Proposal</span> <span>▾</span>
+        </button>
+        <div class="export-menu" id="fac-export-menu">
+          <button type="button" class="export-menu-item" id="btn-fac-download-docx">
+            <span>📄</span> <span>Microsoft Word (.docx)</span>
+          </button>
+          <button type="button" class="export-menu-item" id="btn-fac-download-pptx">
+            <span>📊</span> <span>Oral Defense Slides (.pptx)</span>
+          </button>
+          <button type="button" class="export-menu-item" id="btn-fac-download-md">
+            <span>📝</span> <span>LaTeX / Markdown (.md)</span>
+          </button>
+        </div>
+      </div>
+
+      <button type="button" class="btn-fac-logout" id="btn-fac-logout" title="Sign out of instructor mode">
+        <span>🚪</span> <span>Sign Out</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       ACCESS RESTRICTION GATES (STUDENT BLOCK & PASSCODE LOGIN)
+       ======================================================================== -->
+  {% if access_denied %}
+  <!-- Access Denied Screen: Student Account Detected -->
+  <div class="fac-gate-overlay">
+    <div class="fac-gate-card">
+      <div class="fac-gate-icon" style="background: #dc2626;">🛑</div>
+      <h1 class="fac-gate-title">Access Restricted: Student Account</h1>
+      <p class="fac-gate-desc">
+        You are currently signed in as student <strong>{{ student_id or "Student" }}</strong>.<br><br>
+        The <strong>Faculty Evaluation Studio</strong> is strictly restricted to course instructors, professors, and authorized teaching assistants.
+      </p>
+      <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 20px;">
+        <button type="button" id="btn-denied-signout" class="btn-control-action" style="background: #dc2626; padding: 10px 20px; cursor: pointer; border: none;">
+          🚪 Sign Out Student Account
+        </button>
+        <a href="/" class="btn-control-action" style="text-decoration: none; padding: 10px 20px; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2);">
+          🧬 Back to Student Studio
+        </a>
+      </div>
+    </div>
+  </div>
+  {% elif not is_authenticated %}
+  <!-- Passcode Unlock Gate: Unauthenticated Visitor -->
+  <div class="fac-gate-overlay" id="fac-login-overlay">
+    <div class="fac-gate-card">
+      <div class="fac-gate-icon">👨‍🏫</div>
+      <div><span class="faculty-access-badge">BT_301 Course Faculty</span></div>
+      <h1 class="fac-gate-title" style="margin-top: 10px;">BioWriter Faculty Studio</h1>
+      <p class="fac-gate-desc">
+        Enter your Instructor Access Passcode to unlock the class submission roster, official rubric diagnostics, and grading memos.
+      </p>
+
+      <form id="form-fac-login">
+        <div style="margin-bottom: 14px; text-align: left;">
+          <label for="fac-passcode-input" style="font-size: 0.76rem; font-weight: 700; color: #cbd5e1; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; display: block;">
+            Instructor Access Passcode
+          </label>
+          <div class="password-input-wrap">
+            <input type="password" id="fac-passcode-input" class="form-input" placeholder="Enter instructor access passcode" required autofocus>
+            <button type="button" class="btn-toggle-pwd" data-target="fac-passcode-input" title="Show/Hide">👁️</button>
+          </div>
+        </div>
+
+        <div id="fac-login-error" style="display: none; background: rgba(239, 68, 68, 0.2); border: 1px solid rgba(239, 68, 68, 0.4); color: #fca5a5; padding: 8px 12px; border-radius: 8px; font-size: 0.8rem; margin-bottom: 12px; text-align: left;"></div>
+
+        <button type="submit" class="btn-control-action" id="btn-submit-fac-login" style="width: 100%; padding: 11px 16px;">
+          <span>🔓 Unlock Faculty Studio</span>
+        </button>
+      </form>
+
+      <div style="font-size: 0.74rem; color: #64748b; margin-top: 16px; display: flex; justify-content: center; gap: 8px; align-items: center;">
+        <span>🔒 Secure Instructor Session</span>
+        <span>•</span>
+        <a href="/" style="color: #94a3b8; text-decoration: none;">🧬 Return to Student Studio</a>
+      </div>
+    </div>
+  </div>
+  {% else %}
+
+  <!-- ========================================================================
+       VIEW 1: 👥 COHORT ROSTER & CLASS ANALYTICS
+       ======================================================================== -->
+  <main class="view-container active" id="view-cohort-roster">
+    <!-- KPI Metrics -->
+    <div class="fac-kpi-grid">
+      <div class="fac-kpi-card">
+        <div class="fac-kpi-icon" style="background: #e0f2fe; color: #0284c7;">📋</div>
+        <div class="fac-kpi-info">
+          <div class="fac-kpi-num" id="kpi-total-submissions">3</div>
+          <div class="fac-kpi-label">Cohort Proposals</div>
+        </div>
+      </div>
+      <div class="fac-kpi-card">
+        <div class="fac-kpi-icon" style="background: #ede9fe; color: #7c3aed;">📊</div>
+        <div class="fac-kpi-info">
+          <div class="fac-kpi-num" id="kpi-avg-gpa">8.4</div>
+          <div class="fac-kpi-label">Class Mean GPA (out of 10)</div>
+        </div>
+      </div>
+      <div class="fac-kpi-card">
+        <div class="fac-kpi-icon" style="background: #dcfce7; color: #15803d;">🌟</div>
+        <div class="fac-kpi-info">
+          <div class="fac-kpi-num" id="kpi-grant-ready">2</div>
+          <div class="fac-kpi-label">Grant-Ready (≥8.5 GPA)</div>
+        </div>
+      </div>
+      <div class="fac-kpi-card">
+        <div class="fac-kpi-icon" style="background: #fef3c7; color: #92400e;">⚠️</div>
+        <div class="fac-kpi-info">
+          <div class="fac-kpi-num" id="kpi-revisions-needed">1</div>
+          <div class="fac-kpi-label">Revisions Needed (<6.5 GPA)</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cohort Submissions Table Card -->
+    <div class="roster-card">
+      <div class="roster-toolbar">
+        <div>
+          <h2 style="margin: 0 0 4px; font-size: 1.15rem; font-weight: 800; color: #0f172a;">
+            BT_301 Student Proposal Submissions
+          </h2>
+          <div style="font-size: 0.8rem; color: #64748b;">
+            Live cohort database • Select any student to launch full rubric evaluation
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 10px; align-items: center;">
+          <input type="text" id="roster-search-input" class="roster-search-input" placeholder="🔍 Search student ID or title...">
+          <button type="button" id="btn-refresh-roster" class="btn-student-nav">🔄 Refresh</button>
+        </div>
+      </div>
+
+      <div style="overflow-x: auto;">
+        <table class="roster-table">
+          <thead>
+            <tr>
+              <th>Student ID</th>
+              <th>Student / Team Name</th>
+              <th>Proposal Working Title</th>
+              <th>Modality</th>
+              <th>Completion</th>
+              <th>Rubric Points</th>
+              <th>GPA</th>
+              <th>Standing</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="roster-table-body">
+            <tr>
+              <td colspan="9" style="text-align: center; color: #94a3b8; padding: 24px;">Loading student submissions...</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <!-- ========================================================================
+       VIEW 2: ⚖️ RUBRIC EVALUATION & DIAGNOSTICS SUITE
+       ======================================================================== -->
+  <main class="view-container" id="view-grading-console">
+    <!-- Student Context Sticky Ribbon -->
+    <div class="student-context-ribbon">
+      <div class="student-context-main">
+        <div class="student-avatar-badge">👤</div>
+        <div>
+          <div class="student-context-name" id="ctx-student-name">Sara Ahmed & Team BioDetect</div>
+          <div class="student-context-meta">
+            <span>ID: <strong id="ctx-student-id" style="font-family: monospace; color: #4338ca;">ST-2026-01</strong></span>
+            <span>•</span>
+            <span id="ctx-modality">Cell-Free Diagnostics</span>
+            <span>•</span>
+            <span id="ctx-synced">Synced recently</span>
+            <span>•</span>
+            <span id="ctx-lock-pill" class="status-pill" style="background: #f1f5f9; color: #475569; border: 1px solid #cbd5e1;">📝 Open</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="student-nav-group">
+        <button type="button" class="btn-student-nav" id="btn-prev-student">◀ Previous</button>
+        <select id="ctx-select-student" class="form-input" style="width: auto; min-width: 220px; font-size: 0.8rem; padding: 6px 10px;">
+          <option value="">Choose student...</option>
+        </select>
+        <button type="button" class="btn-student-nav" id="btn-next-student">Next ▶</button>
+        <button type="button" class="btn-control-action" id="btn-jump-preprint" style="font-size: 0.78rem; padding: 6px 12px;">
+          <span>📄 View Preprint</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- 3 Core Evaluation Cards -->
+    <div class="grading-console-cards">
+      <!-- Card 1: Rubric Evaluator & Circular Score Ring -->
+      <div class="faculty-card">
+        <div class="faculty-card-header">
+          <div class="faculty-card-title">
+            <span>🎓 Official BT_301 Rubric Evaluator (85 Raw Points ➔ 10.0 GPA)</span>
+          </div>
+          <div style="display: flex; gap: 8px; align-items: center;">
+            <button type="button" id="btn-faculty-reset-audit" class="btn-student-nav" style="font-size: 0.78rem; padding: 6px 12px;" title="Reset all criteria to automated audit values">
+              🔄 Reset to Automated Audit
+            </button>
+            <button type="button" id="btn-faculty-regrade" class="btn-control-action" style="font-size: 0.78rem; padding: 6px 12px;">
+              ⚡ Recalculate Rubric Grade
+            </button>
+          </div>
+        </div>
+
+        <div class="faculty-rubric-summary">
+          <div class="fac-ring-wrap">
+            <svg class="fac-ring-svg" viewBox="0 0 100 100">
+              <defs>
+                <linearGradient id="facRingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#4f46e5" />
+                  <stop offset="100%" stop-color="#06b6d4" />
+                </linearGradient>
+              </defs>
+              <circle class="ring-bg" cx="50" cy="50" r="38" />
+              <circle class="ring-fill" id="fac-score-ring-fill" cx="50" cy="50" r="38" stroke-dasharray="238.76" stroke-dashoffset="238.76" stroke="url(#facRingGrad)" />
+            </svg>
+            <div class="fac-ring-center">
+              <div class="fac-score-num" id="fac-gpa-number">0.0</div>
+              <div class="fac-score-sub">/ 10.0</div>
+            </div>
+          </div>
+
+          <div class="fac-score-details">
+            <div class="fac-gpa-stat" id="fac-gpa-badge">0.00 / 10.0 GPA</div>
+            <div class="fac-raw-stat" id="fac-raw-badge">0.0 / 85.0 Raw Rubric Points</div>
+            <div class="status-pill status-grant-ready" id="fac-standing-badge">Evaluating...</div>
+          </div>
+        </div>
+
+        <!-- Rubric Breakdown Table -->
+        <div style="overflow-x: auto;">
+          <table class="roster-table">
+            <thead>
+              <tr>
+                <th style="width: 28%;">Rubric Criterion</th>
+                <th style="width: 10%;">Weight</th>
+                <th style="width: 20%;">Faculty Points & Override</th>
+                <th style="width: 42%;">Diagnostic Faculty Audit & Rationale</th>
+              </tr>
+            </thead>
+            <tbody id="fac-rubric-table-body">
+              <tr>
+                <td colspan="4" style="text-align: center; color: #94a3b8;">Loading criteria...</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Card 2: 10-Point Scientific Logic Chain Diagnostic -->
+      <div class="faculty-card">
+        <div class="faculty-card-header">
+          <div class="faculty-card-title">
+            <span>🔗 10-Point Scientific Logic & Progression Diagnostics</span>
+          </div>
+          <span style="font-size: 0.74rem; color: #64748b;">Automated Section Validation</span>
+        </div>
+
+        <div class="progress-grid">
+          <div class="progress-node" id="pnode-anchors"><div class="progress-node-title">1. Anchors (Chassis/Tool)</div><div class="progress-node-val" id="pval-anchors">Checking...</div></div>
+          <div class="progress-node" id="pnode-search"><div class="progress-node-title">2. Literature Evidence</div><div class="progress-node-val" id="pval-search">Checking...</div></div>
+          <div class="progress-node" id="pnode-matrix"><div class="progress-node-title">3. Evidence Matrix</div><div class="progress-node-val" id="pval-matrix">Checking...</div></div>
+          <div class="progress-node" id="pnode-funnel"><div class="progress-node-title">4. Background Funnel</div><div class="progress-node-val" id="pval-funnel">Checking...</div></div>
+          <div class="progress-node" id="pnode-aims"><div class="progress-node-title">5. 3 Decoupled Aims</div><div class="progress-node-val" id="pval-aims">Checking...</div></div>
+          <div class="progress-node" id="pnode-methodology"><div class="progress-node-title">6. Methods & Controls</div><div class="progress-node-val" id="pval-methodology">Checking...</div></div>
+          <div class="progress-node" id="pnode-impact"><div class="progress-node-title">7. 3-Tier Impact</div><div class="progress-node-val" id="pval-impact">Checking...</div></div>
+          <div class="progress-node" id="pnode-competitors"><div class="progress-node-title">8. Competitor USP</div><div class="progress-node-val" id="pval-competitors">Checking...</div></div>
+          <div class="progress-node" id="pnode-swot"><div class="progress-node-title">9. Biotech SWOT</div><div class="progress-node-val" id="pval-swot">Checking...</div></div>
+          <div class="progress-node" id="pnode-refs"><div class="progress-node-title">10. References Recency</div><div class="progress-node-val" id="pval-refs">Checking...</div></div>
+        </div>
+      </div>
+
+      <!-- Card 3: Rapid Feedback Comment Bank & Viva Voce Hot-Seat -->
+      <div class="faculty-card">
+        <div class="faculty-card-header">
+          <div class="faculty-card-title">
+            <span>📋 Rapid Feedback Comment Bank & Viva Voce Hot-Seat</span>
+          </div>
+          <span style="font-size: 0.72rem; background: #ede9fe; color: #5b21b6; padding: 2px 8px; border-radius: 4px; font-weight: 700;">
+            Official BT_301 Comment Codes
+          </span>
+        </div>
+
+        <p style="font-size: 0.84rem; color: #475569; margin-bottom: 12px;">
+          Select comment codes to insert standard rubric diagnostics into the formal evaluation memo:
+        </p>
+
+        <div id="fac-comment-chips" style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px;"></div>
+
+        <!-- Oral Defense Viva Voce Generator -->
+        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 14px; margin-bottom: 16px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+            <strong style="font-size: 0.84rem; color: #0f172a;">🎯 Oral Defense Viva Voce Generator</strong>
+            <button type="button" id="btn-gen-viva" class="btn-student-nav" style="background: #4f46e5; color: #ffffff; border-color: #4f46e5;">
+              ⚡ Generate Viva Defense Questions
+            </button>
+          </div>
+          <div id="viva-questions-output" style="font-size: 0.82rem; color: #475569; line-height: 1.5;">
+            Click above to generate 3 tailored oral defense examination questions based on this student's specific biophysical gap and aims.
+          </div>
+        </div>
+
+        <!-- Instructor Notes -->
+        <div style="margin-bottom: 14px;">
+          <label style="display: block; font-size: 0.76rem; font-weight: 700; color: #334155; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">
+            Instructor Viva Notes & Qualitative Feedback:
+          </label>
+          <textarea id="fac-manual-notes" class="form-input" style="min-height: 80px;" placeholder="Add personalized studio observations, required revisions, or viva defense feedback..."></textarea>
+        </div>
+
+        <div style="display: flex; gap: 10px; margin-bottom: 14px; flex-wrap: wrap;">
+          <button type="button" id="btn-fac-generate-memo" class="btn-control-action">
+            📋 Compile Formal Evaluation Memo
+          </button>
+          <button type="button" id="btn-fac-copy-memo" class="btn-student-nav">
+            📑 Copy Memo to Clipboard
+          </button>
+          <button type="button" id="btn-fac-dispatch-feedback" class="btn-control-action" style="background: #059669; border-color: #059669;" title="Persist evaluation scores, rubrics, and action items directly to student's live draft">
+            <span>📤 Dispatch Evaluation to Student Draft</span>
+          </button>
+        </div>
+
+        <div class="memo-output" id="fac-memo-output">Click "Compile Formal Evaluation Memo" to synthesize the official BT_301 instructor report.</div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ========================================================================
+       VIEW 3: 📄 NATURE PREPRINT READER
+       ======================================================================== -->
+  <main class="view-container" id="view-nature-preprint">
+    <div class="preprint-full-card">
+      <div class="manuscript-nature-bar">
+        <div style="display: flex; align-items: center;">
+          <span class="nature-masthead-title">nature biotechnology</span>
+          <span class="nature-tag-pill">PEER EVALUATION PREPRINT</span>
+        </div>
+        <div style="display: flex; gap: 8px;">
+          <button type="button" class="btn-student-nav" id="btn-fac-print-manuscript">🖨️ Print / PDF</button>
+          <button type="button" class="btn-student-nav" id="btn-fac-copy-manuscript">📋 Copy Manuscript</button>
+        </div>
+      </div>
+
+      <div class="manuscript-doi-bar">
+        <span>https://doi.org/10.1038/s41587-026-bt301-proposal</span>
+        <span style="font-weight: 700; color: #0284c7;">● STDF / ICGEB Peer Evaluation Benchmark</span>
+      </div>
+
+      <h1 class="manuscript-title" id="manu-title">Proposal Title Not Yet Specified</h1>
+      <div class="manuscript-authors" id="manu-author">Sara Ahmed & Team BioInnovate</div>
+      <div class="manuscript-affil">Department of Biotechnology & Genetic Engineering • BT_301 Proposal Series</div>
+
+      <!-- Abstract -->
+      <div class="manuscript-abstract-container">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <span class="abstract-title-label">STRUCTURED ABSTRACT</span>
+          <span id="manu-abstract-count" style="font-size: 0.72rem; font-weight: 700; color: #64748b;">0 words</span>
+        </div>
+        <div class="manuscript-abstract-text" id="manu-abstract">No structured abstract drafted yet.</div>
+      </div>
+
+      <!-- Sections -->
+      <section>
+        <h2 class="manuscript-sec-heading">1. Introduction & Inverted Funnel</h2>
+        <div class="manuscript-sec-body" id="manu-background">Drafted in Step 3.</div>
+      </section>
+
+      <section>
+        <h2 class="manuscript-sec-heading">2. Specific Objectives & Decoupled Work Packages</h2>
+        <div class="manuscript-sec-body" id="manu-aims">Formulated in Step 4.</div>
+      </section>
+
+      <section>
+        <h2 class="manuscript-sec-heading">3. Experimental Methodology & Critical Controls</h2>
+        <div class="manuscript-sec-body" id="manu-methodology">Detailed in Step 4.</div>
+      </section>
+
+      <section>
+        <h2 class="manuscript-sec-heading">Table 1: Work Packages, Milestones & Experimental Controls</h2>
+        <div style="overflow-x: auto; margin-top: 10px;">
+          <table class="roster-table" style="font-size: 0.84rem;">
+            <thead>
+              <tr>
+                <th>Work Package</th>
+                <th>Objective Description</th>
+                <th>Target Deliverable Milestone</th>
+                <th>Essential Control Reference</th>
+              </tr>
+            </thead>
+            <tbody id="manu-table-body">
+              <tr><td colspan="4">Populated from proposal draft.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="manuscript-sec-heading">Figure 1: Molecular Architecture & Experimental Flowchart</h2>
+        <div id="manu-figure-preview" style="background: #f8fafc; border: 1px dashed #cbd5e1; border-radius: 8px; padding: 14px; text-align: center;">
+          Figure preview generated from proposal anchors.
+        </div>
+      </section>
+
+      <section>
+        <h2 class="manuscript-sec-heading">4. Deliverables & 3-Tier Long-Term Impact</h2>
+        <div class="manuscript-sec-body" id="manu-impact">Defined in Step 5.</div>
+      </section>
+
+      <section>
+        <h2 class="manuscript-sec-heading">5. Competitive Advantage & Unique Selling Proposition</h2>
+        <div class="manuscript-sec-body" id="manu-competitors">Defined in Step 5.</div>
+      </section>
+
+      <section>
+        <h2 class="manuscript-sec-heading">6. Peer-Reviewed References Cited</h2>
+        <div class="manuscript-sec-body" id="manu-references">Paste reference list in Step 6.</div>
+      </section>
+    </div>
+  </main>
+
+  <!-- ========================================================================
+       VIEW 4: 🔀 SPLIT REVIEW (DUAL PANE)
+       ======================================================================== -->
+  <main class="view-container" id="view-split-review">
+    <div class="split-grid-layout">
+      <!-- Left Column: Grading Console -->
+      <div id="split-left-pane">
+        <!-- Injected via JavaScript clone or shared rendering -->
+      </div>
+      <!-- Right Column: Preprint Reader -->
+      <div id="split-right-pane">
+        <!-- Injected via JavaScript clone or shared rendering -->
+      </div>
+    </div>
+  </main>
+
+  {% endif %}
+
+  <!-- Modal: Confirm Delete Submission -->
+  <div class="fac-gate-overlay" id="modal-confirm-delete" style="display: none; z-index: 9999;">
+    <div class="fac-gate-card" style="max-width: 480px; text-align: left; padding: 28px; background: #ffffff; color: #0f172a; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.35);">
+      <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 16px;">
+        <div style="width: 46px; height: 46px; border-radius: 12px; background: #fee2e2; color: #dc2626; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; flex-shrink: 0;">
+          🗑️
+        </div>
+        <div>
+          <h2 style="font-size: 1.15rem; font-weight: 800; color: #0f172a; margin: 0;">Delete Student Submission</h2>
+          <div style="font-size: 0.78rem; color: #64748b;">Permanent database draft removal</div>
+        </div>
+      </div>
+      <p style="font-size: 0.88rem; color: #334155; line-height: 1.5; margin-bottom: 16px;">
+        Are you sure you want to permanently delete the proposal submission for <strong id="del-modal-student-name" style="color: #0f172a;">Student</strong> (<code id="del-modal-student-id" style="color: #4338ca; font-weight: 700;">ST-XXXX</code>)?
+      </p>
+      <div style="background: #fef2f2; border: 1px solid #fecaca; border-radius: 8px; padding: 12px 14px; font-size: 0.8rem; color: #991b1b; margin-bottom: 22px; line-height: 1.4;">
+        ⚠️ <strong>Warning:</strong> This will completely remove the student's proposal draft, references, and evaluation memo from the server. This action cannot be reversed.
+      </div>
+      <div style="display: flex; justify-content: flex-end; gap: 10px;">
+        <button type="button" id="btn-cancel-delete" class="btn-student-nav" style="padding: 9px 18px; font-weight: 700;">Cancel</button>
+        <button type="button" id="btn-confirm-delete" class="btn-control-action" style="background: #dc2626; border-color: #dc2626; padding: 9px 18px; color: #ffffff; font-weight: 700;">
+          🗑️ Permanently Delete
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       STANDALONE JAVASCRIPT CONTROLLER (NO CONFLICTS WITH STUDIO.JS)
+       ======================================================================== -->
+  <script>
+    let currentStudentData = null;
+    let selectedCommentCodes = [];
+    let cohortRoster = [];
+    let facultyCriterionOverrides = {};
+    let automatedAuditCache = null;
+    let activeDeleteStudentId = null;
+
+    function escapeHtml(str) {
+      if (!str) return "";
+      return String(str)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+    }
+
+    function showToast(message, type = "info") {
+      let toast = document.getElementById("fac-toast");
+      if (!toast) {
+        toast = document.createElement("div");
+        toast.id = "fac-toast";
+        toast.style.position = "fixed";
+        toast.style.bottom = "24px";
+        toast.style.right = "24px";
+        toast.style.padding = "12px 20px";
+        toast.style.borderRadius = "10px";
+        toast.style.fontSize = "0.85rem";
+        toast.style.fontWeight = "700";
+        toast.style.color = "#ffffff";
+        toast.style.boxShadow = "0 10px 25px rgba(0,0,0,0.2)";
+        toast.style.zIndex = "99999";
+        toast.style.transition = "all 0.3s ease";
+        document.body.appendChild(toast);
+      }
+      toast.style.background = type === "warning" ? "#d97706" : type === "error" ? "#dc2626" : "#4338ca";
+      toast.innerText = message;
+      toast.style.opacity = "1";
+      toast.style.transform = "translateY(0)";
+      clearTimeout(toast._timer);
+      toast._timer = setTimeout(() => {
+        toast.style.opacity = "0";
+        toast.style.transform = "translateY(10px)";
+      }, 3200);
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      // 0. Wire Sign Out on Access Restricted Screen
+      const btnDeniedSignout = document.getElementById("btn-denied-signout");
+      if (btnDeniedSignout) {
+        btnDeniedSignout.addEventListener("click", async () => {
+          btnDeniedSignout.disabled = true;
+          btnDeniedSignout.innerText = "Signing out...";
+          try {
+            await fetch("/api/auth/logout", { method: "POST" });
+          } catch(e) {}
+          window.location.reload();
+        });
+      }
+
+      // 1. Check if unauthenticated gate is present
+      const loginForm = document.getElementById("form-fac-login");
+      if (loginForm) {
+        loginForm.addEventListener("submit", handleFacultyLogin);
+      }
+
+      // Password toggle
+      document.querySelectorAll(".btn-toggle-pwd").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const target = document.getElementById(btn.getAttribute("data-target"));
+          if (target) {
+            target.type = target.type === "password" ? "text" : "password";
+            btn.innerText = target.type === "password" ? "👁️" : "🙈";
+          }
+        });
+      });
+
+      // If not authenticated or access denied, stop here
+      {% if not is_authenticated or access_denied %}
+      return;
+      {% endif %}
+
+      // 2. View Mode Navigation
+      initViewSwitcher();
+
+      // 3. Load Roster and Default Student
+      loadCohortRoster().then(() => {
+        if (cohortRoster.length > 0) {
+          loadStudentDraft(cohortRoster[0].student_id);
+        }
+      });
+
+      // 4. Student Navigation controls
+      initStudentNavigation();
+
+      // 5. Viva Voce Generator
+      const btnViva = document.getElementById("btn-gen-viva");
+      if (btnViva) {
+        btnViva.addEventListener("click", handleGenerateVivaQuestions);
+      }
+
+      // 6. Recalculate & Reset Rubric Grade
+      const btnRegrade = document.getElementById("btn-faculty-regrade");
+      if (btnRegrade) {
+        btnRegrade.addEventListener("click", () => {
+          if (currentStudentData) runFacultyGrading(currentStudentData, true);
+        });
+      }
+
+      const btnResetAudit = document.getElementById("btn-faculty-reset-audit");
+      if (btnResetAudit) {
+        btnResetAudit.addEventListener("click", () => {
+          facultyCriterionOverrides = {};
+          if (currentStudentData && automatedAuditCache) {
+            renderRubricTable(automatedAuditCache.breakdown, false);
+            recalculateAndRenderScores();
+            showToast("Rubric points reset to automated baseline!", "info");
+          } else if (currentStudentData) {
+            runFacultyGrading(currentStudentData, false);
+            showToast("Rubric points reset to automated baseline!", "info");
+          }
+        });
+      }
+
+      // 7. Memo Generation, Copy & Dispatch
+      const btnMemo = document.getElementById("btn-fac-generate-memo");
+      if (btnMemo) btnMemo.addEventListener("click", generateFacultyMemo);
+
+      const btnCopyMemo = document.getElementById("btn-fac-copy-memo");
+      if (btnCopyMemo) {
+        btnCopyMemo.addEventListener("click", () => {
+          const txt = document.getElementById("fac-memo-output").innerText;
+          navigator.clipboard.writeText(txt).then(() => showToast("Evaluation Memo copied to clipboard!"));
+        });
+      }
+
+      const btnDispatch = document.getElementById("btn-fac-dispatch-feedback");
+      if (btnDispatch) {
+        btnDispatch.addEventListener("click", handleDispatchFeedbackToStudent);
+      }
+
+      // 8. Print & Copy Preprint
+      const btnPrint = document.getElementById("btn-fac-print-manuscript");
+      if (btnPrint) btnPrint.addEventListener("click", () => window.print());
+
+      const btnCopyPaper = document.getElementById("btn-fac-copy-manuscript");
+      if (btnCopyPaper) {
+        btnCopyPaper.addEventListener("click", copyPreprintToClipboard);
+      }
+
+      // 9. Exports & Logout
+      initExportAndLogout();
+
+      // 10. Submission Deletion Modal Listeners
+      const btnCancelDel = document.getElementById("btn-cancel-delete");
+      const modalDel = document.getElementById("modal-confirm-delete");
+      if (btnCancelDel && modalDel) {
+        btnCancelDel.addEventListener("click", () => {
+          modalDel.style.display = "none";
+          activeDeleteStudentId = null;
+        });
+        modalDel.addEventListener("click", (e) => {
+          if (e.target === modalDel) {
+            modalDel.style.display = "none";
+            activeDeleteStudentId = null;
+          }
+        });
+      }
+
+      const btnConfirmDel = document.getElementById("btn-confirm-delete");
+      if (btnConfirmDel) {
+        btnConfirmDel.addEventListener("click", async () => {
+          if (!activeDeleteStudentId) return;
+          btnConfirmDel.disabled = true;
+          btnConfirmDel.innerText = "Deleting...";
+          try {
+            const resp = await fetch(`/api/faculty/submission/${encodeURIComponent(activeDeleteStudentId)}`, {
+              method: "DELETE"
+            });
+            const res = await resp.json();
+            if (res.success) {
+              showToast(res.message || `Submission for ${activeDeleteStudentId} permanently deleted!`, "info");
+              if (modalDel) modalDel.style.display = "none";
+              if (currentStudentData && currentStudentData.student_id === activeDeleteStudentId) {
+                currentStudentData = null;
+              }
+              await loadCohortRoster();
+            } else {
+              showToast(res.error || "Failed to delete submission.", "error");
+            }
+          } catch (err) {
+            console.error("Delete error", err);
+            showToast("Network error deleting submission.", "error");
+          } finally {
+            btnConfirmDel.disabled = false;
+            btnConfirmDel.innerText = "🗑️ Permanently Delete";
+            activeDeleteStudentId = null;
+          }
+        });
+      }
+    });
+
+    // ========================================================================
+    // FACULTY LOGIN & LOGOUT
+    // ========================================================================
+    async function handleFacultyLogin(e) {
+      e.preventDefault();
+      const pwdInput = document.getElementById("fac-passcode-input");
+      const errBox = document.getElementById("fac-login-error");
+      const btn = document.getElementById("btn-submit-fac-login");
+      const passcode = (pwdInput.value || "").trim();
+
+      if (!passcode) return;
+      btn.disabled = true;
+      btn.innerText = "Verifying...";
+      if (errBox) errBox.style.display = "none";
+
+      try {
+        const resp = await fetch("/api/faculty/login", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ passcode: passcode })
+        });
+        const res = await resp.json();
+        if (res.success) {
+          window.location.reload();
+        } else {
+          if (errBox) {
+            errBox.innerText = res.error || "Incorrect passcode.";
+            errBox.style.display = "block";
+          }
+        }
+      } catch (err) {
+        if (errBox) {
+          errBox.innerText = "Network error connecting to verification server.";
+          errBox.style.display = "block";
+        }
+      } finally {
+        btn.disabled = false;
+        btn.innerText = "🔓 Unlock Faculty Studio";
+      }
+    }
+
+    async function handleFacultyLogout() {
+      try {
+        await fetch("/api/faculty/logout", { method: "POST" });
+        window.location.reload();
+      } catch (e) {
+        console.error("Logout error", e);
+      }
+    }
+
+    // ========================================================================
+    // VIEW SWITCHER (ROSTER, GRADING, PREPRINT, SPLIT)
+    // ========================================================================
+    function initViewSwitcher() {
+      const views = {
+        roster: document.getElementById("view-cohort-roster"),
+        grading: document.getElementById("view-grading-console"),
+        paper: document.getElementById("view-nature-preprint"),
+        split: document.getElementById("view-split-review")
+      };
+
+      const buttons = {
+        roster: document.getElementById("btn-view-roster"),
+        grading: document.getElementById("btn-view-grading"),
+        paper: document.getElementById("btn-view-paper"),
+        split: document.getElementById("btn-view-split")
+      };
+
+      const setView = (mode) => {
+        Object.values(views).forEach(v => v && v.classList.remove("active"));
+        Object.values(buttons).forEach(b => b && b.classList.remove("active"));
+
+        if (views[mode]) views[mode].classList.add("active");
+        if (buttons[mode]) buttons[mode].classList.add("active");
+
+        if (mode === "split") {
+          buildSplitView();
+        }
+
+        showToast(`Switched to: ${mode.toUpperCase()} View`);
+      };
+
+      Object.entries(buttons).forEach(([k, btn]) => {
+        if (btn) btn.addEventListener("click", () => setView(k));
+      });
+
+      const btnJump = document.getElementById("btn-jump-preprint");
+      if (btnJump) btnJump.addEventListener("click", () => setView("paper"));
+
+      window.switchFacultyView = setView;
+    }
+
+    function buildSplitView() {
+      const splitLeft = document.getElementById("split-left-pane");
+      const splitRight = document.getElementById("split-right-pane");
+      const gradingCards = document.querySelector("#view-grading-console .grading-console-cards");
+      const preprintCard = document.querySelector("#view-nature-preprint .preprint-full-card");
+
+      if (splitLeft && gradingCards) {
+        splitLeft.innerHTML = gradingCards.outerHTML;
+      }
+      if (splitRight && preprintCard) {
+        splitRight.innerHTML = preprintCard.outerHTML;
+      }
+    }
+
+    // ========================================================================
+    // COHORT ROSTER & ANALYTICS
+    // ========================================================================
+    async function loadCohortRoster() {
+      try {
+        const resp = await fetch("/api/student/drafts");
+        const roster = await resp.json();
+        cohortRoster = roster || [];
+
+        renderRosterTable(cohortRoster);
+        updateRosterKPIs(cohortRoster);
+        populateStudentDropdowns(cohortRoster);
+      } catch (e) {
+        console.error("Failed to load cohort roster", e);
+      }
+    }
+
+    function renderRosterTable(items) {
+      const tbody = document.getElementById("roster-table-body");
+      if (!tbody) return;
+      tbody.innerHTML = "";
+
+      if (!items.length) {
+        tbody.innerHTML = '<tr><td colspan="9" style="text-align:center; color:#94a3b8; padding:24px;">No student proposals found in database.</td></tr>';
+        return;
+      }
+
+      items.forEach(st => {
+        const tr = document.createElement("tr");
+        const comp = st.completion_percentage || 0;
+        const gpa = (st.grade !== undefined && st.grade !== null) ? st.grade : 8.5;
+        const pts = (gpa * 8.5).toFixed(1);
+
+        let statusClass = "status-minor-rev";
+        let statusLabel = "Minor Revisions";
+        if (gpa >= 8.5) {
+          statusClass = "status-grant-ready";
+          statusLabel = "🌟 Grant-Ready";
+        } else if (gpa < 6.5) {
+          statusClass = "status-major-rev";
+          statusLabel = "⚠️ Revisions Needed";
+        }
+
+        const isLocked = Boolean(st.is_locked_for_grading);
+        const lockBadge = isLocked 
+          ? `<span class="status-pill" style="background:#fee2e2; color:#991b1b; border:1px solid #fca5a5; font-size:0.68rem;" title="Proposal locked by student for faculty grading">🔒 Locked</span>`
+          : `<span class="status-pill" style="background:#f1f5f9; color:#64748b; border:1px solid #cbd5e1; font-size:0.68rem;" title="Proposal open for edits">📝 Open</span>`;
+
+        const reviewedBadge = st.faculty_reviewed
+          ? `<span class="status-pill" style="background:#dcfce7; color:#15803d; border:1px solid #86efac; font-size:0.68rem;" title="Evaluation dispatched to student">✅ Dispatched</span>`
+          : `<span class="status-pill" style="background:#fef3c7; color:#92400e; border:1px solid #fde68a; font-size:0.68rem;" title="Awaiting faculty dispatch">⏳ Pending</span>`;
+
+        let revisionsBadge = "";
+        if (st.total_action_items && st.total_action_items > 0) {
+          const doneCount = st.completed_action_count || 0;
+          const isAllDone = doneCount >= st.total_action_items;
+          const revBg = isAllDone ? "#dcfce7" : "#e0e7ff";
+          const revCol = isAllDone ? "#15803d" : "#4338ca";
+          const revBrd = isAllDone ? "#86efac" : "#c7d2fe";
+          revisionsBadge = `<span class="status-pill" style="background:${revBg}; color:${revCol}; border:1px solid ${revBrd}; font-size:0.68rem;" title="${doneCount} of ${st.total_action_items} revisions addressed by student">📌 ${doneCount}/${st.total_action_items} Revisions</span>`;
+        }
+
+        tr.innerHTML = `
+          <td>
+            <strong style="font-family: monospace; color:#4338ca;">${escapeHtml(st.student_id)}</strong>
+            <div style="margin-top: 4px; display: flex; gap: 4px; flex-wrap: wrap;">
+              ${lockBadge}
+              ${reviewedBadge}
+              ${revisionsBadge}
+            </div>
+          </td>
+          <td><strong>${escapeHtml(st.student_name)}</strong></td>
+          <td style="font-style: italic; max-width: 300px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="${escapeHtml(st.title)}">
+            ${escapeHtml(st.title)}
+          </td>
+          <td><span style="font-size:0.75rem; background:#f1f5f9; padding:2px 6px; border-radius:4px;">${escapeHtml(st.modality || "General")}</span></td>
+          <td><strong style="color: ${comp >= 90 ? '#166534' : '#d97706'};">${comp}%</strong></td>
+          <td>${pts} / 85.0</td>
+          <td><strong>${gpa.toFixed(1)} / 10.0</strong></td>
+          <td><span class="status-pill ${statusClass}">${statusLabel}</span></td>
+          <td>
+            <div style="display: flex; gap: 6px; align-items: center;">
+              <button type="button" class="btn-control-action btn-eval-student" data-id="${escapeHtml(st.student_id)}" style="font-size:0.75rem; padding: 5px 10px;">
+                🔍 Evaluate ➔
+              </button>
+              <button type="button" class="btn-delete-submission" data-id="${escapeHtml(st.student_id)}" data-name="${escapeHtml(st.student_name)}" title="Delete submission" style="background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.3); color: #dc2626; padding: 5px 8px; border-radius: 6px; cursor: pointer; font-size: 0.75rem; transition: all 0.15s ease;">
+                🗑️
+              </button>
+            </div>
+          </td>
+        `;
+        tbody.appendChild(tr);
+      });
+
+      tbody.querySelectorAll(".btn-eval-student").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const sid = btn.getAttribute("data-id");
+          loadStudentDraft(sid);
+          if (window.switchFacultyView) window.switchFacultyView("grading");
+        });
+      });
+
+      tbody.querySelectorAll(".btn-delete-submission").forEach(btn => {
+        btn.addEventListener("click", (e) => {
+          e.stopPropagation();
+          const sid = btn.getAttribute("data-id");
+          const sname = btn.getAttribute("data-name") || "Student";
+          activeDeleteStudentId = sid;
+          const modal = document.getElementById("modal-confirm-delete");
+          const nameEl = document.getElementById("del-modal-student-name");
+          const idEl = document.getElementById("del-modal-student-id");
+          if (nameEl) nameEl.innerText = sname;
+          if (idEl) idEl.innerText = sid;
+          if (modal) modal.style.display = "flex";
+        });
+      });
+    }
+
+    function updateRosterKPIs(items) {
+      const elTotal = document.getElementById("kpi-total-submissions");
+      const elAvg = document.getElementById("kpi-avg-gpa");
+      const elGrant = document.getElementById("kpi-grant-ready");
+      const elRev = document.getElementById("kpi-revisions-needed");
+
+      if (elTotal) elTotal.innerText = items.length;
+
+      let totalGpa = 0;
+      let grantCount = 0;
+      let revCount = 0;
+
+      items.forEach(st => {
+        const gpa = (st.grade !== undefined && st.grade !== null) ? st.grade : 8.5;
+        totalGpa += gpa;
+        if (gpa >= 8.5) grantCount++;
+        else if (gpa < 6.5) revCount++;
+      });
+
+      const avg = items.length ? (totalGpa / items.length).toFixed(1) : "0.0";
+      if (elAvg) elAvg.innerText = avg;
+      if (elGrant) elGrant.innerText = grantCount;
+      if (elRev) elRev.innerText = revCount;
+
+      // Filter search
+      const searchInput = document.getElementById("roster-search-input");
+      if (searchInput && !searchInput._wired) {
+        searchInput._wired = true;
+        searchInput.addEventListener("input", (e) => {
+          const query = (e.target.value || "").toLowerCase();
+          const filtered = cohortRoster.filter(st => 
+            (st.student_id && st.student_id.toLowerCase().includes(query)) ||
+            (st.student_name && st.student_name.toLowerCase().includes(query)) ||
+            (st.title && st.title.toLowerCase().includes(query))
+          );
+          renderRosterTable(filtered);
+        });
+      }
+
+      const btnRefresh = document.getElementById("btn-refresh-roster");
+      if (btnRefresh && !btnRefresh._wired) {
+        btnRefresh._wired = true;
+        btnRefresh.addEventListener("click", () => loadCohortRoster());
+      }
+    }
+
+    function populateStudentDropdowns(items) {
+      const select = document.getElementById("ctx-select-student");
+      if (!select) return;
+      select.innerHTML = '<option value="">-- Jump to Student --</option>';
+      items.forEach(st => {
+        const opt = document.createElement("option");
+        opt.value = st.student_id;
+        opt.innerText = `${st.student_id} • ${st.student_name}`;
+        select.appendChild(opt);
+      });
+      select.addEventListener("change", (e) => {
+        if (e.target.value) loadStudentDraft(e.target.value);
+      });
+    }
+
+    // ========================================================================
+    // STUDENT DRAFT LOADER & UI BINDING
+    // ========================================================================
+    async function loadStudentDraft(studentId) {
+      try {
+        const resp = await fetch(`/api/student/draft/${encodeURIComponent(studentId)}`);
+        const res = await resp.json();
+        if (res.success && res.draft) {
+          applyStudentDraftToUI(res.draft);
+          showToast(`Loaded draft for ${res.draft.student_name || studentId}!`);
+        } else {
+          showToast(res.error || `Student '${studentId}' not found.`, "warning");
+        }
+      } catch (e) {
+        console.error("Error loading student draft", e);
+        showToast("Network error fetching student draft.");
+      }
+    }
+
+    function applyStudentDraftToUI(data) {
+      currentStudentData = data;
+
+      // Context ribbon
+      const setEl = (id, txt) => {
+        const el = document.getElementById(id);
+        if (el) el.innerText = txt || "";
+      };
+
+      setEl("ctx-student-name", data.student_name || "Anonymous Student");
+      setEl("ctx-student-id", data.student_id || "N/A");
+      setEl("ctx-modality", data.modality || "General Biotechnology");
+      setEl("ctx-synced", `Synced: ${data.updated_at_readable || data.updated_at || "Recently"}`);
+
+      const lockPill = document.getElementById("ctx-lock-pill");
+      if (lockPill) {
+        if (data.is_locked_for_grading) {
+          lockPill.innerText = "🔒 Locked for Grading";
+          lockPill.style.background = "#fee2e2";
+          lockPill.style.color = "#991b1b";
+          lockPill.style.border = "1px solid #fca5a5";
+        } else {
+          lockPill.innerText = "📝 In Progress (Unlocked)";
+          lockPill.style.background = "#f1f5f9";
+          lockPill.style.color = "#475569";
+          lockPill.style.border = "1px solid #cbd5e1";
+        }
+      }
+
+      const select = document.getElementById("ctx-select-student");
+      if (select && data.student_id) select.value = data.student_id;
+
+      // Restore faculty review if already present
+      if (data.faculty_review) {
+        const rev = data.faculty_review;
+        facultyCriterionOverrides = rev.criterion_overrides ? JSON.parse(JSON.stringify(rev.criterion_overrides)) : {};
+        selectedCommentCodes = Array.isArray(rev.comment_codes) ? [...rev.comment_codes] : [];
+        if (document.getElementById("fac-manual-notes")) {
+          document.getElementById("fac-manual-notes").value = rev.manual_notes || "";
+        }
+        if (document.getElementById("fac-memo-output") && rev.memo_text) {
+          document.getElementById("fac-memo-output").innerText = rev.memo_text;
+        }
+      } else {
+        facultyCriterionOverrides = {};
+        selectedCommentCodes = [];
+        if (document.getElementById("fac-manual-notes")) {
+          document.getElementById("fac-manual-notes").value = "";
+        }
+        if (document.getElementById("fac-memo-output")) {
+          document.getElementById("fac-memo-output").innerText = 'Click "Compile Formal Evaluation Memo" to synthesize the official BT_301 instructor report.';
+        }
+      }
+
+      // Progress Nodes
+      updateNode("pnode-anchors", "pval-anchors", Boolean(data.chassis && data.tool), data.chassis ? data.chassis.slice(0, 16) + "..." : "Empty");
+      updateNode("pnode-search", "pval-search", Boolean(data.query), data.query ? "Generated" : "Empty");
+      updateNode("pnode-matrix", "pval-matrix", Boolean(data.matrix && (data.matrix.blue || data.matrix.green)), data.matrix && data.matrix.blue ? "Populated" : "Empty");
+      updateNode("pnode-funnel", "pval-funnel", Boolean(data.funnel && data.funnel.tier1), data.funnel && data.funnel.tier1 ? "Drafted" : "Empty");
+      updateNode("pnode-aims", "pval-aims", Boolean(data.aims && data.aims.aim1 && data.aims.aim2 && data.aims.aim3), data.aims && data.aims.aim1 ? "3 Formulated" : "Incomplete");
+      updateNode("pnode-methodology", "pval-methodology", Boolean(data.methodology && data.methodology.length > 40), data.methodology ? data.methodology.split(/\s+/).length + " words" : "Empty");
+      updateNode("pnode-impact", "pval-impact", Boolean(data.impact_data && (data.impact_data.academic || data.impact_data.economic)), data.impact_data && data.impact_data.academic ? "3 Tiers Set" : "Empty");
+      updateNode("pnode-competitors", "pval-competitors", Boolean(data.competitor_data && data.competitor_data.usp), data.competitor_data && data.competitor_data.usp ? "USP Defined" : "Empty");
+      updateNode("pnode-swot", "pval-swot", Boolean(data.swot && data.swot.s && data.swot.w), data.swot && data.swot.w ? "Filled" : "Empty");
+      updateNode("pnode-refs", "pval-refs", Boolean(data.references && data.references.length > 20), data.references ? data.references.split('\n').filter(Boolean).length + " Refs" : "Empty");
+
+      // Run rubric calculation with overrides if any
+      runFacultyGrading(data, true);
+
+      // Render Nature Preprint reader
+      renderLiveManuscript(data);
+
+      // Load Comment Bank
+      loadCommentBank();
+    }
+
+    function updateNode(nodeId, valId, isComplete, label) {
+      const node = document.getElementById(nodeId);
+      const val = document.getElementById(valId);
+      if (node && val) {
+        if (isComplete) {
+          node.classList.add("active");
+          val.innerText = "✅ " + label;
+          val.style.color = "#166534";
+        } else {
+          node.classList.remove("active");
+          val.innerText = "⚠️ " + label;
+          val.style.color = "#991b1b";
+        }
+      }
+    }
+
+    // ========================================================================
+    // RUBRIC GRADING, AUDIT & INTERACTIVE OVERRIDES
+    // ========================================================================
+    async function runFacultyGrading(data, useOverrides = true) {
+      if (!data) return;
+      try {
+        const resp = await fetch("/api/audit/full", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(data)
+        });
+        const audit = await resp.json();
+        automatedAuditCache = audit;
+
+        renderRubricTable(audit.breakdown, useOverrides);
+        recalculateAndRenderScores();
+      } catch (e) {
+        console.error("Grading calculation error", e);
+      }
+    }
+
+    function renderRubricTable(breakdown, useOverrides = true) {
+      const tbody = document.getElementById("fac-rubric-table-body");
+      if (!tbody || !breakdown) return;
+      tbody.innerHTML = "";
+
+      const criteria = [
+        { key: "title", name: "1. Proposal Title (All-or-None Rule)", max: 2.0 },
+        { key: "abstract", name: "2. Structured Abstract (250-word limit)", max: 5.0 },
+        { key: "background", name: "3. Inverted Funnel & Knowledge Gap", max: 20.0 },
+        { key: "aims_independence", name: "4. 3 Decoupled Aims (Non-Contingency)", max: 5.0 },
+        { key: "methodology", name: "5. Experimental Methodology (Controls & Future Tense)", max: 15.0 },
+        { key: "expected_outcomes", name: "6. Deliverables & 3-Tier Impact", max: 10.0 },
+        { key: "competitive_advantage", name: "7. Competitor Matrix & Unique Selling Proposition", max: 5.0 },
+        { key: "swot_pestel", name: "8. Biotech SWOT & Failure Modes", max: 10.0 },
+        { key: "references", name: "9. Peer-Reviewed References (≥60% 2021-2026)", max: 5.0 },
+        { key: "structure", name: "10. Scientific Rigor & Format", max: 3.0 }
+      ];
+
+      criteria.forEach(c => {
+        const item = breakdown[c.key] || { score: 0.0 };
+        const autoScore = item.score !== undefined ? parseFloat(item.score) : 0.0;
+
+        let override = facultyCriterionOverrides[c.key];
+        let score = autoScore;
+        let isOverridden = false;
+        let note = "";
+
+        if (useOverrides && override !== undefined && override !== null) {
+          if (typeof override === "object") {
+            if (override.score !== undefined && override.score !== null) {
+              score = parseFloat(override.score);
+              isOverridden = true;
+            }
+            if (override.notes !== undefined) {
+              note = override.notes;
+            }
+          } else if (typeof override === "number") {
+            score = override;
+            isOverridden = true;
+          }
+        }
+
+        let reportText = "Evaluation completed.";
+        if (item.report && item.report.feedback) reportText = item.report.feedback;
+        else if (item.report && item.report.issues && item.report.issues.length) reportText = item.report.issues.join("; ");
+
+        const tr = document.createElement("tr");
+        tr.innerHTML = `
+          <td><strong>${c.name}</strong></td>
+          <td style="color: #64748b; font-weight: 700;">${c.max.toFixed(1)} pts</td>
+          <td>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <input type="number" 
+                     class="fac-point-override form-input" 
+                     data-key="${c.key}" 
+                     data-max="${c.max}" 
+                     min="0" 
+                     max="${c.max}" 
+                     step="0.5" 
+                     value="${score.toFixed(1)}" 
+                     style="width: 78px; padding: 4px 6px; font-weight: 800; font-size: 0.88rem; text-align: center; border-color: ${isOverridden ? '#4f46e5' : '#cbd5e1'}; background: ${isOverridden ? '#f5f3ff' : '#ffffff'}; color: ${score > 0 ? '#166534' : '#991b1b'};">
+              <span style="font-size: 0.75rem; font-weight: 700; color: #64748b;">/ ${c.max.toFixed(1)}</span>
+              ${isOverridden ? '<span class="status-pill" style="font-size:0.65rem; background:#4f46e5; color:#ffffff; padding:1px 5px;">Manual</span>' : ''}
+            </div>
+          </td>
+          <td>
+            <div style="color: #475569; font-size: 0.8rem; margin-bottom: 5px;">${escapeHtml(reportText)}</div>
+            <input type="text" 
+                   class="fac-override-note form-input" 
+                   data-key="${c.key}" 
+                   placeholder="Instructor criterion rationale or note..." 
+                   value="${escapeHtml(note)}" 
+                   style="font-size: 0.78rem; padding: 4px 8px; width: 100%;">
+          </td>
+        `;
+        tbody.appendChild(tr);
+      });
+
+      // Attach live recalculation listeners
+      tbody.querySelectorAll(".fac-point-override").forEach(inp => {
+        inp.addEventListener("input", () => {
+          const key = inp.getAttribute("data-key");
+          const max = parseFloat(inp.getAttribute("data-max")) || 0;
+          let val = parseFloat(inp.value);
+          if (isNaN(val)) val = 0;
+          if (val < 0) val = 0;
+          if (val > max) val = max;
+
+          if (!facultyCriterionOverrides[key]) facultyCriterionOverrides[key] = {};
+          facultyCriterionOverrides[key].score = val;
+
+          inp.style.borderColor = "#4f46e5";
+          inp.style.background = "#f5f3ff";
+          inp.style.color = val > 0 ? "#166534" : "#991b1b";
+
+          recalculateAndRenderScores();
+        });
+      });
+
+      tbody.querySelectorAll(".fac-override-note").forEach(inp => {
+        inp.addEventListener("input", () => {
+          const key = inp.getAttribute("data-key");
+          if (!facultyCriterionOverrides[key]) facultyCriterionOverrides[key] = {};
+          facultyCriterionOverrides[key].notes = inp.value;
+        });
+      });
+    }
+
+    function recalculateAndRenderScores() {
+      let raw = 0.0;
+      const inputs = document.querySelectorAll(".fac-point-override");
+      if (inputs.length) {
+        inputs.forEach(inp => {
+          const max = parseFloat(inp.getAttribute("data-max")) || 0;
+          let v = parseFloat(inp.value);
+          if (isNaN(v)) v = 0;
+          if (v < 0) v = 0;
+          if (v > max) v = max;
+          raw += v;
+        });
+      } else if (automatedAuditCache) {
+        raw = automatedAuditCache.raw_total || 0.0;
+      }
+
+      const gpa = Math.min(10.0, (raw / 85.0) * 10.0);
+      const pct = (raw / 85.0) * 100.0;
+
+      const gpaNum = document.getElementById("fac-gpa-number");
+      if (gpaNum) gpaNum.innerText = gpa.toFixed(1);
+
+      const gpaBadge = document.getElementById("fac-gpa-badge");
+      if (gpaBadge) gpaBadge.innerText = gpa.toFixed(2) + " / 10.0 GPA";
+
+      const rawBadge = document.getElementById("fac-raw-badge");
+      if (rawBadge) rawBadge.innerText = raw.toFixed(1) + " / 85.0 Raw Rubric Points";
+
+      const ringFill = document.getElementById("fac-score-ring-fill");
+      if (ringFill) {
+        const circumference = 238.76;
+        const offset = circumference * (1 - Math.min(100, Math.max(0, pct)) / 100);
+        ringFill.style.strokeDashoffset = offset;
+      }
+
+      const standing = document.getElementById("fac-standing-badge");
+      let standingLabel = "⚠️ Substantial Revisions Needed";
+      let standingClass = "status-pill status-major-rev";
+      if (gpa >= 8.5) {
+        standingLabel = "🌟 Grant-Ready / Excellent";
+        standingClass = "status-pill status-grant-ready";
+      } else if (gpa >= 6.5) {
+        standingLabel = "📘 Good / Minor Revisions";
+        standingClass = "status-pill status-minor-rev";
+      }
+      if (standing) {
+        standing.innerText = standingLabel;
+        standing.className = standingClass;
+      }
+
+      return { raw, gpa, standing: standingLabel };
+    }
+
+    async function handleDispatchFeedbackToStudent() {
+      if (!currentStudentData) {
+        showToast("Please select a student proposal first.", "warning");
+        return;
+      }
+
+      const scores = recalculateAndRenderScores();
+      const notes = (document.getElementById("fac-manual-notes") ? document.getElementById("fac-manual-notes").value : "").trim();
+      let memoOutput = document.getElementById("fac-memo-output") ? document.getElementById("fac-memo-output").innerText : "";
+
+      if (!memoOutput || memoOutput.includes('Click "Compile Formal Evaluation Memo"')) {
+        await generateFacultyMemo();
+        memoOutput = document.getElementById("fac-memo-output") ? document.getElementById("fac-memo-output").innerText : "";
+      }
+
+      // Compile pedagogical action items for student dashboard
+      const actionItems = [];
+
+      // 1. Comment code diagnostics
+      if (selectedCommentCodes.length > 0) {
+        selectedCommentCodes.forEach(code => {
+          actionItems.push(`[${code}] Address rubric diagnostic code: ${code}`);
+        });
+      }
+
+      // 2. Low scoring criteria and custom notes
+      const criteriaNames = {
+        title: "Proposal Title",
+        abstract: "Structured Abstract",
+        background: "Inverted Funnel & Knowledge Gap",
+        aims_independence: "3 Decoupled Aims Non-Contingency",
+        methodology: "Experimental Controls & Methodology",
+        expected_outcomes: "3-Tier Impact & Deliverables",
+        competitive_advantage: "Competitor Analysis & USP",
+        swot_pestel: "Biotech FMEA & Risk Mitigation",
+        references: "Peer-Reviewed References Recency",
+        structure: "Scientific Nomenclature & Format"
+      };
+
+      document.querySelectorAll(".fac-point-override").forEach(inp => {
+        const k = inp.getAttribute("data-key");
+        const max = parseFloat(inp.getAttribute("data-max")) || 0;
+        const val = parseFloat(inp.value) || 0;
+        const noteInp = document.querySelector(`.fac-override-note[data-key="${k}"]`);
+        const customNote = noteInp ? noteInp.value.trim() : "";
+
+        if (customNote) {
+          actionItems.push(`${criteriaNames[k] || k}: ${customNote}`);
+        } else if (val < max * 0.75) {
+          actionItems.push(`${criteriaNames[k] || k}: Review and strengthen scientific rigor against rubric standards.`);
+        }
+      });
+
+      // 3. Manual notes lines
+      if (notes) {
+        const noteLines = notes.split(/\r?\n/).map(l => l.trim()).filter(Boolean);
+        noteLines.forEach(l => {
+          if (!actionItems.includes(l)) actionItems.push(l);
+        });
+      }
+
+      if (actionItems.length === 0) {
+        actionItems.push("Proposal meets all evaluation standards. Rehearse viva defense questions.");
+      }
+
+      const btnDispatch = document.getElementById("btn-fac-dispatch-feedback");
+      if (btnDispatch) {
+        btnDispatch.disabled = true;
+        btnDispatch.innerText = "Dispatching...";
+      }
+
+      try {
+        const resp = await fetch("/api/instructor/dispatch_feedback", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            student_id: currentStudentData.student_id,
+            instructor_name: "BT_301 Faculty Evaluation Board",
+            gpa: scores.gpa,
+            raw_total: scores.raw,
+            standing: scores.standing,
+            criterion_overrides: facultyCriterionOverrides,
+            manual_notes: notes,
+            action_items: actionItems,
+            memo_text: memoOutput
+          })
+        });
+
+        const res = await resp.json();
+        if (res.success) {
+          showToast(`✅ Evaluation dispatched to student ${currentStudentData.student_id}!`, "info");
+          currentStudentData.faculty_review = res.faculty_review;
+          loadCohortRoster();
+        } else {
+          showToast(res.error || "Failed to dispatch feedback.", "error");
+        }
+      } catch (err) {
+        console.error("Dispatch error", err);
+        showToast("Network error dispatching feedback.", "error");
+      } finally {
+        if (btnDispatch) {
+          btnDispatch.disabled = false;
+          btnDispatch.innerHTML = "<span>📤 Dispatch Evaluation to Student Draft</span>";
+        }
+      }
+    }
+
+    // ========================================================================
+    // RAPID COMMENT BANK & VIVA VOCE GENERATOR
+    // ========================================================================
+    async function loadCommentBank() {
+      try {
+        const resp = await fetch("/api/instructor/comments");
+        const comments = await resp.json();
+        const container = document.getElementById("fac-comment-chips");
+        if (!container) return;
+        container.innerHTML = "";
+
+        let allItems = [];
+        if (Array.isArray(comments)) allItems = comments;
+        else if (typeof comments === "object") {
+          Object.values(comments).forEach(group => {
+            if (Array.isArray(group)) allItems.push(...group);
+          });
+        }
+
+        allItems.forEach(c => {
+          const chip = document.createElement("button");
+          chip.type = "button";
+          chip.className = "comment-chip" + (selectedCommentCodes.includes(c.code) ? " active" : "");
+          chip.innerText = c.code + ": " + (c.label || c.comment.slice(0, 25));
+          chip.title = c.comment || c.text;
+          chip.addEventListener("click", () => {
+            if (selectedCommentCodes.includes(c.code)) {
+              selectedCommentCodes = selectedCommentCodes.filter(x => x !== c.code);
+              chip.classList.remove("active");
+            } else {
+              selectedCommentCodes.push(c.code);
+              chip.classList.add("active");
+            }
+          });
+          container.appendChild(chip);
+        });
+      } catch (e) {
+        console.error("Error loading comment bank", e);
+      }
+    }
+
+    async function handleGenerateVivaQuestions() {
+      if (!currentStudentData) {
+        showToast("Please select a student first.", "warning");
+        return;
+      }
+      const out = document.getElementById("viva-questions-output");
+      if (out) out.innerText = "⏳ Formulating oral defense questions from student's gap and aims...";
+
+      try {
+        const resp = await fetch("/api/viva/generate", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            title: currentStudentData.title,
+            chassis: currentStudentData.chassis,
+            tool: currentStudentData.tool,
+            target: currentStudentData.target,
+            funnel: currentStudentData.funnel,
+            aims: currentStudentData.aims
+          })
+        });
+        const res = await resp.json();
+        if (res.questions && res.questions.length && out) {
+          out.innerHTML = res.questions.map((q, idx) => `
+            <div style="margin-bottom: 8px; padding: 8px 12px; background: #ffffff; border-left: 3px solid #7c3aed; border-radius: 4px;">
+              <strong>Question ${idx + 1}:</strong> ${escapeHtml(q.question || q)}
+            </div>
+          `).join("");
+          showToast("Viva Voce defense questions generated!");
+        }
+      } catch (e) {
+        if (out) out.innerText = "Error generating viva questions. Try again.";
+      }
+    }
+
+    async function generateFacultyMemo() {
+      if (!currentStudentData) {
+        showToast("Please load a student draft first.", "warning");
+        return;
+      }
+      const notes = document.getElementById("fac-manual-notes").value;
+
+      try {
+        const resp = await fetch("/api/instructor/report", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            student_data: currentStudentData,
+            selected_codes: selectedCommentCodes,
+            manual_comments: notes
+          })
+        });
+        const result = await resp.json();
+        document.getElementById("fac-memo-output").innerText = result.memo_text || "Memo compiled.";
+        showToast("Faculty Evaluation Memo generated!");
+      } catch (e) {
+        console.error("Memo generation error", e);
+      }
+    }
+
+    // ========================================================================
+    // SCHOLARLY NATURE PREPRINT RENDERER
+    // ========================================================================
+    function renderLiveManuscript(data) {
+      const d = data || currentStudentData || {};
+      const setEl = (id, text) => {
+        const el = document.getElementById(id);
+        if (el) el.innerText = text || "";
+      };
+      const setHtml = (id, html) => {
+        const el = document.getElementById(id);
+        if (el) el.innerHTML = html || "";
+      };
+
+      setEl("manu-title", d.title || "Proposal Title Not Yet Specified");
+      setEl("manu-author", d.student_name || "Sara Ahmed & Team BioInnovate");
+
+      const absText = d.abstract || "No structured abstract drafted yet.";
+      setEl("manu-abstract", absText);
+      const wCount = absText.trim().split(/\s+/).filter(Boolean).length;
+      setEl("manu-abstract-count", `${wCount} words (${wCount <= 250 ? 'Compliant' : 'Exceeds 250w'})`);
+
+      const fn = d.funnel || {};
+      let bgHtml = "";
+      if (fn.tier1) bgHtml += `<p style="margin-bottom:6px;"><strong>1. Problem Burden:</strong> ${escapeHtml(fn.tier1)}</p>`;
+      if (fn.tier2) bgHtml += `<p style="margin-bottom:6px;"><strong>2. Current Status:</strong> ${escapeHtml(fn.tier2)}</p>`;
+      if (fn.tier3) bgHtml += `<p style="margin-bottom:6px;"><strong>3. Biophysical Gap:</strong> <span style="background:#fee2e2; padding:1px 4px; border-radius:3px;">${escapeHtml(fn.tier3)}</span></p>`;
+      if (fn.tier4) bgHtml += `<p style="margin-bottom:6px;"><strong>4. Hypothesis:</strong> <span style="background:#dcfce7; padding:1px 4px; border-radius:3px;">${escapeHtml(fn.tier4)}</span></p>`;
+      setHtml("manu-background", bgHtml || "<em>Drafted in Step 3.</em>");
+
+      const aims = d.aims || {};
+      let aimsHtml = "";
+      if (aims.aim1) aimsHtml += `<p style="margin-bottom:6px;"><strong>WP 1:</strong> ${escapeHtml(aims.aim1)}</p>`;
+      if (aims.aim2) aimsHtml += `<p style="margin-bottom:6px;"><strong>WP 2:</strong> ${escapeHtml(aims.aim2)}</p>`;
+      if (aims.aim3) aimsHtml += `<p style="margin-bottom:6px;"><strong>WP 3:</strong> ${escapeHtml(aims.aim3)}</p>`;
+      setHtml("manu-aims", aimsHtml || "<em>Formulated in Step 4.</em>");
+
+      let methHtml = d.methodology ? `<p style="margin-bottom:8px;">${escapeHtml(d.methodology)}</p>` : "";
+      if (d.matrix && d.matrix.purple) {
+        methHtml += `<p style="font-size:0.8rem; background:#f5f3ff; border-left:3px solid #7c3aed; padding:6px 10px; border-radius:4px;"><strong>Essential Experimental Controls:</strong> ${escapeHtml(d.matrix.purple)}</p>`;
+      }
+      setHtml("manu-methodology", methHtml || "<em>Detailed in Step 4.</em>");
+
+      const tableBody = document.getElementById("manu-table-body");
+      if (tableBody) {
+        const a1 = (aims && aims.aim1) || "Synthesis & Expression Preparation";
+        const a2 = (aims && aims.aim2) || "Biophysical Characterization & Activity Kinetics";
+        const a3 = (aims && aims.aim3) || "Analytical Validation & Recovery Optimization";
+        
+        const m1 = (d.matrix && d.matrix.blue) ? d.matrix.blue : "Target yield ≥ 50 mg/L";
+        const m2 = "Activity recovery ≥ 80% vs baseline";
+        const m3 = "Validation p < 0.01 vs control";
+        
+        const c1 = (d.matrix && d.matrix.purple) ? d.matrix.purple : "Vehicle buffer negative control";
+        const c2 = "Native unengineered baseline reference";
+        const c3 = "Heat-denatured mock negative control";
+
+        tableBody.innerHTML = `
+          <tr>
+            <td><strong>WP 1</strong></td>
+            <td>${escapeHtml(a1)}</td>
+            <td><span style="background:#e0f2fe; color:#0369a1; padding:2px 6px; border-radius:3px; font-weight:700;">${escapeHtml(m1)}</span></td>
+            <td>${escapeHtml(c1)}</td>
+          </tr>
+          <tr>
+            <td><strong>WP 2</strong></td>
+            <td>${escapeHtml(a2)}</td>
+            <td><span style="background:#e0f2fe; color:#0369a1; padding:2px 6px; border-radius:3px; font-weight:700;">${escapeHtml(m2)}</span></td>
+            <td>${escapeHtml(c2)}</td>
+          </tr>
+          <tr>
+            <td><strong>WP 3</strong></td>
+            <td>${escapeHtml(a3)}</td>
+            <td><span style="background:#e0f2fe; color:#0369a1; padding:2px 6px; border-radius:3px; font-weight:700;">${escapeHtml(m3)}</span></td>
+            <td>${escapeHtml(c3)}</td>
+          </tr>
+        `;
+      }
+
+      const figPreview = document.getElementById("manu-figure-preview");
+      if (figPreview) {
+        const chassis = d.chassis || "Host Chassis";
+        const tool = d.tool || "Molecular Tool";
+        const target = d.target || "Phenotypic Target";
+        figPreview.innerHTML = `
+          <div style="display:flex; align-items:center; justify-content:center; gap:8px; flex-wrap:wrap; font-size:0.78rem;">
+            <span style="background:#f0fdf4; border:1px solid #86efac; color:#15803d; padding:4px 8px; border-radius:6px; font-weight:700;">🦠 ${escapeHtml(chassis)}</span>
+            <span style="color:#94a3b8; font-weight:800;">➔</span>
+            <span style="background:#faf5ff; border:1px solid #d8b4fe; color:#7e22ce; padding:4px 8px; border-radius:6px; font-weight:700;">✂️ ${escapeHtml(tool)}</span>
+            <span style="color:#94a3b8; font-weight:800;">➔</span>
+            <span style="background:#eff6ff; border:1px solid #93c5fd; color:#1d4ed8; padding:4px 8px; border-radius:6px; font-weight:700;">🎯 ${escapeHtml(target)}</span>
+          </div>
+        `;
+      }
+
+      const imp = d.impact_data || {};
+      let impHtml = "";
+      if (imp.academic) impHtml += `<p style="margin-bottom:4px;"><strong>Academic:</strong> ${escapeHtml(imp.academic)}</p>`;
+      if (imp.economic) impHtml += `<p style="margin-bottom:4px;"><strong>Economic:</strong> ${escapeHtml(imp.economic)}</p>`;
+      if (imp.societal) impHtml += `<p style="margin-bottom:4px;"><strong>Societal:</strong> ${escapeHtml(imp.societal)}</p>`;
+      setHtml("manu-impact", impHtml || "<em>Defined in Step 5.</em>");
+
+      const comp = d.competitor_data || {};
+      let compHtml = "";
+      if (d.usps || comp.usp) {
+        compHtml += `<p style="background:#ecfdf5; border-left:3px solid #059669; padding:8px 12px; border-radius:4px; margin-bottom:10px;"><strong>Unique Selling Proposition (USP):</strong> ${escapeHtml(d.usps || comp.usp)}</p>`;
+      }
+      const pEst = comp.principle_established || comp.incumbent_name;
+      const pProp = comp.principle_proposed || comp.proposed_name || d.tool;
+      if (pEst || pProp) {
+        compHtml += `
+          <div style="overflow-x:auto; margin-top:8px;">
+            <table style="width:100%; font-size:0.75rem; border-collapse:collapse; border:1px solid #cbd5e1;">
+              <thead>
+                <tr style="background:#f1f5f9; text-align:left;">
+                  <th style="padding:4px 6px; border:1px solid #cbd5e1; width:22%;">Dimension</th>
+                  <th style="padding:4px 6px; border:1px solid #cbd5e1; width:26%;">Established</th>
+                  <th style="padding:4px 6px; border:1px solid #cbd5e1; width:26%;">Recent</th>
+                  <th style="padding:4px 6px; border:1px solid #cbd5e1; width:26%; background:#ecfdf5;">Proposed</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td style="padding:4px 6px; border:1px solid #cbd5e1;"><strong>Principle / tech</strong></td><td style="padding:4px 6px; border:1px solid #cbd5e1;">${escapeHtml(pEst || '—')}</td><td style="padding:4px 6px; border:1px solid #cbd5e1;">${escapeHtml(comp.principle_recent || comp.emerging_name || '—')}</td><td style="padding:4px 6px; border:1px solid #cbd5e1; background:#f0fdf4;">${escapeHtml(pProp || '—')}</td></tr>
+                <tr><td style="padding:4px 6px; border:1px solid #cbd5e1;"><strong>Main strength</strong></td><td style="padding:4px 6px; border:1px solid #cbd5e1;">${escapeHtml(comp.strength_established || '—')}</td><td style="padding:4px 6px; border:1px solid #cbd5e1;">${escapeHtml(comp.strength_recent || '—')}</td><td style="padding:4px 6px; border:1px solid #cbd5e1; background:#f0fdf4;">${escapeHtml(comp.strength_proposed || '—')}</td></tr>
+                <tr><td style="padding:4px 6px; border:1px solid #cbd5e1;"><strong>Key limitation</strong></td><td style="padding:4px 6px; border:1px solid #cbd5e1;">${escapeHtml(comp.limitation_established || '—')}</td><td style="padding:4px 6px; border:1px solid #cbd5e1;">${escapeHtml(comp.limitation_recent || '—')}</td><td style="padding:4px 6px; border:1px solid #cbd5e1; background:#f0fdf4;">${escapeHtml(comp.limitation_proposed || '—')}</td></tr>
+                <tr><td style="padding:4px 6px; border:1px solid #cbd5e1;"><strong>Performance</strong></td><td style="padding:4px 6px; border:1px solid #cbd5e1;">${escapeHtml(comp.performance_established || comp.incumbent_speed || '—')}</td><td style="padding:4px 6px; border:1px solid #cbd5e1;">${escapeHtml(comp.performance_recent || comp.emerging_speed || '—')}</td><td style="padding:4px 6px; border:1px solid #cbd5e1; background:#f0fdf4;">${escapeHtml(comp.performance_proposed || comp.proposed_speed || '—')}</td></tr>
+                <tr><td style="padding:4px 6px; border:1px solid #cbd5e1;"><strong>Cost / resources</strong></td><td style="padding:4px 6px; border:1px solid #cbd5e1;">${escapeHtml(comp.cost_established || comp.incumbent_cost || '—')}</td><td style="padding:4px 6px; border:1px solid #cbd5e1;">${escapeHtml(comp.cost_recent || comp.emerging_cost || '—')}</td><td style="padding:4px 6px; border:1px solid #cbd5e1; background:#f0fdf4;">${escapeHtml(comp.cost_proposed || comp.proposed_cost || '—')}</td></tr>
+                <tr><td style="padding:4px 6px; border:1px solid #cbd5e1;"><strong>Safety / sustainability</strong></td><td style="padding:4px 6px; border:1px solid #cbd5e1;">${escapeHtml(comp.safety_established || comp.incumbent_safety || '—')}</td><td style="padding:4px 6px; border:1px solid #cbd5e1;">${escapeHtml(comp.safety_recent || comp.emerging_safety || '—')}</td><td style="padding:4px 6px; border:1px solid #cbd5e1; background:#f0fdf4;">${escapeHtml(comp.safety_proposed || comp.proposed_safety || '—')}</td></tr>
+                <tr><td style="padding:4px 6px; border:1px solid #cbd5e1;"><strong>Evidence available</strong></td><td style="padding:4px 6px; border:1px solid #cbd5e1;">${escapeHtml(comp.evidence_established || '—')}</td><td style="padding:4px 6px; border:1px solid #cbd5e1;">${escapeHtml(comp.evidence_recent || '—')}</td><td style="padding:4px 6px; border:1px solid #cbd5e1; background:#f0fdf4;">${escapeHtml(comp.evidence_proposed || '—')}</td></tr>
+                <tr><td style="padding:4px 6px; border:1px solid #cbd5e1; background:#fef2f2;"><strong>Unresolved gap</strong></td><td style="padding:4px 6px; border:1px solid #cbd5e1; background:#fef2f2;">${escapeHtml(comp.gap_established || '—')}</td><td style="padding:4px 6px; border:1px solid #cbd5e1; background:#fef2f2;">${escapeHtml(comp.gap_recent || '—')}</td><td style="padding:4px 6px; border:1px solid #cbd5e1; background:#fef2f2;">${escapeHtml(comp.gap_proposed || '—')}</td></tr>
+                <tr><td style="padding:4px 6px; border:1px solid #cbd5e1; background:#f0fdf4;"><strong>Contribution of study</strong></td><td style="padding:4px 6px; border:1px solid #cbd5e1; text-align:center;">—</td><td style="padding:4px 6px; border:1px solid #cbd5e1; text-align:center;">—</td><td style="padding:4px 6px; border:1px solid #cbd5e1; background:#dcfce7; font-weight:600;">${escapeHtml(comp.contribution_proposed || d.usps || '—')}</td></tr>
+              </tbody>
+            </table>
+          </div>
+        `;
+      }
+      setHtml("manu-competitors", compHtml || "<em>Defined in Step 5.</em>");
+
+      const refs = d.references ? escapeHtml(d.references).replace(/\n/g, "<br>") : "<em>Paste reference list in Step 6.</em>";
+      setHtml("manu-references", refs);
+    }
+
+    function copyPreprintToClipboard() {
+      if (!currentStudentData) return;
+      const fullText = `NATURE BIOTECHNOLOGY PREPRINT\n\nTitle: ${currentStudentData.title || 'Untitled Proposal'}\nAuthors: ${currentStudentData.student_name || 'Anonymous'}\n\nSTRUCTURED ABSTRACT:\n${currentStudentData.abstract || ''}\n\n1. INTRODUCTION & GAP:\n${currentStudentData.funnel ? Object.values(currentStudentData.funnel).join('\n') : ''}\n\n2. SPECIFIC OBJECTIVES:\n${currentStudentData.aims ? Object.values(currentStudentData.aims).join('\n') : ''}\n\n3. METHODOLOGY & CONTROLS:\n${currentStudentData.methodology || ''}\n\nREFERENCES:\n${currentStudentData.references || ''}`;
+      navigator.clipboard.writeText(fullText).then(() => showToast("Preprint manuscript copied to clipboard!"));
+    }
+
+    // ========================================================================
+    // STUDENT NAVIGATION (PREV / NEXT)
+    // ========================================================================
+    function initStudentNavigation() {
+      const btnPrev = document.getElementById("btn-prev-student");
+      const btnNext = document.getElementById("btn-next-student");
+
+      if (btnPrev) {
+        btnPrev.addEventListener("click", () => {
+          if (!cohortRoster.length || !currentStudentData) return;
+          const idx = cohortRoster.findIndex(st => st.student_id === currentStudentData.student_id);
+          const nextIdx = idx > 0 ? idx - 1 : cohortRoster.length - 1;
+          loadStudentDraft(cohortRoster[nextIdx].student_id);
+        });
+      }
+
+      if (btnNext) {
+        btnNext.addEventListener("click", () => {
+          if (!cohortRoster.length || !currentStudentData) return;
+          const idx = cohortRoster.findIndex(st => st.student_id === currentStudentData.student_id);
+          const nextIdx = idx < cohortRoster.length - 1 ? idx + 1 : 0;
+          loadStudentDraft(cohortRoster[nextIdx].student_id);
+        });
+      }
+    }
+
+    // ========================================================================
+    // EXPORTS & LOGOUT
+    // ========================================================================
+    function initExportAndLogout() {
+      const btnLogout = document.getElementById("btn-fac-logout");
+      if (btnLogout) btnLogout.addEventListener("click", handleFacultyLogout);
+
+      const btnExpTrigger = document.getElementById("btn-fac-export-trigger");
+      const expMenu = document.getElementById("fac-export-menu");
+      if (btnExpTrigger && expMenu) {
+        btnExpTrigger.addEventListener("click", (e) => {
+          e.stopPropagation();
+          expMenu.classList.toggle("show");
+        });
+        document.addEventListener("click", (e) => {
+          if (!btnExpTrigger.contains(e.target) && !expMenu.contains(e.target)) {
+            expMenu.classList.remove("show");
+          }
+        });
+      }
+
+      const btnDocx = document.getElementById("btn-fac-download-docx");
+      if (btnDocx) {
+        btnDocx.addEventListener("click", async () => {
+          if (!currentStudentData) return;
+          try {
+            const resp = await fetch("/api/export/docx", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify(currentStudentData)
+            });
+            const blob = await resp.blob();
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement("a");
+            a.href = url;
+            a.download = `BT301_Proposal_${(currentStudentData.student_id || "Student").replace(/\s+/g, "_")}.docx`;
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+          } catch (e) {
+            showToast("Error downloading Word document.", "error");
+          }
+        });
+      }
+
+      const btnPptx = document.getElementById("btn-fac-download-pptx");
+      if (btnPptx) {
+        btnPptx.addEventListener("click", async () => {
+          if (!currentStudentData) return;
+          try {
+            const resp = await fetch("/api/export/pptx", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify(currentStudentData)
+            });
+            const blob = await resp.blob();
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement("a");
+            a.href = url;
+            a.download = `Defense_Slides_${(currentStudentData.student_id || "Student").replace(/\s+/g, "_")}.pptx`;
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+          } catch (e) {
+            showToast("Error downloading presentation slides.", "error");
+          }
+        });
+      }
+
+      const btnMd = document.getElementById("btn-fac-download-md");
+      if (btnMd) {
+        btnMd.addEventListener("click", async () => {
+          if (!currentStudentData) return;
+          try {
+            const resp = await fetch("/api/export/md", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify(currentStudentData)
+            });
+            const blob = await resp.blob();
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement("a");
+            a.href = url;
+            a.download = `BT301_Proposal_${(currentStudentData.student_id || "Student").replace(/\s+/g, "_")}.md`;
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+          } catch (e) {
+            showToast("Error downloading markdown file.", "error");
+          }
+        });
+      }
+    }
+  </script>
+</body>
+</html>

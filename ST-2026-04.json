@@ -1,0 +1,92 @@
+{
+  "student_id": "ST-2026-04",
+  "student_name": "Layla Hassan & Team NanoEnzyme",
+  "title": "Engineered PETase-MHETase Chimeras for Ambient Plastic Degradation in Marine Environments",
+  "modality": "Enzyme Engineering & Biocatalysis",
+  "chassis": "Pichia pastoris GS115",
+  "tool": "Directed Evolution & SpyTag/SpyCatcher Modular Fusion",
+  "target": "Post-consumer polyethylene terephthalate (PET) microplastics",
+  "query": "Pichia pastoris AND PETase AND MHETase AND SpyTag AND marine",
+  "matrix": {
+    "blue": "≥ 85% mass degradation of 50 um PET films within 72 hours at 25°C",
+    "green": "Premature catalytic inactivation under marine ionic strength and salinity (>35 PSU)",
+    "yellow": "Pichia pastoris GS115 (AOX1 promoter, continuous fed-batch fermentation)",
+    "purple": "Negative vehicle buffer control; Positive wild-type IsPETase reference; Specificity non-polyester control"
+  },
+  "funnel": {
+    "tier1": "Over 14 million metric tons of microplastics accumulate in oceanic ecosystems annually, threatening marine trophic networks and commercial fisheries.",
+    "tier2": "Microbial cutinases and bacterial IsPETase can cleave amorphous PET but exhibit rapid thermal denaturation above 30°C and severe catalytic inhibition in hyper-saline marine water.",
+    "tier3": "Current enzymatic depolymerization lacks catalytic processivity because intermediate MHET accumulates and acts as a potent competitive inhibitor of PETase in high-salinity aquatic matrices.",
+    "tier4": "We hypothesize that covalent proximity-channeling of an engineered salt-tolerant PETase to MHETase via a flexible peptide linker will accelerate intermediate substrate transfer and achieve complete terephthalate mineralization at ambient marine temperatures."
+  },
+  "aims": {
+    "aim1": "Engineer salt-stabilized IsPETase variants via computational Rosetta surface charge re-engineering.",
+    "aim2": "Construct and express SpyTag-SpyCatcher mediated PETase-MHETase multimeric biocatalytic complexes in Pichia pastoris.",
+    "aim3": "Quantify real-time degradation kinetics and complete mineralization efficiency on aged marine PET microplastics."
+  },
+  "aims_contingencies": {
+    "aim1_fallback": "If Rosetta salt-bridge mutants fail to express solubly, substitute with halo-tolerant cutinase scaffolds derived from marine actinomycetes.",
+    "aim2_fallback": "If covalent SpyTag fusion causes steric hindrance around the catalytic triad, utilize a rigid poly-proline helical spacer.",
+    "aim3_fallback": "If marine biofouling impedes enzyme surface adsorption, incorporate a cellulose-binding domain (CBD) for enhanced substrate anchoring."
+  },
+  "control_triad": {
+    "negative_control": "Sterile artificial seawater buffer (35 PSU) and empty-vector pPIC9K transformation supernatant without enzyme.",
+    "positive_control": "Recombinant wild-type Ideonella sakaiensis PETase (IsPETase) tested under standard non-saline 30°C conditions.",
+    "specificity_control": "Incubation of the dual-enzyme chimera with non-target synthetic polymers (Nylon-6,6 and Low-Density Polyethylene)."
+  },
+  "biotech_risk_matrix": {
+    "off_target": "Nonspecific proteolysis of the flexible linker by endogenous Pichia proteases. Mitigation: Utilize protease-deficient strain SMD1168H.",
+    "toxicity": "Accumulation of terephthalic acid (TPA) causing culture acidification. Mitigation: Continuous pH-stat titration with 1M NaOH.",
+    "solubility": "Irreversible aggregation of chimeric enzymes during high-density secretion. Mitigation: Low-temperature induction at 20°C with sorbitol.",
+    "biosafety": "Environmental release of genetically modified yeast into open coastal waters. Mitigation: Strict cell-free immobilized enzyme formulations."
+  },
+  "methodology": "The engineered PETase and MHETase coding sequences will be synthesized with codon optimization for Pichia pastoris and cloned into pPIC9K downstream of the alpha-mating factor secretion signal. Linearized plasmids will be electroporated into Pichia pastoris SMD1168H. Fermentation will be conducted in a 5L benchtop bioreactor under methanol-induced AOX1 expression at 20°C. Secreted enzymes will be purified via Ni-NTA chromatography and characterized by SDS-PAGE. Plastic degradation assays will utilize crystalline and amorphous PET coupon films in artificial seawater (35 PSU). Reaction progress will be monitored by reverse-phase HPLC with diode array detection at 240 nm to quantify liberated MHET and terephthalic acid. Polymer surface topological degradation will be verified using field-emission scanning electron microscopy.",
+  "impact_data": {
+    "academic": "Establishes structural and thermodynamic principles of multi-enzyme proximity channeling for insoluble solid-liquid biocatalysis in saline environments.",
+    "economic": "Provides a low-energy ambient biocatalytic pathway to recover pure polymer precursors (,200/ton TPA) from marine waste without requiring high-temperature chemical recycling.",
+    "societal": "Mitigates persistent microplastic contamination in coastal marine reserves and aquaculture habitats."
+  },
+  "competitor_data": {
+    "incumbent": "High-temperature chemical glycolysis (>200°C, 20 bar): energy-intensive, hazardous solvent waste, incompatible with environmental remediation.",
+    "emerging": "Free wild-type IsPETase: unstable above 30°C, 80% activity loss at marine salinity, inhibited by intermediate MHET.",
+    "proposed": "Salt-stabilized, SpyTag-channeled PETase-MHETase biocatalyst: operates directly at 20–25°C in seawater with zero intermediate inhibition.",
+    "usp": "The first ambient-temperature marine-stable dual enzyme cascade achieving stoichiometric conversion of PET microplastics into soluble monomers in real seawater."
+  },
+  "swot": {
+    "s": "Ultra-rapid synergistic depolymerization due to elimination of MHET feedback inhibition; high secretion titers in Pichia pastoris.",
+    "w": "Cost of large-scale enzyme production and necessity of periodic enzyme re-dosing in open-loop settings.",
+    "o": "Expanding international plastic treaty compliance mandates and corporate demand for enzymatically circular recycled PET.",
+    "t": "Competition from emerging chemical depolymerization facilities and regulatory hurdles regarding immobilized biocatalysts in marine zones."
+  },
+  "budget": [
+    {
+      "category": "Consumables & Reagents",
+      "description": "Synthetic gene blocks, Rosetta modeling licenses, Ni-NTA resins, HPLC analytical columns",
+      "amount": 5800
+    },
+    {
+      "category": "Equipment & Fermentation",
+      "description": "Bioreactor runtime, methanol feeds, cryo-SEM imaging hours at university core facility",
+      "amount": 3800
+    },
+    {
+      "category": "Testing & Assay Supplies",
+      "description": "Model PET microplastics, artificial seawater salts, enzyme kinetics fluorogenic probes",
+      "amount": 2200
+    },
+    {
+      "category": "Dissemination & Defense",
+      "description": "Open-access publication in ACS Catalysis and oral defense presentation materials",
+      "amount": 2200
+    }
+  ],
+  "references": "Yoshida, S., et al. (2016). A bacterium that degrades and assimilates poly(ethylene terephthalate). Science, 351(6278), 1196-1199.\nAustin, H. P., et al. (2018). Characterization and engineering of a plastic-degrading aromatic polyesterase. Proceedings of the National Academy of Sciences, 115(19), E4350-E4357.\nKnott, B. C., et al. (2020). Characterization and engineering of a two-enzyme system for plastics depolymerization. Proceedings of the National Academy of Sciences, 117(41), 25476-25485.",
+  "is_locked_for_grading": false,
+  "updated_at": "2026-09-20T11:48:48.990696",
+  "updated_at_readable": "Sep 20, 2026 - 11:48",
+  "summary": {
+    "completed_nodes": 10,
+    "completion_percentage": 100,
+    "word_count": 255
+  }
+}

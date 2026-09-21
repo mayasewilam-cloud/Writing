@@ -1,0 +1,16 @@
+{
+  "course_id": "GRANT_STDF",
+  "course_name": "National / International Fundable Grant Standard (STDF / ICGEB / NIH)",
+  "curriculum_focus": "Competitive Research Grant Proposal & Budget Defense",
+  "marking_scheme": {
+    "total_raw_marks": 100,
+    "max_gpa": 10.0,
+    "criteria": [
+      {"id": "scientific_merit", "name": "Scientific Merit, Innovation & Novelty", "max_marks": 25},
+      {"id": "technical_feasibility", "name": "Technical Feasibility, Controls & Methodology", "max_marks": 25},
+      {"id": "pi_qualification", "name": "Team Qualifications & Risk Management (SWOT)", "max_marks": 15},
+      {"id": "impact_translation", "name": "Socioeconomic Impact, USPs & PESTEL Alignment", "max_marks": 15},
+      {"id": "budget_timeline", "name": "Budget Justification & Work Package Milestone Gantt", "max_marks": 20}
+    ]
+  }
+}

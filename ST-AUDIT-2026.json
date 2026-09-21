@@ -1,0 +1,76 @@
+{
+  "student_id": "ST-AUDIT-2026",
+  "student_name": "Audit Student & Cohort",
+  "chassis": "Synechocystis sp. PCC 6803",
+  "tool": "CRISPR-dCas9 Transcriptional Repressor",
+  "title": "Engineering Synechocystis sp. PCC 6803 for High-Yield Photosynthetic Biomanufacturing via CRISPR-dCas9 Dynamic Transcriptional Repression",
+  "system": "Synechocystis sp. PCC 6803",
+  "target": "Glycogen synthase (glgC) and competitive carbon sink pathways",
+  "matrix": {
+    "blue": "14.8 g/L/day baseline cyanobacterial biomass yield",
+    "yellow": "Excess carbon diversion into competing intracellular storage glycogen (32% of fixed carbon)",
+    "green": "Wild-type untreated Synechocystis PCC 6803 under identical photobioreactor conditions",
+    "citation": "Kanno et al. (2024). Metabolic flux engineering in Synechocystis. Nat Chem Biol."
+  },
+  "funnel": {
+    "tier1": "Global industrial decarbonization requires carbon-negative biological chemical production platforms to replace petroleum feedstocks.",
+    "tier2": "Cyanobacteria fix carbon dioxide directly using sunlight with theoretical solar-to-chemical conversion efficiency exceeding 8%.",
+    "tier3": "However, commercial viability is severely bottlenecked by metabolic slippage into native carbohydrate storage pathways under high light.",
+    "tier4": "We hypothesize that inducible CRISPR-dCas9 repression of glycogen synthase (glgC) will redirect photosynthetic carbon flux into target terpenes by over 45% without compromising cell viability."
+  },
+  "aims": {
+    "aim1": "Construct and validate light-inducible dCas9 repression cassettes targeting glgC in Synechocystis sp. PCC 6803.",
+    "aim2": "Quantify metabolic carbon redirection and photosynthetic efficiency under continuous photobioreactor cultivation.",
+    "aim3": "Evaluate continuous production yield and genetic stability across 500 hours of continuous biomanufacturing."
+  },
+  "control_triad": {
+    "negative": "Untransformed wild-type PCC 6803 and non-targeting dCas9 scramble guide control.",
+    "positive": "Constitutively active knockout mutant glgC::kanR strain under standard illumination."
+  },
+  "aims_contingencies": {
+    "aim1_fallback": "If dCas9 off-target silencing occurs, switch to a high-fidelity dCas12a variant with orthogonal crRNA scaffolds."
+  },
+  "usps": "First light-switchable epigenetic carbon diverter in cyanobacteria operating without permanent genomic scar insertion.",
+  "biotech_risk_matrix": {
+    "off_target": "Off-target dCas9 binding to essential metabolic promoters",
+    "metabolic_burden": "Protein expression burden from high-copy repressor complexes",
+    "regulatory_gmo": "Horizontal gene transfer containment in photobioreactor closed loops"
+  },
+  "abstract": "Photosynthetic biomanufacturing in cyanobacteria represents an attractive carbon-negative alternative to petrochemical synthesis. However, natural cyanobacteria divert over 30% of fixed solar carbon into intracellular glycogen storage, severely penalizing product yields. In this study, we engineer Synechocystis sp. PCC 6803 using a light-inducible CRISPR-dCas9 transcriptional repression system targeting the glycogen biosynthesis gene glgC. By decoupling metabolic redirection from vegetative biomass accumulation, we achieve high-efficiency carbon shunting toward high-value biochemicals without triggering permanent growth defects. In photobioreactor cultivation, our dynamic repressor achieves a 48% reduction in storage carbohydrate accumulation with a concomitant 3.2-fold increase in target terpene flux relative to wild-type controls. Furthermore, stability audits over 500 hours confirm robust construct retention. This work establishes a generalizable, non-destructive regulatory paradigm for photosynthetic chassis engineering.",
+  "is_locked_for_grading": false,
+  "updated_at": "2026-09-20T22:39:12.131702",
+  "updated_at_readable": "Sep 20, 2026 - 22:39",
+  "summary": {
+    "completed_nodes": 4,
+    "completion_percentage": 40,
+    "word_count": 243
+  },
+  "locked_at": null,
+  "faculty_review": {
+    "instructor_name": "BT_301 Faculty Evaluation Board",
+    "gpa": 4.0,
+    "raw_total": 96.5,
+    "standing": "🌟 Grant-Ready",
+    "criterion_overrides": {
+      "title": {
+        "score": 10,
+        "notes": "Tripartite structure compliant."
+      },
+      "pillars": {
+        "score": 10,
+        "notes": "Host chassis Synechocystis well-matched with dCas9 tool."
+      },
+      "evidence_matrix": {
+        "score": 20,
+        "notes": "Empirical benchmarks thoroughly cited."
+      }
+    },
+    "manual_notes": "Exemplary tripartite title and rigorous quantitative benchmarks. Approved for official viva defense.",
+    "action_items": [
+      "Calibrate light-switchable kinetics in photobioreactor scale-up.",
+      "Formalize off-target dCas12a control contingency in Aim 1 defense."
+    ],
+    "memo_text": "",
+    "dispatched_at": "Sep 20, 2026 - 22:39"
+  }
+}

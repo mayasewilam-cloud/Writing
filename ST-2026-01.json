@@ -1,0 +1,93 @@
+{
+  "student_id": "ST-2026-01",
+  "student_name": "Sara Al-Mansoor & Team BioDetect",
+  "modality": "Cell-Free Diagnostics",
+  "chassis": "Cell-free Tx-Tl lysate",
+  "tool": "CRISPR-Cas12a (LbCas12a) with FAM-quencher reporter",
+  "target": "mcr-1 colistin resistance plasmid gene in wastewater",
+  "query": "(\"CRISPR-Cas12a\" OR \"DETECTR\") AND (\"mcr-1\" OR \"colistin resistance\") AND \"wastewater\" AND \"isothermal\"",
+  "title": "CRISPR-Cas12a-Assisted Isothermal Detection of Polymyxin Resistance (mcr-1) in Agricultural Wastewater",
+  "abstract": "The environmental dissemination of polymyxin resistance mediated by the plasmid-borne mcr-1 gene poses an escalating threat to global public health. Conventional surveillance relies on bacterial culture followed by quantitative PCR, which requires centralized laboratory infrastructure and 24 to 48 hours of turnaround time. Here, we present an all-in-one cell-free diagnostic assay combining Recombinase Polymerase Amplification (RPA) with CRISPR-Cas12a trans-cleavage for rapid, visual detection of mcr-1 directly from agricultural runoff within 45 minutes at 37°C. The engineered system utilizes a chemically modified crRNA targeting a conserved catalytic motif of mcr-1, unleashing indiscriminate collateral cleavage of single-stranded DNA fluorophore-quencher probes upon target engagement. In preliminary benchmarking against spiked environmental matrices, the platform achieved a limit of detection of 5 copies/uL without cross-reactivity against wild-type E. coli or related beta-lactamase genes. This point-of-need diagnostic provides a decentralized biosurveillance tool to track antimicrobial resistance dissemination at agricultural discharge interfaces.",
+  "funnel": {
+    "tier1": "Antimicrobial resistance (AMR) is projected to cause 10 million annual fatalities by 2050. Colistin remains one of the few last-resort reserve antibiotics for treating multidrug-resistant Gram-negative bacterial infections.",
+    "tier2": "The mobilization of the phosphoethanolamine transferase gene (mcr-1) onto conjugative plasmids has facilitated rapid horizontal transmission across livestock reservoirs and agricultural irrigation waterways.",
+    "tier3": "Current environmental monitoring relies on culture-dependent enrichment and benchtop qPCR. These methods fail point-of-need requirements due to thermal cycler dependency, high reagent costs, and 48-hour diagnostic turnaround times.",
+    "tier4": "We hypothesize that coupling isothermal recombinase polymerase amplification (RPA) at 37°C with catalytic CRISPR-Cas12a trans-cleavage will achieve single-copy limit of detection of mcr-1 in wastewater within 45 minutes."
+  },
+  "matrix": {
+    "blue": "LOD: 100 CFU/mL; Assay Time: 45 min at 37°C; Turnaround: <1 hour",
+    "yellow": "Isothermal RPA coupled with CRISPR-Cas12a trans-cleavage of ssDNA-FAM reporters",
+    "green": "Environmental wastewater matrix contains humic acid inhibitors that suppress fluorescent reporter kinetics",
+    "purple": "Positive: Synthesized mcr-1 DNA template; Negative: Nuclease-free water and non-target plasmid (pUC19)",
+    "citation": "Chen et al. (2018) Science; Gootenberg et al. (2017) Science"
+  },
+  "aims": {
+    "aim1": "Design and screen 5 chemically modified crRNA candidates targeting conserved regions of the mcr-1 catalytic domain for optimal Cas12a trans-cleavage kinetics.",
+    "aim2": "Formulate a one-pot RPA-Cas12a reaction buffer containing trehalose and BSA to overcome humic acid polymerase inhibition in agricultural runoff.",
+    "aim3": "Validate diagnostic sensitivity and specificity against 50 blind environmental effluent samples benchmarked against standard TaqMan qPCR."
+  },
+  "methodology": "crRNA sequences targeting mcr-1 will be synthesized with 2'-O-methyl modifications. Recombinase Polymerase Amplification will be conducted at 37°C for 20 minutes using TwistAmp Basic reagents. Subsequently, 2 uL of RPA amplicon will be transferred to a 50 nM LbCas12a reaction containing 100 nM FAM-TAMRA single-stranded DNA reporter. Fluorescent kinetic measurements will be recorded every 60 seconds on a portable microplate fluorometer. Positive control reactions will contain 1,000 copies/uL of sequence-verified mcr-1 plasmid DNA; negative vehicle controls will substitute template with nuclease-free water; specificity controls will test gDNA from multidrug-resistant clinical isolates carrying blaCTX-M and blaNDM-1.",
+  "impact_data": {
+    "academic": "Publishes an open-access protocol for one-pot environmental CRISPR diagnostics and kinetic characterization of chemically modified crRNAs in complex matrix buffers.",
+    "economic": "Reduces diagnostic unit costs from $35.00/sample (qPCR) down to $2.80/sample, enabling high-frequency decentralized farm monitoring without capital infrastructure.",
+    "societal": "Provides early-warning environmental surveillance to intercept antimicrobial resistance spillover into community drinking water aquifers."
+  },
+  "competitor_data": {
+    "incumbent": "Benchtop qPCR (Applied Biosystems 7500): 2.5 hours, $35/test, requires trained operator and cold-chain storage.",
+    "emerging": "Standard loop-mediated isothermal amplification (LAMP): 65°C heating block required, prone to false-positive primer-dimer turbidity.",
+    "proposed": "One-pot RPA-Cas12a at ambient 37°C: 45 min, $2.80/test, visual fluorescent or lateral flow readout.",
+    "usp": "The only field-deployable assay operating strictly at 37°C without thermal cycling that discriminates single-nucleotide mcr-1 variants from benign commensal flora."
+  },
+  "swot": {
+    "s": "High specificity of Cas12a PAM recognition; sub-picomolar sensitivity via dual catalytic amplification.",
+    "w": "Cas12a collateral activity can lead to premature probe exhaustion; commercial RPA enzyme pellets have batch-to-batch variability.",
+    "o": "Expanding regulatory mandates for agricultural discharge monitoring; scalable to lateral flow dipstick format.",
+    "t": "Rapid evolution of mcr alleles (mcr-2 through mcr-10) potentially escaping the single crRNA targeting window."
+  },
+  "budget": [
+    {
+      "category": "Consumables & Reagents",
+      "description": "TwistAmp RPA kits, Cas12a enzyme, modified crRNA oligos, fluorescent ssDNA reporters",
+      "amount": 6500
+    },
+    {
+      "category": "Equipment & Tooling",
+      "description": "Portable 37°C heating block and battery-operated handheld fluorometer",
+      "amount": 3200
+    },
+    {
+      "category": "Testing & Analytical Services",
+      "description": "Sanger sequencing verification and environmental wastewater core testing",
+      "amount": 1800
+    },
+    {
+      "category": "Dissemination & Publication",
+      "description": "Open-access journal publication charges (e.g. Environmental Science & Technology)",
+      "amount": 2500
+    }
+  ],
+  "references": "Chen, J. S., et al. (2018). CRISPR-Cas12a target binding unleashes indiscriminate single-stranded DNase activity. Science, 360(6387), 436-439.\nGootenberg, J. S., et al. (2017). Nucleic acid detection with CRISPR-Cas13a/C2c2. Science, 356(6336), 438-442.\nLiu, Y. Y., et al. (2016). Emergence of plasmid-mediated colistin resistance mechanism MCR-1 in animals and human beings in China: a microbiological and molecular biological study. The Lancet Infectious Diseases, 16(2), 161-168.\nWang, M., et al. (2022). Portable microfluidic CRISPR diagnostics for environmental pathogen surveillance. Nature Biotechnology, 40(8), 1205-1215.",
+  "updated_at": "2026-09-19T15:07:44.856951",
+  "updated_at_readable": "Initial Submission",
+  "summary": {
+    "completed_nodes": 10,
+    "completion_percentage": 100,
+    "word_count": 413
+  },
+  "aims_contingencies": {
+    "aim1_fallback": "Synthesize alternative 2'-fluoro modified crRNA candidates if chemical degradation occurs in environmental matrices.",
+    "aim2_fallback": "Supplement reaction buffer with betaine or secondary surfactant if trehalose alone fails to suppress humic acid inhibition.",
+    "aim3_fallback": "Incorporate magnetic bead pre-concentration step if wastewater target viral load falls below 5 copies/uL."
+  },
+  "control_triad": {
+    "negative_control": "Nuclease-free water and non-target pUC19 plasmid vector (vehicle background).",
+    "positive_control": "Sequence-verified synthesized mcr-1 DNA template at 1,000 copies/uL (analytical benchmark).",
+    "specificity_control": "Genomic DNA from clinical isolates harboring non-target resistance genes (blaCTX-M-15 and blaNDM-1)."
+  },
+  "biotech_risk_matrix": {
+    "off_target": "Spurious trans-cleavage triggered by non-target environmental homologs. Mitigation: Stringent TTTV PAM scanning and 20-nt crRNA matching.",
+    "toxicity": "Minimal cellular toxicity (cell-free assay), but fluorophore quenching in dark effluent. Mitigation: Dual-wavelength ratiometric fluorometry.",
+    "solubility": "RPA enzyme pellet denaturation under field ambient heat. Mitigation: Trehalose-based dry lyosphere stabilization.",
+    "biosafety": "Handling pathogenic wastewater samples (BSL-2). Mitigation: Rapid chemical lysis / heat inactivation (95°C, 3 min) at collection point."
+  }
+}

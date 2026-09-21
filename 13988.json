@@ -1,0 +1,106 @@
+{
+  "student_name": "Maya",
+  "student_id": "13988",
+  "model_id": "cell_free",
+  "title": "",
+  "system": "hospital wastewater effluent",
+  "chassis": "hospital wastewater effluent",
+  "tool": "CRISPR-Cas12a fluorescent reporter",
+  "target": "mcr-1 colistin resistance gene",
+  "search_query": "",
+  "matrix": {
+    "yellow": "",
+    "blue": "",
+    "green": "",
+    "purple": "",
+    "red": "",
+    "citation": ""
+  },
+  "abstract": "",
+  "funnel": {
+    "tier1": "",
+    "tier2": "",
+    "tier3": "",
+    "tier4": ""
+  },
+  "overarching_aim": "",
+  "aims": {
+    "aim1": "",
+    "aim2": "",
+    "aim3": ""
+  },
+  "methodology": "",
+  "expected_outcomes": "",
+  "impact": "",
+  "customer": "",
+  "market": "",
+  "usps": "",
+  "competitor_data": {
+    "incumbent_name": "",
+    "incumbent_speed": "",
+    "incumbent_cost": "",
+    "incumbent_metric": "",
+    "incumbent_portability": "",
+    "incumbent_safety": "",
+    "emerging_name": "",
+    "emerging_speed": "",
+    "emerging_cost": "",
+    "emerging_metric": "",
+    "emerging_portability": "",
+    "emerging_safety": "",
+    "proposed_name": "",
+    "proposed_speed": "",
+    "proposed_cost": "",
+    "proposed_metric": "",
+    "proposed_portability": "",
+    "proposed_safety": ""
+  },
+  "swot": {
+    "strengths": "",
+    "weaknesses": "",
+    "opportunities": "",
+    "threats": ""
+  },
+  "pestel": {
+    "political": "",
+    "economic": "",
+    "social": "",
+    "technological": "",
+    "environmental": "",
+    "legal": ""
+  },
+  "time_plan": "",
+  "budget": "",
+  "references": "",
+  "updated_at": "2026-09-20T10:07:18.755171",
+  "updated_at_readable": "Sep 20, 2026 - 10:07",
+  "summary": {
+    "completed_nodes": 1,
+    "completion_percentage": 10,
+    "word_count": 0
+  },
+  "faculty_review": {
+    "instructor_name": "BT_301 Faculty Evaluation Board",
+    "gpa": 0.5882352941176471,
+    "raw_total": 5,
+    "standing": "⚠️ Substantial Revisions Needed",
+    "criterion_overrides": {},
+    "manual_notes": "require revision",
+    "action_items": [
+      "[AB-01] Address rubric diagnostic code: AB-01",
+      "Proposal Title: Review and strengthen scientific rigor against rubric standards.",
+      "Structured Abstract: Review and strengthen scientific rigor against rubric standards.",
+      "Inverted Funnel & Knowledge Gap: Review and strengthen scientific rigor against rubric standards.",
+      "3 Decoupled Aims Non-Contingency: Review and strengthen scientific rigor against rubric standards.",
+      "Experimental Controls & Methodology: Review and strengthen scientific rigor against rubric standards.",
+      "3-Tier Impact & Deliverables: Review and strengthen scientific rigor against rubric standards.",
+      "Competitor Analysis & USP: Review and strengthen scientific rigor against rubric standards.",
+      "Biotech FMEA & Risk Mitigation: Review and strengthen scientific rigor against rubric standards.",
+      "Peer-Reviewed References Recency: Review and strengthen scientific rigor against rubric standards.",
+      "Scientific Nomenclature & Format: Review and strengthen scientific rigor against rubric standards.",
+      "require revision"
+    ],
+    "memo_text": "FACULTY REVIEW & FACILITATION AUDIT MEMO\nProject: \nStudent / Team: Maya\nCourse: BT_301 Introduction to Biotechnology\n=================================================================\n\nRAPID AUDIT NOTES:\n• [AB-01 - Exceeds 250 Words]: Abstract exceeds the strict 250-word ceiling. Edit down concisely to prevent editorial desk rejection.\n\nFACULTY INSTRUCTOR NOTES:\nrequire revision\n",
+    "dispatched_at": "Sep 20, 2026 - 11:53"
+  }
+}
